@@ -1,0 +1,24 @@
+<script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        $('input[type=radio][name=project_form_type]').change(function () {
+            if (this.value == '1') {
+                $('.advanced_fields_box').hide();
+            } else {
+                $('.advanced_fields_box').show();
+            }
+        });
+        if ($('#firstHeading').text().indexOf(':') < 0) {
+            $('.project_form_type_box').show();
+            $('#type_form_basic').prop("checked", true).change();
+        }
+        $('.dynatree-node.dynatree-expanded.dynatree-has-children.dynatree-exp-e.dynatree-ico-e').removeClass().addClass('dynatree-node dynatree-has-children dynatree-exp-c dynatree-ico-c');
+        $("#Projekt[subcat]treeinput li").attr("data", "&#039;expand&#039;: false");
+    });
+</script>
+<div class="project_form_type_box">
+    <label for="type_form_basic"><input type="radio" id="type_form_basic" name="project_form_type"
+                                        value="1"/>Basic</label>
+    <label for="type_form_adv"><input type="radio" id="type_form_adv" name="project_form_type"
+                                      value="2"/>Advanced</label>
+</div>

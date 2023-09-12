@@ -1,0 +1,22 @@
+{
+    "require": {
+        "mediawiki/chameleon-skin": "3.4.3",
+        "mediawiki/semantic-media-wiki": "~4.0",
+        "mediawiki/semantic-result-formats": "4.*",
+        "mediawiki/page-forms": "~5.6",
+        "mediawiki/bootstrap": "4.*"
+    },"extra": {
+		"merge-plugin": {
+			"include": [
+				"extensions/*/composer.json",
+				"skins/*/composer.json"
+			]
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"wikimedia/composer-merge-plugin": true
+		}
+	}
+}

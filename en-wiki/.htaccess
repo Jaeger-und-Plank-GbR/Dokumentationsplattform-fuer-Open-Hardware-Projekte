@@ -1,0 +1,10 @@
+RewriteEngine On
+
+#RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+#RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-d
+#RewriteCond %{REQUEST_URI} !^/index\.php
+RewriteRule ^wiki/(.*)$ /index.php/$1 [L]
+
+# Redirect / to Main Page
+#RewriteRule ^/*$ %{DOCUMENT_ROOT}/index.php [L]
+

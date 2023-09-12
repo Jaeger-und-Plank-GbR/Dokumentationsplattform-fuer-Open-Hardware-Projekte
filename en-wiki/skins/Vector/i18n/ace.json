@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fadli Idris",
+			"Si Gam Acèh"
+		]
+	},
+	"vector-opt-out": "Gantoe u rupa awai",
+	"vector-languages": "Bahsa",
+	"vector-language-button-label": "{{PLURAL:$1|$1 bahsa}}",
+	"vector-action-addsection": "Tamah bhaih",
+	"vector-action-delete": "Sampôh",
+	"vector-action-move": "Pupinah",
+	"vector-action-protect": "Peulindông",
+	"vector-action-undelete": "Bateuë sampôh",
+	"vector-action-unprotect": "Gantoe neulindông",
+	"vector-view-create": "Peugöt",
+	"vector-view-edit": "Peusaneut",
+	"vector-view-history": "Eu riwayat",
+	"vector-view-view": "Beuet",
+	"vector-view-viewsource": "Eu nè",
+	"vector-more-actions": "Lom",
+	"tooltip-vector-anon-user-menu-title": "Peuniléh laén"
+}

@@ -1,0 +1,1057 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Sandbox Open Hardware Documentation</sitename>
+    <dbname>sandbox_ohdc_wiki_en</dbname>
+    <base>https://sandbox.oh-dc.org/wiki/Home</base>
+    <generator>MediaWiki 1.38.6</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Sandbox Open Hardware Documentation</namespace>
+      <namespace key="5" case="first-letter">Sandbox Open Hardware Documentation talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="102" case="first-letter">Property</namespace>
+      <namespace key="103" case="first-letter">Property talk</namespace>
+      <namespace key="106" case="first-letter">Form</namespace>
+      <namespace key="107" case="first-letter">Form talk</namespace>
+      <namespace key="108" case="first-letter">Concept</namespace>
+      <namespace key="109" case="first-letter">Concept talk</namespace>
+      <namespace key="112" case="first-letter">smw/schema</namespace>
+      <namespace key="113" case="first-letter">smw/schema talk</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="844" case="first-letter">CommentStreams</namespace>
+      <namespace key="845" case="first-letter">CommentStreams Talk</namespace>
+      <namespace key="2300" case="first-letter">Gadget</namespace>
+      <namespace key="2301" case="first-letter">Gadget talk</namespace>
+      <namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+      <namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>MediaWiki:Chameleon.css</title>
+    <ns>8</ns>
+    <id>11</id>
+    <revision>
+      <id>225</id>
+      <parentid>12</parentid>
+      <timestamp>2023-09-05T14:32:19Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <comment>less lines for page forms</comment>
+      <origin>225</origin>
+      <model>css</model>
+      <format>text/css</format>
+      <text bytes="6541" sha1="tc86rt930qd0uok9qzlwy5mil951b78" xml:space="preserve">/* CSS siehe auch https://getbootstrap.com/docs/4.0/layout/overview/ */
+
+/* IOG layout … */
+body { font-family: "B612",sans-serif; }
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.h1 {
+    color: #1C1F1F;
+    margin: 0 0 35px 0;
+    padding: 0 0 20px 0;
+    border: 0;
+    line-height: 1.23;
+    font-size: 26px;
+    position: relative;
+    text-align: center;
+}
+
+.h1:after {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 4px;
+    background: #00A9E0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -90px;
+}
+
+@media (min-width: 768px) {
+    .h1 {
+        font-size:34px;
+    }
+}
+
+.color-1 .h1 {
+    color: #fff;
+}
+
+.color-1 .h1:after {
+    background: #fff;
+}
+
+h2,.h2 {
+    color: #1C1F1F;
+    margin: 0 0 35px 0;
+    padding: 0 0 20px 0;
+    border: 0;
+    line-height: 1.23;
+    font-size: 26px;
+    position: relative;
+    text-align: center;
+}
+
+h2:after,.h2:after {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 4px;
+    background: #00A9E0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -90px;
+}
+
+@media (min-width: 768px) {
+    h2,.h2 {
+        font-size:34px;
+    }
+}
+
+.color-1 h2,.color-1 .h2 {
+    color: #fff;
+}
+
+.color-1 h2:after,.color-1 .h2:after {
+    background: #fff;
+}
+
+h3,.h3 {
+    color: #1C1F1F;
+    margin: 0 0 1em 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.23;
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    h3,.h3 {
+        font-size:26px;
+    }
+}
+
+h3:last-child,.h3:last-child {
+    margin-bottom: 0;
+}
+
+h4,.h4 {
+    color: #1C1F1F;
+    margin: 0 0 1em 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.23;
+    font-size: 17px;
+}
+
+@media (min-width: 768px) {
+    h4,.h4 {
+        font-size:22px;
+    }
+}
+
+h4:last-child,.h4:last-child {
+    margin-bottom: 0;
+}
+
+
+/* IOG - Gestaltung: Inhaltsverzeichnis + Verknüpfungen nur erste Ebene */
+/* IOG - Gestaltung: aus
+#toc { padding:10px 25px; margin-bottom:70px; }
+
+#toc { background: #00A9E0; }
+#toc h2 {
+    color:white;
+    padding-bottom:0px;
+}
+
+.mw-body .toc ul li.toclevel-1 a {
+    color:white!important;
+    text-decoration:underline;
+}
+
+.mw-body .toc ul li.toclevel-1 { float:left; padding-right:24px; }
+.mw-body .toc ul li.toclevel-1:last-of-type { float:none; }
+
+.mw-body .toc .toctitle,
+.mw-body .toc ul li.toclevel-2, 
+.mw-body .toc ul li a .tocnumber { display: none; }
+
+*/
+
+#toc h2:after {
+    content:":";
+    display: unset;
+    width: unset;
+    height: unset;
+    background: unset;
+    position: unset;
+    bottom: unset;
+    left: unset;
+    margin-left: unset;
+}
+/* size and display when header is sticky */
+.IOG-header.sticky * .large-IOG-logo.p-logo { display:none; }
+.IOG-header.sticky * .small-IOG-logo.p-logo { display:inline; }
+
+.IOG-header:not(.sticky) * .large-IOG-logo.p-logo {
+    display:inline;
+    z-index:2;
+}
+.IOG-header:not(.sticky) * .small-IOG-logo.p-logo { display:none;}
+.IOG-header:not(.sticky) * .p-personal { margin-left:230px; }
+.IOG-header:not(.sticky) * .large-IOG-logo.p-logo * img { width:180px; }
+.IOG-header.sticky {
+  box-shadow: 0px 5px 10px 0px #cccccc;
+  -webkit-box-shadow: 0px 5px 10px 0px #cccccc;
+  -moz-box-shadow: 0px 5px 10px 0px #cccccc;
+}
+
+a:link,a:visited {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: #00A9E0;
+    text-decoration: none;
+}
+
+a:hover,a:active {
+    color: #F5A22F;
+}
+
+a.external.text:link,a.external.text:visited {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: #00A9E0;
+    text-decoration: none;
+}
+
+a.external.text:hover,a.external.text:active {
+    color: #F5A22F;
+}
+
+.footer.text-light  .toolbox  a
+  ,.footer.text-light  .toolbox  a:active
+  ,.footer.text-light  .toolbox  a:focus
+  ,.footer.text-light  .toolbox  a:hover
+,.footer.text-light  .language-links  a
+  ,.footer.text-light  .language-links  a:active
+  ,.footer.text-light  .language-links  a:focus
+  ,.footer.text-light  .language-links  a:hover
+,.footer.text-light  .footer-places * a
+  ,.footer.text-light  .footer-places * a:active
+  ,.footer.text-light  .footer-places * a:focus
+  ,.footer.text-light  .footer-places * a:hover
+{ color:white  }
+
+.footer.bg-gradient-primary .p-navbar {
+    background:unset;
+}
+
+
+/* tables IOG */
+
+table td[class*=col-],table th[class*=col-] {
+    position: static;
+    display: table-cell;
+    float: none;
+}
+
+caption {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #777777;
+    text-align: left;
+}
+
+th {
+    text-align: left;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.table &gt; thead &gt; tr &gt; th,.table &gt; thead &gt; tr &gt; td,.table &gt; tbody &gt; tr &gt; th,.table &gt; tbody &gt; tr &gt; td,.table &gt; tfoot &gt; tr &gt; th,.table &gt; tfoot &gt; tr &gt; td {
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+.table &gt; thead &gt; tr &gt; th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+
+.table &gt; caption + thead &gt; tr:first-child &gt; th,.table &gt; caption + thead &gt; tr:first-child &gt; td,.table &gt; colgroup + thead &gt; tr:first-child &gt; th,.table &gt; colgroup + thead &gt; tr:first-child &gt; td,.table &gt; thead:first-child &gt; tr:first-child &gt; th,.table &gt; thead:first-child &gt; tr:first-child &gt; td {
+    border-top: 0;
+}
+
+.table &gt; tbody + tbody {
+    border-top: 2px solid #ddd;
+}
+
+.table .table {
+    background-color: #fff;
+}
+
+/* buttons */
+.btn.btn-primary *,
+.btn.btn-primary { color:white; }
+/* form settings extension:PageForms */
+#pfForm .subfields_area pre {
+   border-top:0px none;
+   border-left-style:dotted;
+   border-right-style:dotted;
+   border-bottom-style:solid;
+   border-bottom-width:3px;
+   background-color:white;
+   margin-top:-1rem;
+}
+/* less lines for page forms */
+#pfForm .createboxInput {
+    border-top-color:transparent;
+    border-left-color:transparent;
+    border-right-color:transparent;
+}
+#pfForm select.createboxInput {
+    border-bottom-style:dotted;
+}
+#pfForm textarea.createboxInput {
+    border-style: dashed;
+    border-color:#BBB;
+}
+
+/* for printing */
+@media print {
+    .large-IOG-logo.p-logo.position-absolute {    position:unset!important;    }
+     .IOG-header.container-fluid  { 
+         position:unset!important; 
+         width:auto!important; 
+         z-index:3;
+     }
+    #bodyContent {
+        clear:both;
+    }
+}</text>
+      <sha1>tc86rt930qd0uok9qzlwy5mil951b78</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Common.css</title>
+    <ns>8</ns>
+    <id>12</id>
+    <revision>
+      <id>14</id>
+      <parentid>13</parentid>
+      <timestamp>2023-08-31T11:22:33Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>13</origin>
+      <model>css</model>
+      <format>text/css</format>
+      <text bytes="2251" sha1="k5p0bjt8146cw9ef55bfrk8daoz0glu" xml:space="preserve">/* Das folgende CSS wird für alle Benutzeroberflächen geladen. */
+
+/* reduce editor preview in height */
+#wikiPreview {
+  overflow-y:auto;
+  max-height:300px !important;
+  border:1px dotted gray;
+  padding:4px;
+}
+
+/* tables having vertical-align:top cells */
+table.vertical-align-top td {  vertical-align:top;}
+table.vertical-align-top th {  vertical-align:bottom;}
+
+/* booktable as in (scientific) books/journals (similar to LaTeX’s package booktable) */
+table.booktable, table.booktabledotted {
+    margin: 1em 1em 1em 0;
+    background: #ffffff;
+    border-top:    2px #656463 solid;
+    border-bottom: 2px #656463 solid;
+    border-collapse: collapse;
+}
+.booktabledotted td {
+  border-bottom: 1px dotted gray;
+  padding:0.2em;
+}
+.booktable td {
+  border: 0px none !important;
+  padding:0.2em;
+}
+.booktable tr.line-t td, .booktable tr td.line-t{
+   border-top:    1px #656463 solid !important;
+}
+.booktable tr.line-b td, .booktable tr td.line-b{
+   border-bottom:    1px #656463 solid !important;
+}
+.booktable tr.line-tb td, .booktable tr td.line-tb{
+   border-bottom:    1px #656463 solid !important;
+   border-top:    1px #656463 solid !important;
+}
+.booktabledotted th, .booktable th {
+    vertical-align:bottom;
+    border-bottom:1px solid #656463;
+    border-top:   1px solid #656463;
+    border-left:0px;
+    border-right:0px;
+    padding: 0.2em;
+}
+.booktabledotted th, .booktable th {
+  background: #ffffff;
+  text-align: center;
+}
+.booktable caption, .booktabledotted caption {
+    font-weight: normal;
+}
+
+/* Extension:PageForms */
+#pfForm span.ht-editsection {
+    display:none;
+    /* 
+     * [edit] index.php?title=Page_Forms_permissions_test&amp;action=edit&amp;section=5
+     * https://github.com/wikimedia/mediawiki-extensions-PageForms/blob/89c552c91225c9a29385d4d7bd14272f25019137/includes/PF_FormPrinter.php#L874
+     */ 
+}
+#pfForm .multipleTemplateList .multipleTemplateInstance.multipleTemplate { overflow:auto; }
+#pfForm table.mat_fields td pre {
+    margin:0px;
+    padding:0px;
+}
+
+/* Template:ProjektResults */
+div.search_item {  height:430px; }
+div.search_item  .search_item_img  { height:200px; overflow:hidden; }
+div.search_item .search_item_title { font-weight:bold; }
+div.search_item .search_item_desc  { font-size:smaller; }</text>
+      <sha1>k5p0bjt8146cw9ef55bfrk8daoz0glu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Common.js</title>
+    <ns>8</ns>
+    <id>13</id>
+    <revision>
+      <id>16</id>
+      <parentid>15</parentid>
+      <timestamp>2023-08-31T11:22:34Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>15</origin>
+      <model>javascript</model>
+      <format>text/javascript</format>
+      <text bytes="6254" sha1="gb9vehgllt2cwgwqc83ymn5tixbcmzs" xml:space="preserve">/* Das folgende JavaScript wird für alle Benutzer geladen. */
+jQuery(document).ready(function($) {
+  /* modify the standard search form (default seems profile=advanced somehow, that is too much to comprehend at first) */
+  $('&lt;input&gt;').attr({
+    type: 'hidden',
+    name: 'profile', value: 'all' /* profile=default,all,images,advanced */
+  }).appendTo('form#searchform');
+
+  /* document.getElementsByClassName("wait_screen_box")[0].style.display = 'none'; */
+  var firstWaitScreenBox = document.querySelector('.wait_screen_box');
+  if (firstWaitScreenBox) { firstWaitScreenBox.style.display = 'none'; }
+
+  // mw.loader.using('jquery.ui.autocomplete', function() {
+  //   (function (mw, $) {
+  //     $(function () {
+  //       /* manually generate keywords by autocompletion 
+  //       * @deprecated use standard functionality autocomplete of extension:PageForms
+  //       * */
+  //       $('.searchInputProjectKWAC').autocomplete( {
+  //         source: function(request, response) {
+  //           mw.loader.using('mw.Api').then(function () {
+  //             var api = new mw.Api();
+  //             api.get({action:'pfautocomplete', limit:10, substr:request.term, property:'Keywords'}).done(
+  //                 function (data) {
+  //                   var dataf = [];
+  //                   dataf = processListAC(request.term, data, dataf);
+  //                   dataf = dataf.sort().slice(0, 10);
+  //                   response(dataf);
+  //                 });
+  //           });
+  //         }
+  //       });
+  //     });
+  //   }(mediaWiki, jQuery));
+  // });
+
+  $(".project_gallery_scroll_box")
+      .append('&lt;div class="button_left"&gt;&lt;/div&gt;')
+      .append('&lt;div class="button_right"&gt;&lt;/div&gt;');
+  $(".project_gallery_scroll_box a.image, .project_gallery_scroll_box img").unwrap('pre');
+  $(".project_gallery_scroll_box &gt; a.image, .project_gallery_scroll_box &gt; img").wrap('&lt;div class="imgbox"&gt;&lt;/div&gt;');
+  $(".project_gallery_scroll_box .imgbox").wrapAll('&lt;div class="gallery_inner"&gt;&lt;/div&gt;');
+  $('.project_gallery_scroll_box img').each(function(){
+    var imgClass = (this.width &gt;= this.height) ? 'imgwfill' : 'imghfill';
+    $(this).addClass(imgClass);
+  });
+  $(".project_gallery_scroll_box .button_left").click(function(){
+    var binn = $(this).parent().find(".gallery_inner");
+    if (binn.position().left &lt; 0) {
+      var imgW = binn.find(".imgbox").first().outerWidth();
+      binn.animate({left:"+="+imgW});
+    }
+  });
+  $(".project_gallery_scroll_box .button_right").click(function(){
+    var $gallery_inner = $(this).parent().find(".gallery_inner");
+    if ($gallery_inner.position().left + $gallery_inner.width() &gt; $gallery_inner.parent().width()) {
+      var imgW = $gallery_inner.find(".imgbox").first().outerWidth();
+      $gallery_inner.animate({left:"-="+imgW});
+    }
+  });
+  $(".project_gallery_scroll_box").removeClass('waitbox');
+});
+
+// /**
+//  * Process list words of autocompletion
+//  *
+//  * @description Seems it only capitalizes words
+//  * @todo AP: Is it really necessary or is it working to use built in functions of remote autocompletion?
+//  * @deprecated use standard functionality autocomplete of extension:PageForms
+//  * 
+//  * @see CSS class .searchInputProjectKWAC
+//  * @param search
+//  * @param data api data
+//  * @param dataf
+//  * @returns {*}
+//  */
+// function processListAC(search, data, dataf) {
+//   for(var dlist in data) {
+//     for(var drow in data[dlist]) {
+//       var listW = data[dlist][drow].title.split(",");
+//       for(var w in listW) {
+//         let wt = listW[w].trim();
+//         if (wt.length&gt;0) {
+//           wt = wt.charAt(0).toUpperCase() + wt.substring(1).toLowerCase();
+//           if (wt.toLowerCase().indexOf(search.toLowerCase())===0 &amp;&amp; $.inArray(wt, dataf)===-1) {
+//             dataf[dataf.length] = wt;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   return dataf;
+// }
+
+$(".materialRow .showComment").click(function(){
+  $(this).parent().toggleClass("openComments");
+  $(this).parent().parent().next().toggleClass("openCommentsRow");
+});
+$(".showGralComment").click(function(){
+  $(".generalCommentsBox").toggle(500);
+  var grhtml = $(".showGralComment").html();
+  if (grhtml.indexOf('+') &gt; -1) {
+    grhtml = grhtml.replace('+', '-');
+  }else{
+    grhtml = grhtml.replace('-', '+');
+  }
+  $(".showGralComment").html(grhtml);
+});
+
+$(".project_material_table .showAllComments").click(function(e){
+  e.preventDefault();
+  const txt = $(this).html();
+  if (txt==='Show All Comments') {
+    $(".project_material_table .materialCommandsBox").addClass("openComments");
+    $(".project_material_table .commentRow").not(".notFoundComment").addClass("openCommentsRow");
+    $(this).html('Hide All Comments');
+  }else{
+    $(".project_material_table .materialCommandsBox").removeClass("openComments");
+    $(".project_material_table .commentRow").not(".notFoundComment").removeClass("openCommentsRow");
+    $(this).html('Show All Comments');
+  }
+});
+
+$(".searchMatCol").keyup(function(e){
+  /*
+  * dependency extensions/HtmlSpecialFunctions/html_includes/framepopups.html
+  * */
+  if (typeof findRowsByCol === "function") {
+    findRowsByCol($(".searchMatCol"));
+  }
+});
+
+/*
+* dependency extensions/HtmlSpecialFunctions/html_includes/framepopups.html
+* dependency extensions/HtmlSpecialFunctions/html_includes/materials.html
+* */
+if (window.initJSFuncts!==undefined) {
+  for(ijsf=0; ijsf&lt;window.initJSFuncts.length; ijsf++) {
+    try {window.initJSFuncts[ijsf]();}catch(e){console.log(e);}
+  }
+}
+
+
+$(".newtablinks a, .newtablink").attr("target", "_blank");
+
+window.isfirst = true; window.prevc = false;
+$('ul.dropdown-menu li a').each(function(){
+  if($(this).text().substr(0,1) == '_'){
+    if (window.isfirst!==false) {$(this).parent().addClass('firstchild')}
+    $(this).text($(this).text().substr(1)).parent().addClass('menuchild lastchild');
+    if (window.prevc!==false) {window.prevc.parent().removeClass('lastchild');}
+    window.isfirst = false;
+    window.prevc = $(this);
+  }else{
+    window.isfirst = true;
+    window.prevc = false;
+  }
+})
+
+
+$(".home_resume_text.home_hidden_text .home_more_results_link a").click(function(e){
+  e.preventDefault();
+  $(this).parent().parent().removeClass('home_hidden_text');
+  $(this).parent().hide();
+});</text>
+      <sha1>gb9vehgllt2cwgwqc83ymn5tixbcmzs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Sidebar</title>
+    <ns>8</ns>
+    <id>81</id>
+    <revision>
+      <id>152</id>
+      <parentid>151</parentid>
+      <timestamp>2023-08-31T12:51:37Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <comment>{{PROJECT}} → {{ns:Project}} Versuch, die Seite zu nehmen, die vom System vorgesehen ist</comment>
+      <origin>152</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="302" sha1="h3pqv1pmd9sfvht6medodqd2thehg6a" xml:space="preserve">** Home|Start
+** Special:RunQuery/projectSearch|menu-search-project-description
+** Special:FormEdit/Project|Create Project
+* Know-How
+** Parts list|Parts list
+** CAD files|CAD files
+** Technical drawings|Technical drawings
+** Technical notes|Technical notes
+* About
+** {{ns:Project}}:About|About OH-Doc</text>
+      <sha1>h3pqv1pmd9sfvht6medodqd2thehg6a</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Menu-search-project-description</title>
+    <ns>8</ns>
+    <id>84</id>
+    <revision>
+      <id>155</id>
+      <timestamp>2023-08-31T13:13:00Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with "Professional Search"</comment>
+      <origin>155</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="19" sha1="j5dqze3sngbfn4gqvjgrc0efdq3wje2" xml:space="preserve">Professional Search</text>
+      <sha1>j5dqze3sngbfn4gqvjgrc0efdq3wje2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Tooltip-n-menu-search-project-description</title>
+    <ns>8</ns>
+    <id>83</id>
+    <revision>
+      <id>154</id>
+      <timestamp>2023-08-31T13:12:32Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with "Professional Search of Projects using filter properties"</comment>
+      <origin>154</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="55" sha1="l52oa3ffzvo91rvjkg7uqsv7x4ojli0" xml:space="preserve">Professional Search of Projects using filter properties</text>
+      <sha1>l52oa3ffzvo91rvjkg7uqsv7x4ojli0</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Categorytree-collapse-bullet</title>
+    <ns>8</ns>
+    <id>86</id>
+    <revision>
+      <id>159</id>
+      <parentid>158</parentid>
+      <timestamp>2023-08-31T13:24:13Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Systemtexte für Anzeigen bei Kategorien usw.</comment>
+      <origin>158</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3" sha1="h8aualobw6olgso3nnoft9bwm41tnjn" xml:space="preserve">‒</text>
+      <sha1>h8aualobw6olgso3nnoft9bwm41tnjn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Categorytree-collapse-bullet/de</title>
+    <ns>8</ns>
+    <id>87</id>
+    <revision>
+      <id>161</id>
+      <parentid>160</parentid>
+      <timestamp>2023-08-31T13:24:13Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Systemtexte für Anzeigen bei Kategorien usw.</comment>
+      <origin>160</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3" sha1="h8aualobw6olgso3nnoft9bwm41tnjn" xml:space="preserve">‒</text>
+      <sha1>h8aualobw6olgso3nnoft9bwm41tnjn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Categorytree-collapse-bullet/en</title>
+    <ns>8</ns>
+    <id>88</id>
+    <revision>
+      <id>163</id>
+      <parentid>162</parentid>
+      <timestamp>2023-08-31T13:24:13Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Systemtexte für Anzeigen bei Kategorien usw.</comment>
+      <origin>162</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3" sha1="h8aualobw6olgso3nnoft9bwm41tnjn" xml:space="preserve">‒</text>
+      <sha1>h8aualobw6olgso3nnoft9bwm41tnjn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Categorytree-collapse-bullet/es</title>
+    <ns>8</ns>
+    <id>89</id>
+    <revision>
+      <id>165</id>
+      <parentid>164</parentid>
+      <timestamp>2023-08-31T13:24:13Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Systemtexte für Anzeigen bei Kategorien usw.</comment>
+      <origin>164</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3" sha1="h8aualobw6olgso3nnoft9bwm41tnjn" xml:space="preserve">‒</text>
+      <sha1>h8aualobw6olgso3nnoft9bwm41tnjn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Categorytree-empty-bullet</title>
+    <ns>8</ns>
+    <id>90</id>
+    <revision>
+      <id>167</id>
+      <parentid>166</parentid>
+      <timestamp>2023-08-31T13:24:13Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Systemtexte für Anzeigen bei Kategorien usw.</comment>
+      <origin>166</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3" sha1="h8aualobw6olgso3nnoft9bwm41tnjn" xml:space="preserve">‒</text>
+      <sha1>h8aualobw6olgso3nnoft9bwm41tnjn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Categorytree-empty-bullet/de</title>
+    <ns>8</ns>
+    <id>91</id>
+    <revision>
+      <id>169</id>
+      <parentid>168</parentid>
+      <timestamp>2023-08-31T13:24:13Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Systemtexte für Anzeigen bei Kategorien usw.</comment>
+      <origin>168</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3" sha1="h8aualobw6olgso3nnoft9bwm41tnjn" xml:space="preserve">‒</text>
+      <sha1>h8aualobw6olgso3nnoft9bwm41tnjn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Categorytree-empty-bullet/en</title>
+    <ns>8</ns>
+    <id>92</id>
+    <revision>
+      <id>171</id>
+      <parentid>170</parentid>
+      <timestamp>2023-08-31T13:24:13Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Systemtexte für Anzeigen bei Kategorien usw.</comment>
+      <origin>170</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3" sha1="h8aualobw6olgso3nnoft9bwm41tnjn" xml:space="preserve">‒</text>
+      <sha1>h8aualobw6olgso3nnoft9bwm41tnjn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Categorytree-empty-bullet/es</title>
+    <ns>8</ns>
+    <id>93</id>
+    <revision>
+      <id>173</id>
+      <parentid>172</parentid>
+      <timestamp>2023-08-31T13:24:13Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Systemtexte für Anzeigen bei Kategorien usw.</comment>
+      <origin>172</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3" sha1="h8aualobw6olgso3nnoft9bwm41tnjn" xml:space="preserve">‒</text>
+      <sha1>h8aualobw6olgso3nnoft9bwm41tnjn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Categorytree-expand-bullet</title>
+    <ns>8</ns>
+    <id>94</id>
+    <revision>
+      <id>175</id>
+      <parentid>174</parentid>
+      <timestamp>2023-08-31T13:24:13Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Systemtexte für Anzeigen bei Kategorien usw.</comment>
+      <origin>174</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1" sha1="jsojwe0y00ox745tisb3rfxjb66ayl8" xml:space="preserve">+</text>
+      <sha1>jsojwe0y00ox745tisb3rfxjb66ayl8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Categorytree-expand-bullet/de</title>
+    <ns>8</ns>
+    <id>95</id>
+    <revision>
+      <id>177</id>
+      <parentid>176</parentid>
+      <timestamp>2023-08-31T13:24:13Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Systemtexte für Anzeigen bei Kategorien usw.</comment>
+      <origin>176</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1" sha1="jsojwe0y00ox745tisb3rfxjb66ayl8" xml:space="preserve">+</text>
+      <sha1>jsojwe0y00ox745tisb3rfxjb66ayl8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Categorytree-expand-bullet/en</title>
+    <ns>8</ns>
+    <id>96</id>
+    <revision>
+      <id>179</id>
+      <parentid>178</parentid>
+      <timestamp>2023-08-31T13:24:13Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Systemtexte für Anzeigen bei Kategorien usw.</comment>
+      <origin>178</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1" sha1="jsojwe0y00ox745tisb3rfxjb66ayl8" xml:space="preserve">+</text>
+      <sha1>jsojwe0y00ox745tisb3rfxjb66ayl8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Categorytree-expand-bullet/es</title>
+    <ns>8</ns>
+    <id>97</id>
+    <revision>
+      <id>181</id>
+      <parentid>180</parentid>
+      <timestamp>2023-08-31T13:24:13Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Systemtexte für Anzeigen bei Kategorien usw.</comment>
+      <origin>180</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1" sha1="jsojwe0y00ox745tisb3rfxjb66ayl8" xml:space="preserve">+</text>
+      <sha1>jsojwe0y00ox745tisb3rfxjb66ayl8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Categorytree-member-num</title>
+    <ns>8</ns>
+    <id>98</id>
+    <revision>
+      <id>183</id>
+      <parentid>182</parentid>
+      <timestamp>2023-08-31T13:24:13Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Systemtexte für Anzeigen bei Kategorien usw.</comment>
+      <origin>182</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="159" sha1="h3dfniwbu0ktpe04kmzxvrmuo5umjle" xml:space="preserve">{{#ifeq:{{#expr:$1+$2}}|0||({{#ifeq:$1|0||{{PLURAL:$1|1 Category|$1 Categories}}{{#ifeq:$2|0||,&amp;nbsp;}}}}{{#ifeq:$2|0||{{PLURAL:$2|1 Project|$2 Projects}}}})}}</text>
+      <sha1>h3dfniwbu0ktpe04kmzxvrmuo5umjle</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Categorytree-member-num/de</title>
+    <ns>8</ns>
+    <id>99</id>
+    <revision>
+      <id>185</id>
+      <parentid>184</parentid>
+      <timestamp>2023-08-31T13:24:14Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Systemtexte für Anzeigen bei Kategorien usw.</comment>
+      <origin>184</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="155" sha1="dwsrv71kkhpx17z4598gma10cc7d9gs" xml:space="preserve">{{#ifeq:{{#expr:$1+$2}}|0||({{#ifeq:$1|0||{{PLURAL:$1|1 Kategorie|$1 Kategorien}}{{#ifeq:$2|0||, }}}}{{#ifeq:$2|0||{{PLURAL:$2|1 Projekt|$2 Projekte}}}})}}</text>
+      <sha1>dwsrv71kkhpx17z4598gma10cc7d9gs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Categorytree-member-num/en</title>
+    <ns>8</ns>
+    <id>100</id>
+    <revision>
+      <id>187</id>
+      <parentid>186</parentid>
+      <timestamp>2023-08-31T13:24:14Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Systemtexte für Anzeigen bei Kategorien usw.</comment>
+      <origin>186</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="154" sha1="9ve3wxyhsq8z4oe1pzjcinwsr7nswcm" xml:space="preserve">{{#ifeq:{{#expr:$1+$2}}|0||({{#ifeq:$1|0||{{PLURAL:$1|1 Category|$1 Categories}}{{#ifeq:$2|0||, }}}}{{#ifeq:$2|0||{{PLURAL:$2|1 Project|$2 Projects}}}})}}</text>
+      <sha1>9ve3wxyhsq8z4oe1pzjcinwsr7nswcm</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Categorytree-member-num/es</title>
+    <ns>8</ns>
+    <id>101</id>
+    <revision>
+      <id>189</id>
+      <parentid>188</parentid>
+      <timestamp>2023-08-31T13:24:14Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Systemtexte für Anzeigen bei Kategorien usw.</comment>
+      <origin>188</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="159" sha1="bro4cak6okres3eiydwmmgnpo0yl7bq" xml:space="preserve">{{#ifeq:{{#expr:$1+$2}}|0||({{#ifeq:$1|0||{{PLURAL:$1|1 Categoría|$1 Categorías}}{{#ifeq:$2|0||, }}}}{{#ifeq:$2|0||{{PLURAL:$2|1 Proyecto|$2 Proyectos}}}})}}</text>
+      <sha1>bro4cak6okres3eiydwmmgnpo0yl7bq</sha1>
+    </revision>
+  </page>
+</mediawiki>

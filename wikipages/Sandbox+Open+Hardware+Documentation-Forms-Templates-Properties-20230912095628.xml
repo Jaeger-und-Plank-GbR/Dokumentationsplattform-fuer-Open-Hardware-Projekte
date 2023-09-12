@@ -1,0 +1,3690 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Sandbox Open Hardware Documentation</sitename>
+    <dbname>sandbox_ohdc_wiki_en</dbname>
+    <base>https://sandbox.oh-dc.org/wiki/Home</base>
+    <generator>MediaWiki 1.38.6</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Sandbox Open Hardware Documentation</namespace>
+      <namespace key="5" case="first-letter">Sandbox Open Hardware Documentation talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="102" case="first-letter">Property</namespace>
+      <namespace key="103" case="first-letter">Property talk</namespace>
+      <namespace key="106" case="first-letter">Form</namespace>
+      <namespace key="107" case="first-letter">Form talk</namespace>
+      <namespace key="108" case="first-letter">Concept</namespace>
+      <namespace key="109" case="first-letter">Concept talk</namespace>
+      <namespace key="112" case="first-letter">smw/schema</namespace>
+      <namespace key="113" case="first-letter">smw/schema talk</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="844" case="first-letter">CommentStreams</namespace>
+      <namespace key="845" case="first-letter">CommentStreams Talk</namespace>
+      <namespace key="2300" case="first-letter">Gadget</namespace>
+      <namespace key="2301" case="first-letter">Gadget talk</namespace>
+      <namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+      <namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Form:Project</title>
+    <ns>106</ns>
+    <id>14</id>
+    <revision>
+      <id>218</id>
+      <parentid>18</parentid>
+      <timestamp>2023-09-05T13:00:03Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <comment>create a new main category</comment>
+      <origin>218</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="17612" sha1="59ie3vfgfcqvfm6nyuqnchljt1kz1d3" xml:space="preserve">&lt;noinclude&gt;
+Verwaltung eines Projektes und dessen Daten.
+
+== Technische Abhängigkeiten ==
+
+* [[mw:extension: Page Forms]]
+** [[Form: Project]] (Eingabe)
+** [[Form: ProjectSearch]] (Suchfunktion)
+----
+[[template: Projekt]] und deren Abhängigkeiten (vorher [[template: Projekt3]])
+* [[template: ProjektImages]]
+* [[template: ProjektComponent2]]
+* [[template: ProjektLink]]
+* [[template: ProjektMaterials]]
+* [[template: LabelTranslationStatus]]
+* [[template: LabelMatPartType]]
+----
+* Erweiterung: HtmlSpecialFunctions
+** &lt;code&gt;#mwIncludeHTML:materials.html&lt;/code&gt; + JavaScript(!!)
+*** [{{SERVER}}{{SCRIPTPATH}}/extensions/HtmlSpecialFunctions/html_includes/materials.html {{SERVER}}{{SCRIPTPATH}}/extensions/HtmlSpecialFunctions/html_includes/materials.html]
+* [[mw:extension: Header Tabs]]
+* [[mw:extension: SemanticMediaWiki]]
+
+
+=== Formularfelder und Vorlagenfelder ===
+
+ {{PAGENAME}}|assembly_inst_pub=
+ {{PAGENAME}}|assembly_instructions_editable=
+ {{PAGENAME}}|assembly_instructions_link=
+ {{PAGENAME}}|bill_materials_editable=
+ {{PAGENAME}}|bill_materials_link=
+ {{PAGENAME}}|bill_materials_pub=
+ {{PAGENAME}}|cad_files_editable=
+ {{PAGENAME}}|cad_format=
+ {{PAGENAME}}|cad_format_name=
+ {{PAGENAME}}|cad_link=
+ {{PAGENAME}}|certificate_requested=
+ {{PAGENAME}}|certificate_status=
+ {{PAGENAME}}|contains_pdf_drawings=
+ {{PAGENAME}}|contributing_guide_pub=
+ {{PAGENAME}}|contrubuting_guide_link=
+ {{PAGENAME}}|desc=
+ {{PAGENAME}}|design_files_pub=
+ {{PAGENAME}}|electronic_files_editable=
+ {{PAGENAME}}|electronic_files_pub=
+ {{PAGENAME}}|electronic_license=
+ {{PAGENAME}}|electronic_license_name=
+ {{PAGENAME}}|electronic_license_url=
+ {{PAGENAME}}|electronic_link=
+ {{PAGENAME}}|firstin=
+ {{PAGENAME}}|is_cad_editable=
+ {{PAGENAME}}|issue_management_system=
+ {{PAGENAME}}|issue_management_system_link=
+ {{PAGENAME}}|kewords=
+ {{PAGENAME}}|licence=
+ {{PAGENAME}}|maturity=
+ {{PAGENAME}}|mechanical_licence=
+ {{PAGENAME}}|mechanical_licence_name=
+ {{PAGENAME}}|mechanical_license_url=
+ {{PAGENAME}}|new_licence_redistr=
+ {{PAGENAME}}|organization=
+ {{PAGENAME}}|projectname=
+ {{PAGENAME}}|projectnameDE=
+ {{PAGENAME}}|projectnameES=
+ {{PAGENAME}}|project_status=
+ {{PAGENAME}}|software_files_editable=
+ {{PAGENAME}}|software_files_pub=
+ {{PAGENAME}}|software_license=
+ {{PAGENAME}}|software_license_name=
+ {{PAGENAME}}|software_license_url=
+ {{PAGENAME}}|software_link=
+ {{PAGENAME}}|subcat=
+ {{PAGENAME}}|techdata=
+ {{PAGENAME}}|technology_readyness_level=
+ {{PAGENAME}}|trans_status=
+ {{PAGENAME}}|typeproject=
+ {{PAGENAME}}|versioning_system=
+ {{PAGENAME}}|versioning_system_link=
+ {{PAGENAME}}|reviewer1=
+ {{PAGENAME}}|reviewer2=
+ {{PAGENAME}}|reviewer3=
+----
+ {{PAGENAME}}|TechDoc=…
+ → ProjektComponent2|cmpfile1= 
+ → ProjektComponent2|cmpfile2= 
+ → ProjektComponent2|cmpfile3= 
+ → ProjektComponent2|cmpfile4= 
+ → ProjektComponent2|cmpfile5= 
+ → ProjektComponent2|cmpimage= 
+ → ProjektComponent2|cmpimg=    Description
+ → ProjektComponent2|cmptitle= 
+----
+ {{PAGENAME}}|Materials=…
+ → ProjektMaterials|matdesc=
+ → ProjektMaterials|matdrawingsheet=
+ → ProjektMaterials|matpartnumber=
+ → ProjektMaterials|matparttype=     (mapping template=LabelMatPartType)
+ → ProjektMaterials|matpdffile=
+ → ProjektMaterials|matposold=
+ → ProjektMaterials|matquantity=
+ → ProjektMaterials|matspec=
+ → ProjektMaterials|status_rev_1=
+ → ProjektMaterials|status_rev_2=
+ → ProjektMaterials|status_rev_3=
+----
+ {{PAGENAME}}|Images=…
+ → ProjektImages|projectimage=
+  ----
+ ProjektLink|lnktitle=   (unused)
+ ProjektLink|lnkurl=     (unused)
+
+=== CSS ===
+
+=== ZUTUN ===
+
+Formularanzeige auf Gruppenrechte einstellen und abstimmen:
+&lt;syntaxhighlight lang="javascript"&gt;
+mw.config.get('wgUserGroups').includes("certification_applicant")// true|false;
+mw.config.get('wgUserGroups').includes("certification_reviewer")// true|false;
+mw.config.get('wgUserGroups').includes("certification_body")// true|false;
+&lt;/syntaxhighlight&gt;
+
+[[Category:Project management]]
+&lt;/noinclude&gt;&lt;includeonly&gt;
+__NOTOC__
+&lt;!--
+[[de:Spezial:FormEdit/Projekt]]
+[[es:Especial:FormEdit/Proyecto]]
+--&gt;
+{{{info
+|create title=Create project
+|edit title= Modify project: &lt;page name&gt;
+|page name=&lt;Projekt[projectname]&gt;}}}
+{{{for template|Projekt}}}
+
+= Project data =
+&lt;table class="formtable vertical-align-top"&gt;
+&lt;tr&gt;&lt;td&gt;&lt;!-- becomes &lt;pre&gt;&lt;/pre&gt; and line breakes will show at is here in the code --&gt;
+ Images: &lt;div class="images_form_box"&gt;{{{field|Images|holds template}}}&lt;/div&gt;
+
+ Category(*): {{{field|subcat|input type=tree|top category=Projects|mandatory|hideroot|height=200}}}
+ ([[Help:Creating_Pages#add_main_project_category|create a new main category]])
+&lt;/td&gt;
+&lt;td&gt;
+ Project name(*):
+ {{{field|projectname|input type=text|mandatory}}}
+&lt;!-- Project name Spanish(*):
+ {{{field|projectnameES|input type=text|mandatory}}}
+ Project name German(*):
+ {{{field|projectnameDE|input type=text|mandatory}}}--&gt;
+ Keywords:
+ {{{field|kewords|input type=text}}}
+ 
+ &lt;div class="separator_box"&gt;&lt;/div&gt;
+ URL (first publication):
+ {{{field|firstin|input type=text|placeholder=http://...}}}
+&lt;!-- Translation status:
+ {{{field|trans_status|input type=dropdown|values=WT,AT,TP,MT|mapping template=LabelTranslationStatus|default=4-Manual Translation}}}--&gt;
+&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+&lt;td colspan="2"&gt;&lt;!-- becomes &lt;pre&gt;&lt;/pre&gt; and line breakes will show at is here in the code --&gt;
+ Description(*):
+ {{{field|desc|input type=textarea|autogrow|mandatory|editor=simple}}}
+&lt;/tr&gt;
+&lt;/table&gt;
+
+= Supplementary Information =
+
+Additional fields to describe further or detailed information about the project.
+
+&lt;table class="formtable vertical-align-top"&gt;
+&lt;tr&gt;&lt;td&gt;
+ License:
+ {{{field|licence|input type=dropdown|values=AL,BSDL,CCU,CCBY20,CCBY30,CCBY40,CCBYNC25,CCBYNC30,CCBYNC40,CCBYNCND30,CCBYNCSA20,CCBYNCSA25,CCBYNCSA25CH,CCBYNCSA30,CCBYNCSA40,CCBYSA,CCBYSA20,CCBYSA25,CCBYSA30,CCBYSA40,COHL12,COHL11,COHL,EGPL,GNUAGPL,GNUFDL,GNUGPL,GNUGPL2,GNUGPL3,GNULGPL,LGPL2,LAL,M3ODP,MITL,OLNS,POHL,PCFL,PD,TOHL,UNLIC|mapping template=LabelGralLicense}}}
+ Source:
+ {{{field|typeproject|input type=dropdown|property=Typeproject}}}&lt;!-- define values on property page --&gt;
+ Organization:
+ {{{field|organization|input type=text}}}
+ Project status:
+ {{{field|project_status|input type=dropdown|values=active,inactive|mapping template=LabelProjectStatus}}}
+ Maturity of the project:
+ {{{field|maturity|input type=dropdown|values=PFP,PDIY,PRD,PTT,CON|mapping template=LabelProjectMaturity}}}
+&lt;/td&gt;
+&lt;td&gt;
+ Contains original mechanical hardware: {{{field|design_files_pub|input type=dropdown|values=yes,no|mapping template=LabelYesNo|show on select=Yes=&gt;cad_link;}}}
+ &lt;div id="cad_link" class="subfields_area"&gt;
+  Public CAD repository for mechanical hardware:
+  {{{field|cad_link|input type=text|placeholder=http://...}}}
+  CAD files for mechanical hardware are editable: &lt;!--
+  --&gt;{{{field|cad_files_editable|input type=dropdown|values=yes,no|mapping template=LabelYesNo|default=No}}}
+  CAD Format:
+  {{{field|cad_format|input type=dropdown|multiple|values=GBS,POS,CMP,PRO,SKP,BLEND,X3D,GCODE,DWB,ART,PCB,LXO,LWO,123DX,DWF,PAR,F3D,EPS,ORCAD,LXF,GBO,GTS,BL,3DS,AOI,DWG,CDR,JPG,EASM,PNG,STP,DCH,ODG,3DM,TIF,DRW,ASM,PRT,CRV,SH3D,OBJ,SLDDRW,X_T,GTO,GTP,GTL,GBL,FZZ,FCSTD,DAE,SAT,SCAD,IAM,IPT,BRD,IGS,DRL,GBR,KICAD_PCB,AI,SCH,STL,SKP,PDF,STEP,SLDPRT,SLDASM,DXF,SVG,ADDNEW|mapping template=LabelCadFormat|show on select=Add New CAD Format=&gt;new_cad_format}}}
+  &lt;div id="new_cad_format" class="subfields_area"&gt;
+   Format Name:
+   {{{field|cad_format_name|input type=text}}}
+   {{{field|is_cad_editable|input type=dropdown|values=yes,no|mapping template=LabelYesNo|default=No}}} Is CAD Format Editable
+  &lt;/div&gt;
+ &lt;/div&gt;
+
+ License for mechanical hardware:
+ {{{field|mechanical_licence|input type=dropdown|values=AL,BSDL,CCU,CCBY20,CCBY30,CCBY40,CCBYNC25,CCBYNC30,CCBYNC40,CCBYNCND30,CCBYNCSA20,CCBYNCSA25,CCBYNCSA25CH,CCBYNCSA30,CCBYNCSA40,CCBYSA,CCBYSA20,CCBYSA25,CCBYSA30,CCBYSA40,COHL12,COHL11,COHL,EGPL,GNUAGPL,GNUFDL,GNUGPL,GNUGPL2,GNUGPL3,GNULGPL,LGPL2,LAL,M3ODP,MITL,OLNS,POHL,PCFL,PD,TOHL,UNLIC,ADDNEW|mapping template=LabelGralLicense|show on select=Add New License=&gt;mechanical_new_license}}}
+ &lt;div id="mechanical_new_license" class="subfields_area"&gt;
+  License Name:
+  {{{field|mechanical_licence_name|input type=text}}}
+  License URL:
+  {{{field|mechanical_license_url|input type=text|placeholder=http://...}}}
+  Free redistribution is allowed: &lt;!--
+  --&gt;{{{field|new_licence_redistr|input type=dropdown|values=yes,no|mapping template=LabelYesNo}}}
+ &lt;/div&gt;
+
+ Contains original electronic hardware: &lt;!--
+  --&gt;{{{field|electronic_files_pub|input type=dropdown|property=ElectronicFilesPub|show on select=Yes=&gt;electronic_link;}}}
+ &lt;div id="electronic_link" class="subfields_area"&gt; 
+  Public CAD repository for electronic hardware:
+  {{{field|electronic_link|input type=text|placeholder=http://...}}}
+  CAD files for electronic hardware is editable: &lt;!--
+  --&gt;{{{field|electronic_files_editable|input type=dropdown|property=ElectronicFilesEditable}}}
+  Electronic License:
+  {{{field|electronic_license|input type=dropdown|values=AL,BSDL,CCU,CCBY20,CCBY30,CCBY40,CCBYNC25,CCBYNC30,CCBYNC40,CCBYNCND30,CCBYNCSA20,CCBYNCSA25,CCBYNCSA25CH,CCBYNCSA30,CCBYNCSA40,CCBYSA,CCBYSA20,CCBYSA25,CCBYSA30,CCBYSA40,COHL12,COHL11,COHL,EGPL,GNUAGPL,GNUFDL,GNUGPL,GNUGPL2,GNUGPL3,GNULGPL,LGPL2,LAL,M3ODP,MITL,OLNS,POHL,PCFL,PD,TOHL,UNLIC,ADDNEW|mapping template=LabelGralLicense|show on select=Add New License=&gt;electronic_new_license}}}
+  &lt;div id="electronic_new_license" class="subfields_area"&gt;
+   License Name:
+   {{{field|electronic_license_name|input type=text}}}
+   License URL:
+   {{{field|electronic_license_url|input type=text|placeholder=http://...}}}
+  &lt;/div&gt;
+&lt;/div&gt;
+ 
+ Contains original software: &lt;!--
+  --&gt;{{{field|software_files_pub|input type=dropdown|values=yes,no|mapping template=LabelYesNo|show on select=Yes=&gt;software_link;}}}
+ &lt;div id="software_link" class="subfields_area"&gt;
+   Public Software repository for Software:
+   {{{field|software_link|input type=text|placeholder=http://...}}}
+   Software files is editable: &lt;!--
+  --&gt;{{{field|software_files_editable|input type=dropdown|values=yes,no|mapping template=LabelYesNo}}}
+   Software License:
+   {{{field|software_license|input type=dropdown|values=AL,BSDL,CCU,CCBY20,CCBY30,CCBY40,CCBYNC25,CCBYNC30,CCBYNC40,CCBYNCND30,CCBYNCSA20,CCBYNCSA25,CCBYNCSA25CH,CCBYNCSA30,CCBYNCSA40,CCBYSA,CCBYSA20,CCBYSA25,CCBYSA30,CCBYSA40,COHL12,COHL11,COHL,EGPL,GNUAGPL,GNUFDL,GNUGPL,GNUGPL2,GNUGPL3,GNULGPL,LGPL2,LAL,M3ODP,MITL,OLNS,POHL,PCFL,PD,TOHL,UNLIC,ADDNEW|mapping template=LabelGralLicense|show on select=Add New License=&gt;software_new_license}}}
+   &lt;div id="software_new_license" class="subfields_area"&gt;
+    License Name:
+    {{{field|software_license_name|input type=text}}}
+    License URL:
+    {{{field|software_license_url|input type=text|placeholder=http://...}}}
+  &lt;/div&gt;
+&lt;/div&gt;
+
+ Assembly instructions are published: &lt;!--
+  --&gt;{{{field|assembly_inst_pub|input type=dropdown|values=yes,no|mapping template=LabelYesNo|show on select=Yes=&gt;assembly_editable;}}}
+ &lt;div id="assembly_editable" class="subfields_area"&gt;
+  Assembly instructions:
+  {{{field|assembly_instructions_link|input type=text|placeholder=http://...}}}
+  Assembly instructions are editable: &lt;!--
+  --&gt;{{{field|assembly_instructions_editable|input type=dropdown|values=yes,no|mapping template=LabelYesNo}}}
+ &lt;/div&gt;
+ 
+ Bill of materials is published: &lt;!--
+  --&gt;{{{field|bill_materials_pub|input type=dropdown|values=yes,no|mapping template=LabelYesNo|show on select=Yes=&gt;bill_materials_editable;}}}
+ &lt;div id="bill_materials_editable" class="subfields_area"&gt;
+  Bill of materials: &lt;!--
+  --&gt;{{{field|bill_materials_link|input type=text|placeholder=http://...}}}
+  Bill of materials is editable: &lt;!--
+ --&gt;{{{field|bill_materials_editable|input type=dropdown|values=yes,no|mapping template=LabelYesNo}}} 
+ &lt;/div&gt;
+
+ Contributing Guide is published: &lt;!--
+  --&gt;{{{field|contributing_guide_pub|input type=dropdown|values=yes,no|mapping template=LabelYesNo|show on select=Yes=&gt;contrubuting_guide_editable;}}}
+ &lt;div id="contrubuting_guide_editable" class="subfields_area"&gt;
+  Contrubuting Guide:
+  {{{field|contrubuting_guide_link|input type=text|placeholder=http://...}}}
+ &lt;/div&gt;
+
+ Issue Management System: &lt;!--
+  --&gt;{{{field|issue_management_system|input type=dropdown|values=yes,no|mapping template=LabelYesNo|show on select=Yes=&gt;issue_management_system_link;}}}
+ &lt;div id="issue_management_system_link" class="subfields_area"&gt;
+  Issue Management System URL:
+  {{{field|issue_management_system_link|input type=text|placeholder=http://...}}}
+ &lt;/div&gt;
+
+ Versioning System: &lt;!--
+  --&gt;{{{field|versioning_system|input type=dropdown|values=yes,no|mapping template=LabelYesNo|show on select=Yes=&gt;versioning_system_link;}}}
+ &lt;div id="versioning_system_link" class="subfields_area"&gt;
+  Versioning System URL:
+  {{{field|versioning_system_link|input type=text|placeholder=http://...}}}
+ &lt;/div&gt;
+
+ Contains PDF-drawings: &lt;!--
+  --&gt;{{{field|contains_pdf_drawings|input type=dropdown|values=yes,no|mapping template=LabelYesNo}}}
+
+ Technology Readyness Level TRL &lt;!--
+  --&gt;{{{field|technology_readyness_level|input type=dropdown|values=1,2,3,4,5,6,7,8,9}}}
+&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+&lt;td colspan="2"&gt;
+ Technical data:
+ {{{field|techdata|input type=textarea|autogrow|editor=simple}}}
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+= Technical documentation =
+{{{field|TechDoc|holds template}}}
+
+= Parts list =
+
+&lt;div id="matform"&gt;{{{field|Materials|holds template}}}
+{{#mwIncludeHTML:materials.html}}&lt;!-- materials.html: on ID #matform the JavaScript depends on --&gt;
+&lt;/div&gt;
+
+&lt;!--
+= Certificate Request =
+Before making the certificate request, you must fill in the following information:
+*[[Special:MyPage|User Profile]]:
+**Name
+**Email
+**City
+**Country
+**About me
+**Occupation
+**Telephone
+**Company
+*Basic Data
+**Project name
+**Description
+**License
+*Materials
+**Complete the project bill of materials
+After completing the required fields, make the certificate request by checking the following checkbox and saving the project, and soon an authorized user will contact you to complete the process.&lt;br&gt;
+&lt;br&gt;
+{{{field|certificate_requested|input type=checkbox}}} &lt;b&gt;Request Certification&lt;/b&gt;
+
+--&gt;&lt;!--
+
+= Certification Manager =
+Certification Status:&lt;br&gt;
+{{{field|certificate_status|input type=dropdown|values=preselected,selected,in process,approved,rejected|mapping template=LabelCertStatus}}}&lt;br&gt;&lt;br&gt; 
+&lt;div class="separator_box"&gt;&lt;/div&gt;
+Reviewer 1:&lt;br&gt;
+{{{field|reviewer1|input type=text|class=reviewers_dd_list}}}&lt;br/&gt; 
+Reviewer 2:&lt;br&gt;
+{{{field|reviewer2|input type=text|class=reviewers_dd_list}}}&lt;br/&gt;
+Reviewer 3:&lt;br&gt;
+{{{field|reviewer3|input type=text|class=reviewers_dd_list}}}&lt;br/&gt;
+--&gt;
+{{{end template}}}
+
+
+{{{for template|ProjektImages|multiple|embed in field=Projekt[Images]|add button text=Add image|minimum instances=0}}}
+ {{{field|projectimage|input type=text|mandatory|uploadable|image preview}}}
+{{{end template}}}
+
+{{{for template|ProjektComponent2
+|label=Additional Project Information
+|intro=Here you can upload or document more information, such as project phases, download components or assemblies aso..
+|multiple
+|embed in field=Projekt[TechDoc]
+|add button text=Add}}}
+&lt;div class="formdiv"&gt;
+ Title:
+ {{{field|cmptitle|input type=text}}}
+ Image:
+ {{{field|cmpimage|input type=text|uploadable|image preview}}}
+ Description:
+ {{{field|cmpimg|input type=textarea|autogrow|editor=simple}}}
+ Files:
+ {{{field|cmpfile1|input type=text|uploadable}}}
+ {{{field|cmpfile2|input type=text|uploadable}}}
+ {{{field|cmpfile3|input type=text|uploadable}}}
+ {{{field|cmpfile4|input type=text|uploadable}}}
+ {{{field|cmpfile5|input type=text|uploadable}}}
+&lt;/div&gt;
+{{{end template}}}
+
+{{{for template|ProjektMaterials
+|multiple
+|label=List of materials used in the project
+|intro=The form is currently technically limited to process up to 300 individual parts.
+|embed in field=Projekt[Materials]
+|add button text=Add part
+|minimum instances=0
+|maximum instances=300}}}
+ {| class="mat_fields"
+ |-
+ | Position(*):
+ {{{field|matpartnumber|input type=text|size=20|mandatory}}}
+ | Position old:
+ {{{field|matposold|input type=text|size=20}}}
+ | Quantity:
+ {{{field|matquantity|input type=text|size=20}}}
+ |-
+ | Part Name:
+ {{{field|matdesc|input type=text|size=20}}}
+ | Part code:
+ {{{field|matdrawingsheet|input type=text|size=20}}}
+ | Part Type:
+ {{{field|matparttype|input type=dropdown|values=production,standard,buy|mapping template=LabelMatPartType}}}
+ |}
+ Specifications:
+ {{{field|matspec|input type=textarea|rows=2|cols=50}}}
+ PDF:
+ {{{field|matpdffile|input type=text|uploadable}}}&lt;!--
+ &lt;div class="status_reviewers"&gt;
+ Status Reviewer 1:
+ {{{field|status_rev_1|input type=dropdown|values=open,under review,approved,action required|mapping template=LabelReviewStatus}}}
+ Status Reviewer 2:
+ {{{field|status_rev_2|input type=dropdown|values=open,under review,approved,action required|mapping template=LabelReviewStatus}}}
+ Status Reviewer 3:
+ {{{field|status_rev_3|input type=dropdown|values=open,under review,approved,action required|mapping template=LabelReviewStatus}}}
+ &lt;/div&gt;
+--&gt;{{{end template}}}
+&lt;!--
+
+== Related links ==
+{{{for template|ProjektLink|multiple|add button text=Add}}}
+&lt;div class="formdiv"&gt;
+ Title:
+ {{{field|lnktitle|input type=text}}}
+ Url:
+ {{{field|lnkurl|input type=text}}}
+&lt;/div&gt;
+{{{end template}}}
+--&gt;
+
+&lt;headertabs/&gt;
+&lt;br&gt;
+&lt;div class="project_summary"&gt;
+{{{standard input|summary}}}
+{{{standard input|minor edit}}} {{{standard input|watch}}}
+&lt;/div&gt;
+&lt;div class="project_save_box"&gt;
+{{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
+&lt;/div&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>59ie3vfgfcqvfm6nyuqnchljt1kz1d3</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Form:ProjectSearch</title>
+    <ns>106</ns>
+    <id>15</id>
+    <revision>
+      <id>20</id>
+      <parentid>19</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>19</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="4400" sha1="7esd32vimfysde14pnmfx03vq94nhb0" xml:space="preserve">&lt;noinclude&gt;
+Suche von Projekten vermittels Formular, daß im ähnlichgleichen  [[Template: ProjektSearch]] als Ergebnis zurückgegeben wird.
+
+== Technische Abhängigkeiten ==
+
+=== Verschachtelte Vorlagen ===
+
+* [[Template:ProjektSearch]]
+
+=== Semantische Objekte ===
+
+… 
+&lt;!--
+{| class="booktable"
+|-
+! Semantische Eigenschaft !! Vorlagenparameter
+|-
+| [[Property: Projectname]] || projectname
+|}
+--&gt;
+
+=== Erweiterungen ===
+
+* Erweiterung:SemanticMediaWiki
+* Erweiterung:PageForms
+
+=== CSS ===
+
+&lt;syntaxhighlight lang="css"&gt;
+  div.formdiv div.search_projekt_form
+&lt;/syntaxhighlight&gt;
+
+[[Category: Project management]]
+&lt;/noinclude&gt;
+&lt;includeonly&gt;
+{{{info|query form at top|query title=Professional search}}}
+{{{for template|ProjektSearch}}}
+&lt;table class="vertical-align-top table /* bootstrap has cass .table */"&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;!--
+
+linke Spalte
+--&gt;&lt;div class="search_row clearfix" &gt;&lt;!--
+--&gt;Search: &lt;span class="ml-2"&gt;{{{field|search|input type=text with autocomplete|remote autocompletion|property=Keywords}}}&lt;/span&gt;&lt;!--
+--&gt;&lt;/div&gt;
+&lt;div class="search_row clearfix" style="padding-left:1.5em" &gt;&lt;!--
+--&gt; {{{field|searchDesc|input type=checkbox|label=   Search in description}}} &lt;!--
+--&gt;&lt;/div&gt;
+&lt;div class="search_row clearfix" &gt;&lt;!--
+--&gt;Certification Status:&lt;!-- &lt;br&gt;
+--&gt; &lt;span class="float-right"&gt;{{{field|certificate_status|input type=dropdown|values=preselected,selected,in process,approved,rejected|mapping template=LabelCertStatus}}}&lt;/span&gt;&lt;!--
+--&gt;&lt;/div&gt;
+&lt;div class="search_row clearfix" &gt;&lt;!--
+--&gt;Contains PDF-drawings:&lt;!-- &lt;br&gt;
+--&gt; &lt;span class="float-right"&gt;{{{field|contains_pdf_drawings|input type=dropdown|property=ContainsPdfDrawings}}}&lt;/span&gt;&lt;!--
+--&gt;&lt;/div&gt;
+&lt;div class="search_row clearfix" &gt;&lt;!--
+--&gt;CAD files for mechanical hardware are editable:&lt;!-- &lt;br&gt;
+--&gt; &lt;span class="float-right"&gt;{{{field|cad_files_editable|input type=dropdown|property=CadFilesAreInEditableFormat}}}&lt;/span&gt;&lt;!--
+--&gt;&lt;/div&gt;
+&lt;div class="search_row clearfix" &gt;&lt;!--
+--&gt;License for mechanical hardware: &lt;span class="float-right"&gt;{{{field|mechanical_licence|input type=dropdown|values=AL,BSDL,CCU,CCBY20,CCBY30,CCBY40,CCBYNC25,CCBYNC30,CCBYNC40,CCBYNCND30,CCBYNCSA20,CCBYNCSA25,CCBYNCSA25CH,CCBYNCSA30,CCBYNCSA40,CCBYSA,CCBYSA20,CCBYSA25,CCBYSA30,CCBYSA40,COHL12,COHL11,COHL,EGPL,GNUAGPL,GNUFDL,GNUGPL,GNUGPL2,GNUGPL3,GNULGPL,LGPL2,LAL,M3ODP,MITL,OLNS,POHL,PCFL,PD,TOHL,UNLIC,ADDNEW|mapping template=LabelGralLicense}}}&lt;/span&gt;&lt;!--
+--&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;!--
+
+rechte Spalte
+--&gt;&lt;td&gt;
+&lt;div class="search_row clearfix" &gt;&lt;!--
+--&gt;Contains original electronic hardware:&lt;!-- &lt;br&gt;
+--&gt; &lt;span class="float-right"&gt;{{{field|electronic_files_pub|input type=dropdown|property=ElectronicFilesPub}}}&lt;/span&gt;&lt;!--
+--&gt;&lt;/div&gt;
+&lt;div class="search_row clearfix" &gt;&lt;!--
+--&gt;CAD files for electronic hardware is editable:&lt;!-- &lt;br&gt;
+--&gt; &lt;span class="float-right"&gt;{{{field|electronic_files_editable|input type=dropdown|property=ElectronicFilesEditable}}}&lt;/span&gt;&lt;!--
+--&gt;&lt;/div&gt;
+&lt;div class="search_row clearfix" &gt;&lt;!--
+--&gt;Contains original software:&lt;!--&lt;br&gt;
+ --&gt; &lt;span class="float-right"&gt;{{{field|software_files_pub|input type=dropdown|property=ContainsOriginalSoftware}}}&lt;/span&gt;&lt;!--
+--&gt;&lt;/div&gt;
+&lt;div class="search_row clearfix" &gt;&lt;!--
+--&gt;Assembly instructions are published:&lt;!--&lt;br&gt;
+ --&gt; &lt;span class="float-right"&gt;{{{field|assembly_inst_pub|input type=dropdown|values=yes,no|mapping template=LabelYesNo}}}&lt;/span&gt;&lt;!--
+--&gt;&lt;/div&gt;
+&lt;div class="search_row clearfix" &gt;&lt;!--
+--&gt;Bill of materials is published:&lt;!--&lt;br&gt;
+ --&gt; &lt;span class="float-right"&gt;{{{field|bill_materials_pub|input type=dropdown|property=BillOfMaterialsIsPublished}}}&lt;/span&gt;&lt;!--
+--&gt;&lt;/div&gt;
+&lt;div class="search_row clearfix" &gt;&lt;!--
+--&gt;Technology Readyness Level TRL: &lt;!--&lt;br&gt;
+ --&gt; &lt;span class="float-right"&gt;{{{field|technology_readyness_level|input type=dropdown|property=TechnologyReadynessLevel}}}&lt;/span&gt;&lt;!--
+--&gt;&lt;/div&gt;
+&lt;div class="search_row clearfix" &gt;&lt;!--
+--&gt;Source:&lt;!-- &lt;br&gt;
+--&gt; &lt;span class="float-right"&gt;{{{field|typeproject|input type=dropdown|property=Typeproject}}}&lt;/span&gt;&lt;!--
+--&gt;&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;&lt;!--
+&lt;tr&gt;
+&lt;td colspan="2"&gt;&lt;div class="search_projekt_form_line search_cat_box"&gt;
+  Category: {{{field|subcat|input type=tree|top category=Projects|hideroot}}}&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+--&gt;
+&lt;/table&gt;
+{{{end template}}}
+{{{standard input|run query|label=Search}}}
+&lt;!-- [[Categories|Go To Category Search]]&lt;br&gt;&lt;br&gt;
+[https://en.oho.wiki/wiki/The_OHO_Product_Directory See complex Open Source Hardware projects] --&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>7esd32vimfysde14pnmfx03vq94nhb0</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:AssemblyInstructionsAreEditable</title>
+    <ns>102</ns>
+    <id>16</id>
+    <revision>
+      <id>22</id>
+      <parentid>21</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>21</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="216" sha1="l3b80jelg4n6l0im27cm6dpi3g8iye7" xml:space="preserve">This is a property of type [[Has type::Boolean]].
+
+Preferred labels:
+* [[Has preferred property label::assembly instructions are editable@en]]
+
+[[Category:Translation of terms (TODO)]]
+[[Category:Project management]]</text>
+      <sha1>l3b80jelg4n6l0im27cm6dpi3g8iye7</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:AssemblyInstructionsArePublished</title>
+    <ns>102</ns>
+    <id>17</id>
+    <revision>
+      <id>24</id>
+      <parentid>23</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>23</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="217" sha1="9fhlwc8te4l0gmhswsb3bnv63l8zekj" xml:space="preserve">This is a property of type [[Has type::Boolean]].
+
+Preferred labels:
+* [[Has preferred property label::assembly instructions are published@en]]
+
+[[Category:Translation of terms (TODO)]]
+[[Category:Project management]]</text>
+      <sha1>9fhlwc8te4l0gmhswsb3bnv63l8zekj</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:BillOfMaterialsIsEditable</title>
+    <ns>102</ns>
+    <id>18</id>
+    <revision>
+      <id>26</id>
+      <parentid>25</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>25</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="82" sha1="e2pmff6f6ir0uvgixzbdtvm4p5uue2l" xml:space="preserve">This is a property of type [[Has type::Boolean]].
+
+[[Category:Project management]]</text>
+      <sha1>e2pmff6f6ir0uvgixzbdtvm4p5uue2l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:BillOfMaterialsIsPublished</title>
+    <ns>102</ns>
+    <id>19</id>
+    <revision>
+      <id>28</id>
+      <parentid>27</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>27</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="82" sha1="e2pmff6f6ir0uvgixzbdtvm4p5uue2l" xml:space="preserve">This is a property of type [[Has type::Boolean]].
+
+[[Category:Project management]]</text>
+      <sha1>e2pmff6f6ir0uvgixzbdtvm4p5uue2l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:CadFilesAreInEditableFormat</title>
+    <ns>102</ns>
+    <id>20</id>
+    <revision>
+      <id>30</id>
+      <parentid>29</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>29</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="82" sha1="e2pmff6f6ir0uvgixzbdtvm4p5uue2l" xml:space="preserve">This is a property of type [[Has type::Boolean]].
+
+[[Category:Project management]]</text>
+      <sha1>e2pmff6f6ir0uvgixzbdtvm4p5uue2l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:CadLink</title>
+    <ns>102</ns>
+    <id>21</id>
+    <revision>
+      <id>32</id>
+      <parentid>31</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>31</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="79" sha1="o4bm1xbanbqijrp5u1keb7vplsj00mw" xml:space="preserve">This is a property of type [[Has type::URL]].
+
+[[Category: Project management]]</text>
+      <sha1>o4bm1xbanbqijrp5u1keb7vplsj00mw</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:CertificateRequested</title>
+    <ns>102</ns>
+    <id>22</id>
+    <revision>
+      <id>34</id>
+      <parentid>33</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>33</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="82" sha1="e2pmff6f6ir0uvgixzbdtvm4p5uue2l" xml:space="preserve">This is a property of type [[Has type::Boolean]].
+
+[[Category:Project management]]</text>
+      <sha1>e2pmff6f6ir0uvgixzbdtvm4p5uue2l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:CertificateReviewer1</title>
+    <ns>102</ns>
+    <id>23</id>
+    <revision>
+      <id>36</id>
+      <parentid>35</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>35</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="121" sha1="a73l1djmwdsjapugfmfrqbnm9bja084" xml:space="preserve">This is a property of type [[Has type::Page]] (perhaps a valid user name in the system).
+
+[[Category:Project management]]</text>
+      <sha1>a73l1djmwdsjapugfmfrqbnm9bja084</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:CertificateReviewer2</title>
+    <ns>102</ns>
+    <id>24</id>
+    <revision>
+      <id>38</id>
+      <parentid>37</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>37</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="121" sha1="a73l1djmwdsjapugfmfrqbnm9bja084" xml:space="preserve">This is a property of type [[Has type::Page]] (perhaps a valid user name in the system).
+
+[[Category:Project management]]</text>
+      <sha1>a73l1djmwdsjapugfmfrqbnm9bja084</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:CertificateReviewer3</title>
+    <ns>102</ns>
+    <id>25</id>
+    <revision>
+      <id>40</id>
+      <parentid>39</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>39</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="121" sha1="a73l1djmwdsjapugfmfrqbnm9bja084" xml:space="preserve">This is a property of type [[Has type::Page]] (perhaps a valid user name in the system).
+
+[[Category:Project management]]</text>
+      <sha1>a73l1djmwdsjapugfmfrqbnm9bja084</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:CertificateStatus</title>
+    <ns>102</ns>
+    <id>26</id>
+    <revision>
+      <id>42</id>
+      <parentid>41</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>41</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="79" sha1="sxrcd29fr2khvauvk4pp92pkgsdf1h1" xml:space="preserve">This is a property of type [[Has type::Text]].
+
+[[Category:Project management]]</text>
+      <sha1>sxrcd29fr2khvauvk4pp92pkgsdf1h1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:ContainsOriginalElectronicHardware</title>
+    <ns>102</ns>
+    <id>27</id>
+    <revision>
+      <id>44</id>
+      <parentid>43</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>43</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="219" sha1="27zmv2sfe6n4kk1kqhi2cq9hl5sx5s8" xml:space="preserve">This is a property of type [[Has type::Boolean]].
+
+Preferred labels:
+* [[Has preferred property label::contains original electronic hardware@en]]
+
+[[Category:Translation of terms (TODO)]]
+[[Category:Project management]]</text>
+      <sha1>27zmv2sfe6n4kk1kqhi2cq9hl5sx5s8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:ContainsOriginalNonElectronicHardware</title>
+    <ns>102</ns>
+    <id>28</id>
+    <revision>
+      <id>46</id>
+      <parentid>45</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>45</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="227" sha1="oavai0ea6r8ki4xtv2logkbu4hao8rk" xml:space="preserve">This is a property of type [[Has type::Boolean]].
+
+Preferred labels:
+* [[Has preferred property label::contains original ''non''-electronic hardware@en]]
+
+[[Category:Translation of terms (TODO)]]
+[[Category:Project management]]</text>
+      <sha1>oavai0ea6r8ki4xtv2logkbu4hao8rk</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:ContainsOriginalSoftware</title>
+    <ns>102</ns>
+    <id>29</id>
+    <revision>
+      <id>48</id>
+      <parentid>47</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>47</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="208" sha1="bz40zunpd3l3fbd4p3py1oy8fz422be" xml:space="preserve">This is a property of type [[Has type::Boolean]].
+
+Preferred labels:
+* [[Has preferred property label::contains original software@en]]
+
+[[Category:Translation of terms (TODO)]]
+[[Category:Project management]]</text>
+      <sha1>bz40zunpd3l3fbd4p3py1oy8fz422be</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:ContainsPdfDrawings</title>
+    <ns>102</ns>
+    <id>30</id>
+    <revision>
+      <id>50</id>
+      <parentid>49</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>49</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="82" sha1="e2pmff6f6ir0uvgixzbdtvm4p5uue2l" xml:space="preserve">This is a property of type [[Has type::Boolean]].
+
+[[Category:Project management]]</text>
+      <sha1>e2pmff6f6ir0uvgixzbdtvm4p5uue2l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:ContributingGuideIsPublished</title>
+    <ns>102</ns>
+    <id>31</id>
+    <revision>
+      <id>52</id>
+      <parentid>51</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>51</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="82" sha1="e2pmff6f6ir0uvgixzbdtvm4p5uue2l" xml:space="preserve">This is a property of type [[Has type::Boolean]].
+
+[[Category:Project management]]</text>
+      <sha1>e2pmff6f6ir0uvgixzbdtvm4p5uue2l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:Desc</title>
+    <ns>102</ns>
+    <id>32</id>
+    <revision>
+      <id>54</id>
+      <parentid>53</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>53</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="79" sha1="sxrcd29fr2khvauvk4pp92pkgsdf1h1" xml:space="preserve">This is a property of type [[Has type::Text]].
+
+[[Category:Project management]]</text>
+      <sha1>sxrcd29fr2khvauvk4pp92pkgsdf1h1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:DesignFilesArePublished</title>
+    <ns>102</ns>
+    <id>33</id>
+    <revision>
+      <id>56</id>
+      <parentid>55</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>55</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="82" sha1="e2pmff6f6ir0uvgixzbdtvm4p5uue2l" xml:space="preserve">This is a property of type [[Has type::Boolean]].
+
+[[Category:Project management]]</text>
+      <sha1>e2pmff6f6ir0uvgixzbdtvm4p5uue2l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:ElectronicFilesEditable</title>
+    <ns>102</ns>
+    <id>34</id>
+    <revision>
+      <id>58</id>
+      <parentid>57</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>57</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="253" sha1="r76secd39jk4ql7eifeipgnyn73yvoz" xml:space="preserve">This is a property of type [[Has type::Boolean]]. See also [[property: electronicFilesPub]]
+
+Preferred labels:
+* [[Has preferred property label::electronic files are editable@en]]
+
+[[Category:Translation of terms (TODO)]]
+[[Category:Project management]]</text>
+      <sha1>r76secd39jk4ql7eifeipgnyn73yvoz</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:ElectronicFilesPub</title>
+    <ns>102</ns>
+    <id>35</id>
+    <revision>
+      <id>60</id>
+      <parentid>59</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>59</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="259" sha1="n1e0ylm7mm401csixk4eyekc33cpva8" xml:space="preserve">This is a property of type [[Has type::Boolean]]. See also [[property: electronicFilesEditable]]
+
+Preferred labels:
+* [[Has preferred property label::electronic files are published@en]]
+
+[[Category:Translation of terms (TODO)]]
+[[Category:Project management]]</text>
+      <sha1>n1e0ylm7mm401csixk4eyekc33cpva8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:FilesAreInEditableFormat</title>
+    <ns>102</ns>
+    <id>36</id>
+    <revision>
+      <id>62</id>
+      <parentid>61</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>61</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="82" sha1="e2pmff6f6ir0uvgixzbdtvm4p5uue2l" xml:space="preserve">This is a property of type [[Has type::Boolean]].
+
+[[Category:Project management]]</text>
+      <sha1>e2pmff6f6ir0uvgixzbdtvm4p5uue2l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:Firstin</title>
+    <ns>102</ns>
+    <id>37</id>
+    <revision>
+      <id>64</id>
+      <parentid>63</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>63</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="78" sha1="ee39gbwofy6ihjl0hxnafk8ei412buy" xml:space="preserve">This is a property of type [[Has type::URL]].
+
+[[Category:Project management]]</text>
+      <sha1>ee39gbwofy6ihjl0hxnafk8ei412buy</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:FreeRedistributionIsAllowedLicence</title>
+    <ns>102</ns>
+    <id>38</id>
+    <revision>
+      <id>66</id>
+      <parentid>65</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>65</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="82" sha1="e2pmff6f6ir0uvgixzbdtvm4p5uue2l" xml:space="preserve">This is a property of type [[Has type::Boolean]].
+
+[[Category:Project management]]</text>
+      <sha1>e2pmff6f6ir0uvgixzbdtvm4p5uue2l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:IssueManagementSystem</title>
+    <ns>102</ns>
+    <id>39</id>
+    <revision>
+      <id>68</id>
+      <parentid>67</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>67</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="82" sha1="e2pmff6f6ir0uvgixzbdtvm4p5uue2l" xml:space="preserve">This is a property of type [[Has type::Boolean]].
+
+[[Category:Project management]]</text>
+      <sha1>e2pmff6f6ir0uvgixzbdtvm4p5uue2l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:Keywords</title>
+    <ns>102</ns>
+    <id>40</id>
+    <revision>
+      <id>70</id>
+      <parentid>69</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>69</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="78" sha1="76acfef6ihvltgi7f7dvwxxkm0hwxyq" xml:space="preserve">{{FULLPAGENAME}} has type [[Has type::Text]]
+
+[[Category: Project management]]</text>
+      <sha1>76acfef6ihvltgi7f7dvwxxkm0hwxyq</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:Licence</title>
+    <ns>102</ns>
+    <id>41</id>
+    <revision>
+      <id>72</id>
+      <parentid>71</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>71</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="79" sha1="sxrcd29fr2khvauvk4pp92pkgsdf1h1" xml:space="preserve">This is a property of type [[Has type::Text]].
+
+[[Category:Project management]]</text>
+      <sha1>sxrcd29fr2khvauvk4pp92pkgsdf1h1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:MaturityOfTheProject</title>
+    <ns>102</ns>
+    <id>42</id>
+    <revision>
+      <id>74</id>
+      <parentid>73</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>73</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="79" sha1="sxrcd29fr2khvauvk4pp92pkgsdf1h1" xml:space="preserve">This is a property of type [[Has type::Text]].
+
+[[Category:Project management]]</text>
+      <sha1>sxrcd29fr2khvauvk4pp92pkgsdf1h1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:MechanicalLicence</title>
+    <ns>102</ns>
+    <id>43</id>
+    <revision>
+      <id>76</id>
+      <parentid>75</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>75</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="79" sha1="sxrcd29fr2khvauvk4pp92pkgsdf1h1" xml:space="preserve">This is a property of type [[Has type::Text]].
+
+[[Category:Project management]]</text>
+      <sha1>sxrcd29fr2khvauvk4pp92pkgsdf1h1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:OpenOMeter</title>
+    <ns>102</ns>
+    <id>44</id>
+    <revision>
+      <id>78</id>
+      <parentid>77</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>77</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="81" sha1="9l1han7e0cysecq9r6k0i6dhc7x6wux" xml:space="preserve">This is a property of type [[Has type::Number]].
+
+[[Category:Project management]]</text>
+      <sha1>9l1han7e0cysecq9r6k0i6dhc7x6wux</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:Organization</title>
+    <ns>102</ns>
+    <id>45</id>
+    <revision>
+      <id>80</id>
+      <parentid>79</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>79</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="79" sha1="cejx9t0xghixlka3c8hbspszoky2cu1" xml:space="preserve">This is a property of type [[Has type::Page]].
+
+[[Category:Project management]]</text>
+      <sha1>cejx9t0xghixlka3c8hbspszoky2cu1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:ProductCategory</title>
+    <ns>102</ns>
+    <id>46</id>
+    <revision>
+      <id>82</id>
+      <parentid>81</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>81</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="287" sha1="g9fz8ivm03qrj0941b2rly8og59924m" xml:space="preserve">This is a property of type [[Has type::Page]] (technical note: should be actually a category page, with prefix &lt;code&gt;category:&lt;/code&gt;…).
+
+Preferred labels:
+* [[Has preferred property label::product category@en]]
+
+[[Category:Translation of terms (TODO)]]
+[[Category:Project management]]</text>
+      <sha1>g9fz8ivm03qrj0941b2rly8og59924m</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:ProjectSearchResultPreviewBox1</title>
+    <ns>102</ns>
+    <id>47</id>
+    <revision>
+      <id>84</id>
+      <parentid>83</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>83</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="138" sha1="kteebb32o7es4mtuyfottigwuz6h6iy" xml:space="preserve">This is a property of type [[Has type::Text]] and contains the rendered preview box for a search result.
+
+[[Category: Project management]]</text>
+      <sha1>kteebb32o7es4mtuyfottigwuz6h6iy</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:ProjectStatus</title>
+    <ns>102</ns>
+    <id>48</id>
+    <revision>
+      <id>86</id>
+      <parentid>85</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>85</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="292" sha1="6syj930rwxcgdh12d5jlwzbsn7f1xox" xml:space="preserve">This is a property of type [[Has type::Text]].
+
+The allowed values for this property are:
+* [[Allows value::active]]
+* [[Allows value::inactive]]
+
+Preferred labels:
+* [[Has preferred property label::project status@en]]
+
+[[Category:Translation of terms (TODO)]]
+[[Category:Project management]]</text>
+      <sha1>6syj930rwxcgdh12d5jlwzbsn7f1xox</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:Projectimage</title>
+    <ns>102</ns>
+    <id>49</id>
+    <revision>
+      <id>88</id>
+      <parentid>87</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>87</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="79" sha1="cejx9t0xghixlka3c8hbspszoky2cu1" xml:space="preserve">This is a property of type [[Has type::Page]].
+
+[[Category:Project management]]</text>
+      <sha1>cejx9t0xghixlka3c8hbspszoky2cu1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:Projectname</title>
+    <ns>102</ns>
+    <id>50</id>
+    <revision>
+      <id>90</id>
+      <parentid>89</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>89</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="78" sha1="76acfef6ihvltgi7f7dvwxxkm0hwxyq" xml:space="preserve">{{FULLPAGENAME}} has type [[Has type::Text]]
+
+[[Category: Project management]]</text>
+      <sha1>76acfef6ihvltgi7f7dvwxxkm0hwxyq</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:TechnologyReadynessLevel</title>
+    <ns>102</ns>
+    <id>51</id>
+    <revision>
+      <id>92</id>
+      <parentid>91</parentid>
+      <timestamp>2023-08-31T11:22:35Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>91</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="451" sha1="hhgmt0hknoaw1x8coo7zipb8gmtdiss" xml:space="preserve">This is a property of type [[Has type::Number]].
+
+The allowed values for this property are:
+* [[Allows value::1]]
+* [[Allows value::2]]
+* [[Allows value::3]]
+* [[Allows value::4]]
+* [[Allows value::5]]
+* [[Allows value::6]]
+* [[Allows value::7]]
+* [[Allows value::8]]
+* [[Allows value::9]]
+
+Preferred labels:
+* [[Has preferred property label::Level of Technology Readyness@en]]
+
+[[Category:Translation of terms (TODO)]]
+[[Category:Project management]]</text>
+      <sha1>hhgmt0hknoaw1x8coo7zipb8gmtdiss</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:TranslateStatus</title>
+    <ns>102</ns>
+    <id>52</id>
+    <revision>
+      <id>94</id>
+      <parentid>93</parentid>
+      <timestamp>2023-08-31T11:22:36Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>93</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="79" sha1="sxrcd29fr2khvauvk4pp92pkgsdf1h1" xml:space="preserve">This is a property of type [[Has type::Text]].
+
+[[Category:Project management]]</text>
+      <sha1>sxrcd29fr2khvauvk4pp92pkgsdf1h1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:Typeproject</title>
+    <ns>102</ns>
+    <id>53</id>
+    <revision>
+      <id>96</id>
+      <parentid>95</parentid>
+      <timestamp>2023-08-31T11:22:36Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>95</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="356" sha1="4qvqf04acj4faeyacqarxrzy3ukglb9" xml:space="preserve">This is a property of type [[Has type::Text]].
+
+For allowed values of this property we’d like naturally spelled values (instead of technical once):
+* [[Allows value::OHO e.V.]]
+* [[Allows value::IoG e.V.]]
+
+Preferred labels:
+* [[Has preferred property label::type of project@en]]
+
+[[Category:Translation of terms (TODO)]]
+
+[[Category:Project management]]</text>
+      <sha1>4qvqf04acj4faeyacqarxrzy3ukglb9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:VersioningSystem</title>
+    <ns>102</ns>
+    <id>54</id>
+    <revision>
+      <id>98</id>
+      <parentid>97</parentid>
+      <timestamp>2023-08-31T11:22:36Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>97</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="82" sha1="e2pmff6f6ir0uvgixzbdtvm4p5uue2l" xml:space="preserve">This is a property of type [[Has type::Boolean]].
+
+[[Category:Project management]]</text>
+      <sha1>e2pmff6f6ir0uvgixzbdtvm4p5uue2l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:LabelCadFormat</title>
+    <ns>10</ns>
+    <id>55</id>
+    <revision>
+      <id>100</id>
+      <parentid>99</parentid>
+      <timestamp>2023-08-31T11:22:36Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>99</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1081" sha1="d7s3qyxslo1h0s9ycfgl0xf0f531v3c" xml:space="preserve">&lt;noinclude&gt;
+'''Zusammenfassung:''' Wandle den Code eines CAD-Formats in eine Beschriftungsanzeige um (siehe die vielen Codes von CAD-Formaten im Wiki Code).
+
+== Vorlagenbeiwerte (Parameter) ==
+
+ |1=Code eines CAD-Formats
+
+== Anwendung ==
+
+ &lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}
+ |1=GBS
+ }}
+
+… wird zu:
+
+{{ {{PAGENAME}}
+|1=GBS
+}}
+
+[[Category: Project management]]
+[[Category: Display templates]]
+&lt;/noinclude&gt;&lt;includeonly&gt;{{#switch:{{{1}}}|GBS=GBS|POS=POS|CMP=CMP|PRO=PRO|SKP=SKP|BLEND=BLEND|X3D=X3D|GCODE=GCODE|DWB=DWB|ART=ART|PCB=PCB|LXO=LXO|LWO=LWO|123DX=123DX|DWF=DWF|PAR=PAR|F3D=F3D|EPS=EPS|ORCAD=ORCAD|LXF=LXF|GBO=GBO|GTS=GTS|BL=BL|3DS=3DS|AOI=AOI|DWG=DWG|CDR=CDR|JPG=JPG|EASM=EASM|PNG=PNG|STP=STP|DCH=DCH|ODG=ODG|3DM=3DM|TIF=TIF|DRW=DRW|ASM=ASM|PRT=PRT|CRV=CRV|SH3D=SH3D|OBJ=OBJ|SLDDRW=SLDDRW|X_T=X_T|GTO=GTO|GTP=GTP|GTL=GTL|GBL=GBL|FZZ=FZZ|FCSTD=FCSTD|DAE=DAE|SAT=SAT|SCAD=SCAD|IAM=IAM|IPT=IPT|BRD=BRD|IGS=IGS|DRL=DRL|GBR=GBR|KICAD_PCB=KICAD_PCB|AI=AI|SCH=SCH|STL=STL|SKP=SKP|PDF=PDF|STEP=STEP|SLDPRT=SLDPRT|SLDASM=SLDASM|DXF=DXF|SVG=SVG|ADDNEW=Add New CAD Format}}&lt;/includeonly&gt;</text>
+      <sha1>d7s3qyxslo1h0s9ycfgl0xf0f531v3c</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:LabelCertStatus</title>
+    <ns>10</ns>
+    <id>56</id>
+    <revision>
+      <id>102</id>
+      <parentid>101</parentid>
+      <timestamp>2023-08-31T11:22:36Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>101</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="738" sha1="frztzqtbqgt4rzcqmkitnyhi597k2ou" xml:space="preserve">&lt;noinclude&gt;
+&lt;strong&gt;Zusammenfassung:&lt;/strong&gt; Anzeigewert für Stand der Certifizierung formatieren und ausgeben.
+
+== Technische Dokumentation ==
+
+{| class="wikitable"
+! Verwendung
+! Ausgabe
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|preselected}}
+| {{ {{PAGENAME}}|preselected}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|in process}}
+| {{ {{PAGENAME}}|in process}}
+|-
+| …
+| …
+|}
+
+Parameter:
+
+* &lt;code&gt;&lt;nowiki&gt;|1=&lt;/nowiki&gt;&lt;/code&gt; Lizenz-Code (mögliche Eingabewerte: preselected, selected, in process, approved, rejected)
+
+
+[[Category:Project management]]
+[[Category: Display templates]]
+&lt;/noinclude&gt;&lt;includeonly&gt;{{#switch:{{{1}}}|preselected=Preselected|selected=Selected|in process=In process|approved=Approved|rejected=Rejected}}&lt;/includeonly&gt;</text>
+      <sha1>frztzqtbqgt4rzcqmkitnyhi597k2ou</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:LabelGralLicense</title>
+    <ns>10</ns>
+    <id>57</id>
+    <revision>
+      <id>104</id>
+      <parentid>103</parentid>
+      <timestamp>2023-08-31T11:22:36Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>103</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="6078" sha1="c9upou8w1fkitw955rgu9488eqesc42" xml:space="preserve">&lt;noinclude&gt;
+&lt;strong&gt;Zusammenfassung:&lt;/strong&gt; Anzeigewert für die Lizenz formatieren und ausgeben.
+
+== Technische Dokumentation ==
+
+{| class="wikitable"
+! Verwendung
+! Ausgabe
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|AL}}
+| {{ {{PAGENAME}}|AL}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|BSDL}}
+| {{ {{PAGENAME}}|BSDL}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCU}}
+| {{ {{PAGENAME}}|CCU}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBY20}}
+| {{ {{PAGENAME}}|CCBY20}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBY30}}
+| {{ {{PAGENAME}}|CCBY30}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBY40}}
+| {{ {{PAGENAME}}|CCBY40}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBYNC25}}
+| {{ {{PAGENAME}}|CCBYNC25}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBYNC30}}
+| {{ {{PAGENAME}}|CCBYNC30}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBYNC40}}
+| {{ {{PAGENAME}}|CCBYNC40}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBYNCND30}}
+| {{ {{PAGENAME}}|CCBYNCND30}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBYNCSA20}}
+| {{ {{PAGENAME}}|CCBYNCSA20}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBYNCSA25}}
+| {{ {{PAGENAME}}|CCBYNCSA25}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBYNCSA25CH}}
+| {{ {{PAGENAME}}|CCBYNCSA25CH}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBYNCSA30}}
+| {{ {{PAGENAME}}|CCBYNCSA30}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBYNCSA40}}
+| {{ {{PAGENAME}}|CCBYNCSA40}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBYSA}}
+| {{ {{PAGENAME}}|CCBYSA}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBYSA20}}
+| {{ {{PAGENAME}}|CCBYSA20}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBYSA25}}
+| {{ {{PAGENAME}}|CCBYSA25}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBYSA30}}
+| {{ {{PAGENAME}}|CCBYSA30}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|CCBYSA40}}
+| {{ {{PAGENAME}}|CCBYSA40}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|COHL12}}
+| {{ {{PAGENAME}}|COHL12}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|COHL11}}
+| {{ {{PAGENAME}}|COHL11}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|COHLP2}}
+| {{ {{PAGENAME}}|COHLP2}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|COHLS2}}
+| {{ {{PAGENAME}}|COHLS2}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|COHLW2}}
+| {{ {{PAGENAME}}|COHLW2}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|COHL}}
+| {{ {{PAGENAME}}|COHL}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|EROSHL}}
+| {{ {{PAGENAME}}|EROSHL}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|EGPL}}
+| {{ {{PAGENAME}}|EGPL}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|GNUAGPL}}
+| {{ {{PAGENAME}}|GNUAGPL}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|GNUFDL}}
+| {{ {{PAGENAME}}|GNUFDL}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|GNUGPL}}
+| {{ {{PAGENAME}}|GNUGPL}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|GNUGPL2}}
+| {{ {{PAGENAME}}|GNUGPL2}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|GNUGPL3}}
+| {{ {{PAGENAME}}|GNUGPL3}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|GNULGPL3}}
+| {{ {{PAGENAME}}|GNULGPL3}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|GNULGPL}}
+| {{ {{PAGENAME}}|GNULGPL}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|LGPL2}}
+| {{ {{PAGENAME}}|LGPL2}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|LAL}}
+| {{ {{PAGENAME}}|LAL}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|M3ODP}}
+| {{ {{PAGENAME}}|M3ODP}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|MITL}}
+| {{ {{PAGENAME}}|MITL}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|OLNS}}
+| {{ {{PAGENAME}}|OLNS}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|POHL}}
+| {{ {{PAGENAME}}|POHL}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|PCFL}}
+| {{ {{PAGENAME}}|PCFL}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|PD}}
+| {{ {{PAGENAME}}|PD}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|RMPL}}
+| {{ {{PAGENAME}}|RMPL}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|TOHL}}
+| {{ {{PAGENAME}}|TOHL}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|UNLIC}}
+| {{ {{PAGENAME}}|UNLIC}}
+|-
+|
+&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|ADDNEW}}
+| {{ {{PAGENAME}}|ADDNEW}}
+|}
+
+Parameter:
+
+* &lt;code&gt;&lt;nowiki&gt;|1=&lt;/nowiki&gt;&lt;/code&gt; Lizenz-Code (mögliche Eingabewerte: AL BSDL CCU CCBY20 CCBY30 CCBY40 CCBYNC25 CCBYNC30 CCBYNC40 CCBYNCND30 CCBYNCSA20 CCBYNCSA25 CCBYNCSA25CH CCBYNCSA30 CCBYNCSA40 CCBYSA CCBYSA20 CCBYSA25 CCBYSA30 CCBYSA40 COHL12 COHL11 COHLP2 COHLS2 COHLW2 COHL EROSHL EGPL GNUAGPL GNUFDL GNUGPL GNUGPL2 GNUGPL3 GNULGPL3 GNULGPL LGPL2 LAL M3ODP MITL OLNS POHL PCFL PD RMPL TOHL UNLIC ADDNEW)
+
+&lt;!-- 
+BASH loop
+
+echo '' &gt; Zwischenablage.txt
+for licence in AL BSDL CCU CCBY20 CCBY30 CCBY40 CCBYNC25 CCBYNC30 CCBYNC40 CCBYNCND30 CCBYNCSA20 CCBYNCSA25 CCBYNCSA25CH CCBYNCSA30 CCBYNCSA40 CCBYSA CCBYSA20 CCBYSA25 CCBYSA30 CCBYSA40 COHL12 COHL11 COHLP2 COHLS2 COHLW2 COHL EROSHL EGPL GNUAGPL GNUFDL GNUGPL GNUGPL2 GNUGPL3 GNULGPL3 GNULGPL LGPL2 LAL M3ODP MITL OLNS POHL PCFL PD RMPL TOHL UNLIC ADDNEW;do 
+echo "|-" &gt;&gt; Zwischenablage.txt;
+echo "|" &gt;&gt; Zwischenablage.txt;
+echo "&lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|$licence}}" &gt;&gt; Zwischenablage.txt;
+echo "| {{ {{PAGENAME}}|$licence}}" &gt;&gt; Zwischenablage.txt;
+
+done;
+
+--&gt;
+[[Category:Project management]]
+[[Category: Display templates]]
+&lt;/noinclude&gt;&lt;includeonly&gt;{{#switch:{{{1}}}|AL=Apache License|BSDL=BSD License|CCU=CC (unspecified)|CCBY20=CC BY 2.0|CCBY30=CC BY 3.0|CCBY40=CC BY 4.0|CCBYNC25=CC BY-NC 2.5|CCBYNC30=CC BY-NC 3.0|CCBYNC40=CC BY-NC 4.0|CCBYNCND30=CC BY-NC-ND 3.0|CCBYNCSA20=CC BY-NC-SA 2.0|CCBYNCSA25=CC BY-NC-SA 2.5|CCBYNCSA25CH=CC BY-NC-SA 2.5 CH|CCBYNCSA30=CC BY-NC-SA 3.0|CCBYNCSA40=CC BY-NC-SA 4.0|CCBYSA=CC BY-SA|CCBYSA20=CC BY-SA 2.0|CCBYSA25=CC BY-SA 2.5|CCBYSA30=CC BY-SA 3.0|CCBYSA40=CC BY-SA 4.0|COHL12=CERN OHL v1.2|COHL11=CERN Open Hardware Licence 1.1|COHLP2=CERN Open Hardware Licence 2 - Permissive|COHLS2=CERN Open Hardware Licence 2 - Strongly Reciprocal|COHLW2=CERN Open Hardware Licence 2 - Weakly Reciprocal|COHL=CERN Open Hardware License|EROSHL=E-Puck Robot Open Source Hardware License|EGPL=Echopen General Public License|GNUAGPL=GNU Affero GPL|GNUFDL=GNU Free Documentation License|GNUGPL=GNU GPL|GNUGPL2=GNU GPL 2.0|GNUGPL3=GNU GPL 3.0|GNULGPL3=GNU Lesser General Public License v.3|GNULGPL=GNU LGPL|LGPL2=LGPL v2.0|LAL=Licence art libre|M3ODP=Mach 30 Open Design Pledge|MITL=MIT License|OLNS=Open License (not specified)|POHL=Panaka Open Hardware License|PCFL=Pandora Case Files License|PD=Public Domain|RMPL=RobotGroup-Multiplo Pacifist License|TOHL=TARP Open Hardware License|UNLIC=Unlicense|ADDNEW=Add New License}}&lt;/includeonly&gt;</text>
+      <sha1>c9upou8w1fkitw955rgu9488eqesc42</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:LabelMatPartType</title>
+    <ns>10</ns>
+    <id>58</id>
+    <revision>
+      <id>106</id>
+      <parentid>105</parentid>
+      <timestamp>2023-08-31T11:22:36Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>105</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="560" sha1="l73q5rg880a6im3c4s75buktyhf3fqr" xml:space="preserve">&lt;noinclude&gt;
+&lt;strong&gt;Zusammenfassung:&lt;/strong&gt; Anzeigewert (für die Art des Herstellungsmaterials) formatieren und ausgeben.
+
+== Technische Dokumentation ==
+
+Parameter:
+
+* &lt;code&gt;&lt;nowiki&gt;|1=&lt;/nowiki&gt;&lt;/code&gt; (mögliche Eingabewerte: production, standard, buy)
+
+{| class="wikitable"
+! Verwendung
+! Ausgabe
+|-
+|
+ &lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|production}}
+| {{ {{PAGENAME}}|production}}
+|}
+
+
+[[Category:Project management]]
+[[Category: Display templates]]
+&lt;/noinclude&gt;&lt;includeonly&gt;{{#switch:{{{1}}}|production=Production|standard=Standard|buy=Buy}}&lt;/includeonly&gt;</text>
+      <sha1>l73q5rg880a6im3c4s75buktyhf3fqr</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:LabelProjectMaturity</title>
+    <ns>10</ns>
+    <id>59</id>
+    <revision>
+      <id>108</id>
+      <parentid>107</parentid>
+      <timestamp>2023-08-31T11:22:36Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>107</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="548" sha1="fvw1qlpilyjxcwkebxkisyoslp5u7sd" xml:space="preserve">&lt;noinclude&gt;
+Convert code of project maturity into a label:
+ PFP  → production / full product
+ PDIY → production / DIY
+ PRD  → production / kit
+ PTT  → prototype
+ CON  → concept
+
+== Parameters ==
+
+ |1=maturity code
+
+== Usage ==
+
+ &lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}
+ |1=PDIY
+ }}
+
+… becomes
+
+{{ {{PAGENAME}}
+|1=PDIY
+}}
+
+[[Category: Project management]]
+[[Category: Display templates]]
+&lt;/noinclude&gt;&lt;includeonly&gt;{{#switch:{{{1}}}|PFP=production / full product|PDIY=production / DIY|PRD=production / kit|PTT=prototype|CON=concept}}&lt;/includeonly&gt;</text>
+      <sha1>fvw1qlpilyjxcwkebxkisyoslp5u7sd</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:LabelProjectStatus</title>
+    <ns>10</ns>
+    <id>60</id>
+    <revision>
+      <id>110</id>
+      <parentid>109</parentid>
+      <timestamp>2023-08-31T11:22:36Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>109</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="423" sha1="0s3lwh9dnzuufkufviofxjbvbs9i8uq" xml:space="preserve">&lt;noinclude&gt;
+'''Zusammenfassung:''' Stand eines Projektes beschriften (siehe im Wiki Code).
+
+== Vorlagenbeiwerte (Parameter) ==
+
+ |1=active
+oder
+ |1=inactive
+
+== Anwendung ==
+
+ &lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}
+ |1=active
+ }}
+
+… wird zu:
+
+{{ {{PAGENAME}}
+|1=active
+}}
+
+[[Category: Project management]]
+[[Category: Display templates]]
+&lt;/noinclude&gt;&lt;includeonly&gt;{{#switch:{{{1}}}|active=Active|inactive=Inactive}}&lt;/includeonly&gt;</text>
+      <sha1>0s3lwh9dnzuufkufviofxjbvbs9i8uq</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:LabelReviewStatus</title>
+    <ns>10</ns>
+    <id>61</id>
+    <revision>
+      <id>112</id>
+      <parentid>111</parentid>
+      <timestamp>2023-08-31T11:22:36Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>111</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="596" sha1="0xox6euuilf95yi95fmnr7jdv1q1tue" xml:space="preserve">&lt;noinclude&gt;
+&lt;strong&gt;Zusammenfassung:&lt;/strong&gt; Anzeigewert für Status der Begutachtung (review) ausgeben.
+
+== Technische Dokumentation ==
+
+{| class="wikitable"
+! Verwendung
+! Ausgabe
+|-
+|
+ &lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|under review}}
+| {{ {{PAGENAME}}|under review}}
+|}
+
+
+Parameter:
+
+* &lt;code&gt;&lt;nowiki&gt;|1=&lt;/nowiki&gt;&lt;/code&gt; (mögliche Werte: open, under review, approved, action required)
+
+[[Category:Project management]]
+[[Category: Display templates]]
+&lt;/noinclude&gt;&lt;includeonly&gt;{{#switch:{{{1}}}|open=Open|under review=Under review|approved=Approved|action required=Action required}}&lt;/includeonly&gt;</text>
+      <sha1>0xox6euuilf95yi95fmnr7jdv1q1tue</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:LabelSource</title>
+    <ns>10</ns>
+    <id>62</id>
+    <revision>
+      <id>114</id>
+      <parentid>113</parentid>
+      <timestamp>2023-08-31T11:22:36Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>113</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="454" sha1="mpozvgdcnk3zbso4amrm3jqkouygxkj" xml:space="preserve">&lt;noinclude&gt;
+'''Zusammenfassung:''' Beschrifte die Projekte-Quelle, woher es stammt (siehe im Wiki Code).
+
+== Vorlagenbeiwerte (Parameter) ==
+
+ |1=TUBerlin
+
+== Anwendung ==
+
+ &lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}
+ |1=TUBerlin
+ }}
+
+… wird zu:
+
+{{ {{PAGENAME}}
+|1=TUBerlin
+}}
+
+[[Category: Project management]]
+[[Category: Display templates]]
+&lt;/noinclude&gt;&lt;includeonly&gt;{{#switch:{{{1}}}|YouTube|Youtube=YouTube|TUBerlin|TU Berlin=TU Berlin|Web=Web}}&lt;/includeonly&gt;</text>
+      <sha1>mpozvgdcnk3zbso4amrm3jqkouygxkj</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:LabelTranslationStatus</title>
+    <ns>10</ns>
+    <id>63</id>
+    <revision>
+      <id>116</id>
+      <parentid>115</parentid>
+      <timestamp>2023-08-31T11:22:36Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>115</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="547" sha1="9syhsien59ctjf7s2ylhno7kbwrrs1h" xml:space="preserve">&lt;noinclude&gt;
+'''Zusammenfassung:''' Beschrifte aus der Eingabe eines Code-Kürzels den Stand der Übersetzung (Werte siehe im Wiki Code).
+
+== Vorlagenbeiwerte (Parameter) ==
+
+ |1=WT (verfügbare Werte: WT, AT, TP, MT)
+
+== Anwendung ==
+
+ &lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}
+ |1=WT
+ }}
+
+… wird zu:
+
+{{ {{PAGENAME}}
+|1=WT
+}}
+
+[[Category: Project management]]
+[[Category: Display templates]]
+&lt;/noinclude&gt;&lt;includeonly&gt;{{#switch:{{{1}}}|WT=1-Without Translation|AT=2-Automatic Translation|TP=3-Translation In Process|MT=4-Manual Translation}}&lt;/includeonly&gt;</text>
+      <sha1>9syhsien59ctjf7s2ylhno7kbwrrs1h</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:LabelYesNo</title>
+    <ns>10</ns>
+    <id>64</id>
+    <revision>
+      <id>118</id>
+      <parentid>117</parentid>
+      <timestamp>2023-08-31T11:22:36Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>117</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="440" sha1="jpqoyoz4tte7nn1kqthc0gro702m6j9" xml:space="preserve">&lt;noinclude&gt;
+&lt;strong&gt;Zusammenfassung:&lt;/strong&gt; Anzeigewert für ja/nein ausgeben.
+
+== Technische Dokumentation ==
+
+{| class="wikitable"
+! Verwendung
+! Ausgabe
+|-
+|
+ &lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}|no}}
+| {{ {{PAGENAME}}|no}}
+|}
+
+Parameter:
+
+* &lt;code&gt;&lt;nowiki&gt;|1=&lt;/nowiki&gt;&lt;/code&gt; (mögliche Werte: yes, no)
+
+[[Category:Project management]]
+[[Category: Display templates]]
+&lt;/noinclude&gt;&lt;includeonly&gt;{{#switch:{{{1}}}|yes=Yes|no=No}}&lt;/includeonly&gt;</text>
+      <sha1>jpqoyoz4tte7nn1kqthc0gro702m6j9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Projekt</title>
+    <ns>10</ns>
+    <id>65</id>
+    <revision>
+      <id>213</id>
+      <parentid>211</parentid>
+      <timestamp>2023-09-05T12:49:53Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <comment>+Vorlagen für’s Erstellen im Zusammenhang mit Extension:InputBox</comment>
+      <origin>213</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="26085" sha1="44u1hxlgms3yjuo1mg6aj1crgt8dxi4" xml:space="preserve">&lt;noinclude&gt;
+'''Zusammenfassung:''' Verwaltung von Projekt-Seiten mit Begutachtung (Review). Sie benutzt das gleichnamige [[Form: Project]].
+
+Hauptkategorie hinzufügen:
+
+&lt;inputbox&gt;
+type=create
+preload=Template:Projekt/preload poject category level 1
+break=no
+summary=Create main project category
+prefix=Category:
+editintro=Template:Projekt/preload poject category level 1 - intro
+buttonlabel=Create main project category
+&lt;/inputbox&gt;
+
+== Vorlagen-Beiwerte (Parameter) ==
+
+ZUTUN Dokumentieren der Einzelheiten
+
+{| class="booktable"
+|-
+! Vorlagenbeiwert !! Beschreibung
+|-
+| Desc || … Komponenten
+|-
+| Images || …
+|-
+| LabelCadFormat || …
+|-
+| Materials || …
+|-
+| TechDoc || …
+|-
+| assembly_instructions_editable || …
+|-
+| assembly_inst_pub || …
+|-
+| bill_materials_editable || …
+|-
+| bill_materials_pub || …
+|-
+| cad_files_editable || …
+|-
+| cad_format || …
+|-
+| cad_format_name || …
+|-
+| cad_link || …
+|-
+| certificate_requested || …
+|-
+| certificate_status || …
+|-
+| contains_pdf_drawings || …
+|-
+| contributing_guide_pub || …
+|-
+| desc || …
+|-
+| design_files_pub || …
+|-
+| electronic_files_editable || …
+|-
+| electronic_files_pub || …
+|-
+| electronic_license || …
+|-
+| electronic_license_name || …
+|-
+| electronic_license_url || …
+|-
+| electronic_link || …
+|-
+| firstin || …
+|-
+| &lt;s&gt;intro&lt;/s&gt; || … → desc
+|-
+| issue_management_system || …
+|-
+| issue_management_system_link || …
+|-
+| kewords || …
+|-
+| licence || …
+|-
+| maturity || …
+|-
+| mechanical_licence || …
+|-
+| mechanical_licence_name || …
+|-
+| mechanical_licence_url || …
+|-
+| new_licence_redistr || …
+|-
+| organization || …
+|-
+| original_elect_h || …
+|-
+| original_non_elect_h || …
+|-
+| original_soft || …
+|-
+| product_category || …
+|-
+| projectname || …
+|-
+| projectnameDE || …
+|-
+| projectnameEN || …
+|-
+| projectnameES || …
+|-
+| project_status || …
+|-
+| reviewer1 || …
+|-
+| reviewer2 || …
+|-
+| reviewer3 || …
+|-
+| software_files_pub || …
+|-
+| software_license || …
+|-
+| software_license_name || …
+|-
+| software_license_url || …
+|-
+| softwarfe_link || …
+|-
+| subcat || …
+|-
+| techdata || …
+|-
+| technology_readyness_level || …
+|-
+| trans_status || …
+|-
+| typeproject || …
+|-
+| versioning_system || …
+|-
+| versioning_system_link || …
+|}
+
+== Technische Abhängigkeiten ==
+=== Verschachtelte Vorlagen ===
+
+* [[template: LabelCadFormat]]
+* [[template: LabelCertStatus]]
+* [[template: LabelGralLicense]]
+* [[template: LabelProjectMaturity]]
+* [[template: LabelProjectStatus]]
+* [[template: LabelTranslationStatus]]
+* [[template: LabelYesNo]]
+* Desc: [[Template:ProjektComponent2]]
+* Images: [[Template:ProjektImages]]
+* Materials: [[Template:ProjektMaterials]]
+
+Vorlagen für’s Erstellen im Zusammenhang mit Extension:InputBox
+* [[Template:Projekt/preload poject category level 1]]
+* [[Template:Projekt/preload poject category level 1 - intro]]
+
+Ergebnisse:
+* [[Template: ProjektResults]]
+
+=== Formulare ===
+
+* [[Form: Project]]
+
+=== Code-Änderungen ===
+
+ |Images=
+ &amp;lt;div class="project_gallery_scroll_box waitbox"&amp;gt;
+* Bilder: &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; entfernt (stattdessen &lt;code&gt;&amp;lt;gallery mode="packed"&amp;gt;&lt;/code&gt;)
+
+* Template:Projekt3 überführt in → Template:Projekt
+
+=== Semantische Eigenschaften ===
+
+{| class="booktable vertical-align-top"
+|-
+! Eigenschaft !! Vorlagenparameter/Beschreibung
+|-
+| [[property: Projectname]] || …
+|-
+| [[property: ProjectSearchResultPreviewBox1]] || Vorschaukasten für Ergebnissuche schon fertig formatiert (Test für geschwindere Ergebnisse, da nicht zur Laufzeit gerendert werden muß)
+|-
+| [[property: Keywords]] || …
+|-
+| [[property: Projectimage]] || …
+|-
+| [[property: Firstin]] || …
+|-
+| [[property: Typeproject]] || …
+|-
+| [[property: Licence]] || …
+|-
+| [[property: TranslateStatus]] || …
+|-
+| [[property: Desc]] || …
+|-
+| [[property: Organization]] || …
+|-
+| [[property: ProjectStatus]] || …
+|-
+| [[property: MaturityOfTheProject]] || …
+|-
+| [[property: DesignFilesArePublished]] || …
+|-
+| [[property: AssemblyInstructionsArePublished]] || …
+|-
+| [[property: BillOfMaterialsIsPublished]] || …
+|-
+| [[property: ContributingGuideIsPublished]] || …
+|-
+| [[property: CadFilesAreInEditableFormat]] || …
+|-
+| [[property: FilesAreInEditableFormat]] || …
+|-
+| [[property: CadLink]] || …
+|-
+| [[property: MechanicalLicence]] || …
+|-
+| [[property: AssemblyInstructionsAreEditable]] || …
+|-
+| [[property: BillOfMaterialsIsEditable]] || …
+|-
+| [[property: FreeRedistributionIsAllowedLicence]] || …
+|-
+| [[property: OpenOMeter]] || …
+|-
+| [[property: IssueManagementSystem]] || …
+|-
+| [[property: VersioningSystem]] || …
+|-
+| [[property: ProductCategory]] || …
+|-
+| [[property: ContainsOriginalNonElectronicHardware]] || …
+|-
+| [[property: ContainsOriginalElectronicHardware]] || …
+|-
+| [[property: ContainsOriginalSoftware]] || …
+|-
+| [[property: ContainsPdfDrawings]] || …
+|-
+| [[property: TechnologyReadynessLevel]] || …
+|-
+| [[property: ElectronicFilesPub]] || …
+|-
+| [[property: ElectronicFilesEditable]] || …
+|-
+| [[property: CertificateRequested]] || …
+|-
+| [[property: CertificateStatus]] || …
+|-
+| [[property: CertificateReviewer1]] || …
+|-
+| [[property: CertificateReviewer2]] || …
+|-
+| [[property: CertificateReviewer3]] || …
+|}
+
+=== Erweiterungen ===
+
+* Erweiterung:HtmlSpecialFunctions
+** &lt;code&gt;#addInput&lt;/code&gt;
+** &lt;code&gt;#loadMaterialsComments&lt;/code&gt;
+** &lt;code&gt;#mwCleanHTML&lt;/code&gt;
+** &lt;code&gt;#mwGetBestWordsList&lt;/code&gt;
+** &lt;code&gt;#mwIncludeHTML&lt;/code&gt;
+
+* Erweiterung:EmbedVideo &lt;code&gt;#evt&lt;/code&gt;
+* Erweiterung:Variables
+* Erweiterung:SemanticMediaWiki
+* Erweiterung:Arrays
+* Erweiterung:ParserFunctions
+* Erweiterung:WikiSEO
+
+* Extension:InputBox (wahlweise für Erstellungsformular)
+
+=== CSS ===
+
+&lt;syntaxhighlight lang="css"&gt;
+/* viele CSS Klassen siehe Wiki Code */
+&lt;/syntaxhighlight&gt;
+
+=== JavaScript ===
+
+&lt;syntaxhighlight lang="css"&gt;
+/* … ? Aufklappkästen in Stückeliste Begutachtung / Anmerkungen sog. „Kommentare“?  */
+&lt;/syntaxhighlight&gt;
+
+[[Category:Project management]]
+[[Category:Dokumentieren (ZUTUN)]]
+&lt;/noinclude&gt;&lt;includeonly&gt;&lt;!-- 
+TODO: improve meaning: (AP 2023-06-22 00:37:45) 
+- Why a &lt;div&gt; here wrapping all of it? 
+- You could always define globally div#bodyContent
+--&gt;&lt;span style="display:none"&gt;{{#default_form: Project}}&lt;/span&gt;
+&lt;div style="width: 100%; overflow-x:auto;"&gt;
+{{#seo:
+|keywords={{#mwGetBestWordsList:{{{projectname|}}} {{{kewords|}}}|5|&lt;nowiki&gt;, &lt;/nowiki&gt;|20|Homemade, DIY, Do it yourself, Plans}}
+|description={{#mwCleanHTML:{{{desc|}}}|200}}
+}}__NOTOC__
+{{#loadMaterialsComments:}}
+{{#mwIncludeHTML:framepopups.html}}
+
+__TOC__
+
+&lt;h2 &gt;Project Description&lt;/h2&gt;&lt;!-- id="mw-toc-heading" --&gt;
+{{#if: {{{desc|}}}|
+&lt;p&gt;
+ {{{desc|}}}
+&lt;/p&gt;
+}}
+
+&lt;h2&gt;Project data&lt;/h2&gt; &lt;!-- id="mw-toc-heading" --&gt;
+&lt;div class="projekt_box"&gt;
+&lt;table class="wikitable vertical-align-top" &gt;
+&lt;tr&gt;&lt;td&gt;
+&lt;div class="info_box"&gt;&lt;!-- TODO: improve meaning: Why a &lt;div&gt; here? Is the &lt;td&gt; not enough? (AP 2023-06-22 00:37:45) --&gt;
+&lt;!-- &lt;p class="info_row"&gt;'''{{{projectname|}}}'''&lt;/p&gt; --&gt;
+&lt;!-- &lt;p class="info_section_title"&gt;1. Project data&lt;/p&gt; --&gt;
+&lt;p class="info_row"&gt;'''Category:''' {{#arraymap:{{{subcat|}}}|## |§|[[:Category:§{{!}}§]]|, }}&lt;/p&gt;
+{{#if: {{{firstin|}}}
+| &lt;p class="info_row"&gt;'''URL (first publication):''' {{{firstin|}}}&lt;/p&gt; 
+}}{{#if: {{{kewords|}}}
+| &lt;p class="info_row"&gt;'''Keywords:''' {{{kewords|}}}&lt;/p&gt; 
+}}{{#if: {{{licence|}}}
+| &lt;p class="info_row"&gt;'''License:''' {{LabelGralLicense|{{{licence|}}}}}&lt;/p&gt; 
+}}{{#if: {{{organization|}}}
+| &lt;p class="info_row"&gt;'''Organization:''' {{{organization|}}}&lt;/p&gt; 
+}}{{#if: {{{project_status|}}}
+| &lt;p class="info_row"&gt;'''Project status:''' {{LabelProjectStatus|{{{project_status|}}}}}&lt;/p&gt; 
+}}{{#if: {{{certificate_status|}}}
+| &lt;p class="info_row"&gt;'''Certification status:''' {{LabelCertStatus|{{{certificate_status|}}}}}&lt;/p&gt; 
+}}&lt;!--
+{{#if: {{{trans_status|}}}
+| &lt;p class="info_row"&gt;'''Translation status:''' {{LabelTranslationStatus|{{{trans_status|}}}}}&lt;/p&gt;
+}}
+--&gt;{{#if: {{{maturity|}}}&lt;!--
+  --&gt;{{#switch:{{{certificate_requested|}}}|Ja|Yes|Si=1|}}&lt;!--
+  --&gt;{{{assembly_inst_pub|}}}&lt;!--
+  --&gt;{{{bill_materials_pub|}}}&lt;!--
+  --&gt;{{{contributing_guide_pub|}}}&lt;!--
+THEN
+--&gt;|
+ &lt;!-- &lt;p class="info_section_title"&gt;Technical documentation&lt;/p&gt; --&gt;
+}}{{#if: {{{maturity|}}}
+| &lt;p class="info_row"&gt;'''Maturity of the project:''' {{LabelProjectMaturity|{{{maturity|}}}}}&lt;/p&gt; 
+}}{{#ifeq: {{#switch:{{{certificate_requested}}}|Ja|Yes|Si=1|0}} | 1&lt;!--
+then 
+--&gt;|&lt;p class="info_row"&gt;'''Certification Status:''' {{LabelCertStatus|{{{certificate_status|}}}}}&lt;/p&gt;
+}}{{#if: {{{contains_pdf_drawings|}}}
+| &lt;p class="info_row"&gt;'''Contains PDF-drawings:''' {{LabelYesNo|{{{contains_pdf_drawings|}}}}}&lt;/p&gt; 
+}}{{#if: {{{cad_files_editable|}}}
+| &lt;p class="info_row"&gt;'''CAD files are editable:''' {{LabelYesNo|{{{cad_files_editable|}}}}}&lt;/p&gt; 
+}}{{#if: {{{assembly_inst_pub|}}}
+| &lt;p class="info_row"&gt;'''Assembly instructions are published:''' {{LabelYesNo|{{{assembly_inst_pub|}}}}}&lt;/p&gt; 
+}}{{#if: {{{bill_materials_pub|}}}
+| &lt;p class="info_row"&gt;'''Bill of materials is published:''' {{LabelYesNo|{{{bill_materials_pub|}}}}}&lt;/p&gt; 
+}}&lt;!--
+{{#if: {{{contributing_guide_pub|}}}
+| &lt;p class="info_row"&gt;'''Contributing guide is published:''' {{LabelYesNo|{{{contributing_guide_pub|}}}}}&lt;/p&gt;
+}}
+{{#if: {{{design_files_pub|}}}{{#switch:{{{design_files_pub}}}|Ja|Yes|Si=1|}}{{{mechanical_licence|}}}
+| &lt;p class="info_section_title&gt;Mechanical hardware&lt;/p&gt;
+}}
+{{#if: {{{design_files_pub|}}}
+| &lt;p class="info_row"&gt;'''Contains original mechanical hardware:''' {{LabelYesNo|{{{design_files_pub|}}}}}&lt;/p&gt;
+}}
+{{#ifeq: {{{design_files_pub|}}}|yes
+| {{#if: {{{cad_link|}}}
+  |&lt;p class="info_row"&gt;'''Public CAD repository for mechanical hardware:''' {{{cad_link|}}}&lt;/p&gt;
+  }}
+  {{#ifeq: {{{cad_format|}}}|ADDNEW
+    |&lt;p class="info_row"&gt;'''CAD Format:''' {{{cad_format_name|}}}&lt;/p&gt;
+    |&lt;p class="info_row"&gt;'''CAD Format:''' {{{LabelCadFormat|{{{cad_format|}}}}}&lt;/p&gt;
+  }}
+}}
+{{#if: {{{mechanical_licence|}}}
+  | {{#ifeq: {{{mechanical_licence|}}}|ADDNEW
+    | {{#if: {{{mechanical_licence_url|}}}
+      | &lt;p class="info_row"&gt;'''License for mechanical hardware:''' [{{{mechanical_licence_url|}}} {{{mechanical_licence_name|}}}]&lt;/p&gt;
+      | &lt;p class="info_row"&gt;'''License for mechanical hardware:''' {{{mechanical_licence_name|}}}&lt;/p&gt;
+  }}|
+  &lt;p class="info_row"&gt;'''License for mechanical hardware:''' {{LabelGralLicense|{{{mechanical_licence|}}}}}&lt;/p&gt;
+ }}
+}}
+
+{{#if: {{{electronic_files_pub|}}}{{{electronic_link|}}}{{{electronic_license|}}}
+|&lt;p class="info_section_title&gt;Electronic hardware&lt;/p&gt;
+}}
+{{#if: {{{electronic_files_pub|}}}
+|&lt;p class="info_row"&gt;'''Contains original electronic hardware:''' {{LabelYesNo|{{{electronic_files_pub|}}}}}&lt;/p&gt;
+}}
+{{#ifeq: {{{electronic_files_pub|}}}|yes
+  |{{#if: {{{electronic_link|}}}
+    | &lt;p class="info_row"&gt;'''Public CAD repository for electronic hardware:''' {{{electronic_link|}}}&lt;/p&gt;
+  }}
+}}
+{{#if: {{{electronic_license|}}}|
+  {{#ifeq: {{{electronic_license|}}}|ADDNEW
+  |{{#if: {{{electronic_license_url|}}}
+    |&lt;p class="info_row"&gt;'''Electronic License:''' [{{{electronic_license_url|}}} {{{electronic_license_name|}}}]&lt;/p&gt;
+    |&lt;p class="info_row"&gt;'''Electronic License:''' {{{electronic_license_name|}}}&lt;/p&gt;
+  }}
+  | &lt;p class="info_row"&gt;'''Electronic License:''' {{LabelGralLicense|{{{electronic_license|}}}}}&lt;/p&gt;
+}}
+}}
+--&gt;&lt;!--
+
+--&gt;{{#vardefine: n|0}}&lt;!--
+--&gt;{{#vardefine: licens_control|1}}&lt;!--
+--&gt;{{#vardefine: editable_control|1}}&lt;!--
+--&gt;{{#ifeq:  {{{design_files_pub|}}}|yes
+  |{{#vardefine: n |{{#expr: {{#var: n}}+1}} }} 
+}}{{#ifeq: {{{cad_files_editable|}}}|yes
+  |
+  |{{#vardefine: editable_control|{{#expr: {{#var: editable_control}}*0}} }}
+}}{{#ifeq: {{{assembly_inst_pub|}}}|yes
+  |{{#vardefine: n |{{#expr: {{#var: n}}+1}} }}
+}}{{#ifeq: {{{assembly_instructions_editable|}}}|yes
+  |
+  |{{#vardefine: editable_control|{{#expr: {{#var: editable_control}}*0}} }}
+}}{{#ifeq: {{{bill_materials_pub|}}}|yes
+  | {{#vardefine: n |{{#expr: {{#var: n}}+1}} }}
+}}{{#ifeq: {{{bill_materials_editable|}}}|yes
+  |
+  | {{#vardefine: editable_control|{{#expr: {{#var: editable_control}}*0}} }}
+}}{{#ifeq: {{{contributing_guide_pub|}}}|yes
+  |{{#vardefine: n |{{#expr: {{#var: n}}+1}} }}
+}}{{#ifeq: {{#var: editable_control}}|1
+  | {{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: editable_control_string|yes}}
+  | {{#vardefine: editable_control_string|no}}
+}}&lt;!--
+
+--&gt;{{#ifeq: {{{issue_management_system|}}}|yes
+  | {{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: issue_control|yes}}
+  | {{#vardefine: issue_control|no}}
+}}{{#ifeq: {{{versioning_system|}}}|yes
+  | {{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: version_control|yes}}
+  | {{#vardefine: version_control|no}}
+}}&lt;!--
+
+--&gt;{{#switch: {{LabelGralLicense|{{{licence|}}}}}
+ | Apache License = {{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | BSD License ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | CC (unspecified) ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | CC BY 2.0 ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | CC BY 3.0 ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | CC BY 4.0 ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | CC BY-SA ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | CC BY-SA 2.0 ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | CC BY-SA 2.5 ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | CC BY-SA 3.0 ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | CC BY-SA 4.0 ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | CERN OHL v1.2 ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | CERN Open Hardware Licence 1.1  ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | CERN Open Hardware License ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | e-puck Robot Open Source Hardware License ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | Echopen General Public License ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | GNU Affero GPL ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | GNU Free Documentation License ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | GNU GPL={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | GNU GPL 2.0 ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | GNU GPL 3.0 ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | GNU Lesser General Public License v.3 ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | GNU LGPL ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | LGPL v2.0 ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | Licence art libre ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | Mach 30 Open Design Pledge ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | MIT License ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | open license (not specified) ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | Panaka Open Hardware License ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | Panaka Open Hardware License ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | Public Domain={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | RobotGroup-Multiplo Pacifist License ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | TARP Open Hardware License ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+ | Unlicense ={{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+}}&lt;!--
+
+TODO revise code ifeq here perhaps: new_licence_redistr is meant vor what? Variable?
+--&gt;{{#ifeq: {{{new_licence_redistr|}}}|yes|
+ {{#vardefine: n |{{#expr: {{#var: n}}+1}} }} {{#vardefine: licens_control |{{#expr: {{#var: licens_control}}*0}} }}
+}}&lt;!--
+
+{{#if: {{{software_files_pub|}}}{{{softwarfe_link|}}}{{{software_license|}}}{{{technology_readyness_level|}}}{{{assembly_instructions_editable|}}}{{{bill_materials_editable|}}}
+|&lt;p class="info_section_title&gt;Other&lt;/p&gt;
+}}
+{{#if: {{{software_files_pub|}}}
+| &lt;p class="info_row"&gt;'''Contains original software:''' {{LabelYesNo|{{{software_files_pub|}}}}}&lt;/p&gt;
+}}
+{{#ifeq: {{{software_files_pub|}}}|yes
+| {{#if: {{{softwarfe_link|}}}
+  |&lt;p class="info_row"&gt;'''Public Software repository for Software:''' {{{softwarfe_link|}}}&lt;/p&gt;
+  }}
+}}
+{{#if: {{{software_license|}}}
+|{{#ifeq: {{{software_license|}}}|ADDNEW
+  |{{#if: {{{software_license_url|}}}
+    |&lt;p class="info_row"&gt;'''Software License:''' [{{{software_license_url|}}} {{{software_license_name|}}}]&lt;/p&gt;
+    |&lt;p class="info_row"&gt;'''Software License:''' {{{software_license_name|}}}&lt;/p&gt;
+   }}
+  |&lt;p class="info_row"&gt;'''Software License:''' {{LabelGralLicense|{{{software_license|}}}}}&lt;/p&gt;
+  }}
+}}
+{{#if: {{{assembly_instructions_editable|}}}
+| &lt;p class="info_row"&gt;'''Assembly instructions are editable:''' {{LabelYesNo|{{{assembly_instructions_editable|}}} }}&lt;/p&gt;
+}}
+{{#if: {{{bill_materials_editable|}}}
+| &lt;p class="info_row"&gt;'''Bill of materials is editable:''' {{LabelYesNo|{{{bill_materials_editable|}}}}}&lt;/p&gt;
+}}
+{{#ifeq: 1|2
+| {{#if: {{#var: editable_control_string}}
+  |&lt;p class="info_row"&gt;'''Design files are in original format:''' {{LabelYesNo|{{#var: editable_control_string}} }}&lt;/p&gt;
+  }}
+  {{#ifeq: {{#var: licens_control}}|0
+    | &lt;p class="info_row"&gt;'''Free redistribution is allowed licence:''' {{LabelYesNo|{{#vardefineecho: licens_control_string|yes}} }}&lt;/p&gt;
+    | &lt;p class="info_row"&gt;'''Free redistribution is allowed licence:''' {{LabelYesNo|{{#vardefineecho: licens_control_string|no}} 4444}}&lt;/p&gt;
+  }}
+}}
+{{#if: {{{technology_readyness_level|}}}
+| &lt;p class="info_row"&gt;'''Technology Readyness Level TRL:''' {{{technology_readyness_level|}}}&lt;/p&gt;
+}}
+
+--&gt;{{#if: {{{issue_management_system_link|}}}&lt;!-- 
+  --&gt;{{{versioning_system_link|}}}&lt;!-- 
+  --&gt;{{#switch: {{LC:{{{typeproject|}}}}}| tuberlin | tu berlin | tu-berlin=1}}&lt;!-- 
+  --&gt;{{{product_category|}}}&lt;!-- 
+  --&gt;{{{original_non_elect_h|}}}&lt;!-- 
+  --&gt;{{{original_elect_h|}}}&lt;!-- 
+  --&gt;{{{original_soft|}}}&lt;!-- 
+then 
+--&gt;| &lt;p class="info_section_title"&gt;Project management&lt;/p&gt;
+}}{{#if: {{{issue_management_system_link|}}}| &lt;p class="info_row"&gt;'''Issue Management System:''' {{{issue_management_system_link|}}}&lt;/p&gt; 
+}}{{#if: {{{versioning_system_link|}}}| &lt;p class="info_row"&gt;'''Versioning System:'''{{{versioning_system_link|}}}&lt;/p&gt; 
+}}{{#switch: {{LC:{{{typeproject|}}}}}| tuberlin | tu berlin | tu-berlin=&lt;p class="info_row"&gt;'''Open-o-meter:''' {{#var: n}}&lt;/p&gt; 
+}}{{#if: {{{product_category|}}}| &lt;p class="info_row"&gt;'''Product category:''' {{{product_category|}}}&lt;/p&gt; 
+}}{{#if: {{{original_non_elect_h|}}}| &lt;p class="info_row"&gt;'''Contains original non-electronic hardware:''' {{LabelYesNo|{{{original_non_elect_h|}}}}}&lt;/p&gt; 
+}}{{#if: {{{original_elect_h|}}}| &lt;p class="info_row"&gt;'''Contains original electronic hardware:''' {{LabelYesNo|{{{original_elect_h|}}}}}&lt;/p&gt; 
+}}{{#if: {{{original_soft|}}}| &lt;p class="info_row"&gt;'''Contains original software:''' {{LabelYesNo|{{{original_soft|}}}}}&lt;/p&gt; }}
+&lt;/div&gt;&lt;!-- class="info_box" --&gt;
+&lt;/td&gt;
+&lt;td class="project_imagecell" &gt;
+{{#arraydefine: imglist|{{{Images|}}}| /\n\n/}}
+{{#if: {{#pos:{{{firstin|}}}|.youtube.}}&lt;!--
+ then --&gt;|{{#evt: service=youtube|id={{{firstin|}}}|dimensions=480x360|description=|container=frame}}{{#vardefine: gallmin|0}}&lt;!--
+ else --&gt;|&lt;!--
+--&gt;{{#if: {{#arrayindex: imglist|0}}&lt;!--
+    then
+  --&gt;|[[File:{{#arrayindex: imglist|0}}|frameless|link=|480x360px|class=imgproject_gallery]]{{#vardefine: gallmin|1}}&lt;!--
+    else
+  --&gt;|&lt;small&gt;(please add at least one representative project picture)&lt;/small&gt;{{#vardefine: gallmin|0}}&lt;!--
+--&gt;}}&lt;!-- if end
+--&gt;}}
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;!-- AP comment: here should be perhaps a redesign to use robust standard Wiki gallery, that works always --&gt;
+{{#ifexpr: {{#arraysize:imglist}} &gt; {{#var: gallmin}} |
+{{#tag: gallery|
+{{#arraymap: {{{Images|}}}|\n\n|§|File:§|\n}}&lt;!-- get the first Image only of nested template calls (?is there a better redsign of using nested temlates? or would a file list field do the same) --&gt;
+|mode=packed
+|heights=100px
+}}
+&lt;!-- __TOC__ --&gt;
+}}
+{{#if: {{{Desc|}}}|&lt;!-- no &lt;p&gt; should wrap &lt;h2&gt; (&lt;p&gt; is defined for paragraphs only, one could use &lt;div&gt; instead) --&gt;
+&lt;h2&gt;Project details&lt;/h2&gt;
+{{{Desc|}}} &lt;!-- ProjektComponent(2) --&gt;
+}}
+{{#if: {{{techdata|}}}|
+&lt;h2&gt;Technical data&lt;/h2&gt;
+{{{techdata|}}}
+}}
+{{#if: {{{TechDoc|}}}|
+&lt;h2&gt;Technical documentation&lt;/h2&gt;
+{{{TechDoc|}}}
+}}
+&lt;h2 class="showGralCommentButton"&gt;&lt;span class="showGralComment"&gt;+ General Reviews [[Image:Review.png|32px|link=|General Reviews]]&lt;span class="commentsCountBox"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class="generalCommentsBox loadingComments projekt_component_box"&gt;
+  &lt;div class="generalCommentsArea projectReviewsArea"&gt;&lt;/div&gt;
+  &lt;!-- review disabled for now (AP 2023-06-22 00:29:21)
+  &lt;div class="popupLinks"&gt; [{{fullurl: Special:Newsection/{{TALKPAGENAME}}|class=linksPopups}} Add Review] &lt;/div&gt; 
+  --&gt;
+&lt;/div&gt;
+{{#if: {{{Materials|}}}|
+== Reviews ==
+&lt;table class="project_material_table table /* bootstrap: .table */"&gt;
+&lt;tr&gt;
+&lt;th&gt;Pos.&lt;/th&gt;
+&lt;th&gt;Qty.&lt;/th&gt;
+&lt;th&gt;Part Name&lt;/th&gt;
+&lt;th&gt;Part code&lt;/th&gt;
+&lt;th&gt;Part Type&lt;/th&gt;
+&lt;th&gt;Specifications&lt;/th&gt;
+&lt;th&gt;Review Status&lt;/th&gt;
+&lt;th colspan="2"&gt;&lt;span class="showAllComments"&gt;Show All Comments&lt;/span&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;{{#addInput:searchMatCol searchLeft||searchByCol1}}&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;{{#addInput:searchMatCol||searchByCol5}}&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;{{#addInput:searchMatCol||searchByCol7}}&lt;/th&gt;
+&lt;th colspan="2"&gt;&lt;/th&gt;
+&lt;/tr&gt;
+{{#arraymap:{{{Materials|}}}|\n\n|x|x| }}
+&lt;/table&gt;
+}}
+
+[mailto:info@oho.wiki Report this page]
+&lt;/div&gt;&lt;!-- class="projekt_box" --&gt;
+
+{{#if: {{{projectnameDE|}}}|[[de:{{{projectnameDE|}}}]]}}
+{{#if: {{{projectnameEN|}}}|[[en:{{{projectnameEN|}}}]]}}
+{{#if: {{{projectnameES|}}}|[[es:{{{projectnameES|}}}]]}}
+{{#arraymap: {{{subcat|}}}|## |x|[[Category:x]]| }}
+{{#set:
+ Projectname={{{projectname|}}}
+ |Keywords={{{kewords|}}}|+sep=,
+ |Projectimage=File:{{#explode:{{#arraymap:{{{Images|}}}|\n\n|x|x|&amp;#13;}}|&amp;#13;|0}}&lt;!-- TODO improve: get very first of image only (if line break was present) --&gt;
+ |Firstin={{{firstin|}}}
+ |Typeproject={{{typeproject|}}}
+ |Licence={{{licence|}}}
+ |TranslateStatus={{{trans_status|}}}
+ |Desc={{{desc|}}}
+ |Organization={{{organization|}}}
+ |ProjectStatus={{{project_status|}}}
+ |MaturityOfTheProject={{{maturity|}}}
+ |DesignFilesArePublished={{{design_files_pub|}}}
+ |AssemblyInstructionsArePublished={{{assembly_inst_pub|}}}
+ |BillOfMaterialsIsPublished={{{bill_materials_pub|}}}
+ |ContributingGuideIsPublished={{{contributing_guide_pub|}}}
+ |CadFilesAreInEditableFormat={{{cad_files_editable|}}}
+ |FilesAreInEditableFormat={{#var: editable_control_string}}
+ |CadLink={{{cad_link|}}}
+ |MechanicalLicence={{{mechanical_licence|}}}
+ |AssemblyInstructionsAreEditable={{{assembly_instructions_editable|}}}
+ |BillOfMaterialsIsEditable={{{bill_materials_editable|}}}
+ |FreeRedistributionIsAllowedLicence={{#var: licens_control_string}}
+ |OpenOMeter={{#var: n}}
+ |IssueManagementSystem={{#var: issue_control}}
+ |VersioningSystem={{#var: version_control}}
+ |ProductCategory={{{product_category|}}}
+ |ContainsOriginalNonElectronicHardware={{{original_non_elect_h|}}}
+ |ContainsOriginalElectronicHardware={{{original_elect_h|}}}
+ |ContainsOriginalSoftware={{{software_files_pub|}}}
+ |ContainsPdfDrawings={{{contains_pdf_drawings|}}}
+ |TechnologyReadynessLevel={{{technology_readyness_level|}}}
+ |ElectronicFilesPub={{{electronic_files_pub|}}}
+ |ElectronicFilesEditable={{{electronic_files_editable|}}}
+ |CertificateRequested={{{certificate_requested|}}}
+ |CertificateStatus={{{certificate_status|}}}
+ |CertificateReviewer1={{{reviewer1|}}}
+ |CertificateReviewer2={{{reviewer2|}}}
+ |CertificateReviewer3={{{reviewer3|}}}
+}}{{#set: ProjectSearchResultPreviewBox1={{ProjektResults
+|1={{FULLPAGENAME}}
+|2={{{desc|}}}
+|3=File:{{#explode:{{#arraymap:{{{Images|}}}|\n\n|x|x|&amp;#13;}}|&amp;#13;|0}}&lt;!-- TODO improve: get very first of image only (if line break was present) --&gt;
+|4={{{licence|}}}
+|5={{{contains_pdf_drawings|}}}
+|6=
+|7={{{cad_files_editable|}}}
+}}
+}}&lt;!--
+--&gt;&lt;/div&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>44u1hxlgms3yjuo1mg6aj1crgt8dxi4</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Projekt/preload poject category level 1</title>
+    <ns>10</ns>
+    <id>105</id>
+    <revision>
+      <id>209</id>
+      <parentid>207</parentid>
+      <timestamp>2023-09-05T11:33:25Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <origin>209</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="389" sha1="jqjvqcmqa8qrwisv473ihkljayhbay6" xml:space="preserve">{&lt;includeonly&gt;&lt;/includeonly&gt;{#seo:
+|keywords=&lt;&lt;includeonly&gt;&lt;/includeonly&gt;!-- remove this comment: Please add keywords here as comma separated list: word1, word2, word3 --&gt;
+|description=&lt;&lt;includeonly&gt;&lt;/includeonly&gt;!-- remove this comment: Please add a descritpton here --&gt;
+}}
+{&lt;includeonly&gt;&lt;/includeonly&gt;{#default_form:Project}}
+[[Cate&lt;noinclude&gt;&lt;nowiki&gt;&lt;/nowiki&gt;&lt;/noinclude&gt;gory:Projects]]</text>
+      <sha1>jqjvqcmqa8qrwisv473ihkljayhbay6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Projekt/preload poject category level 1 - intro</title>
+    <ns>10</ns>
+    <id>106</id>
+    <revision>
+      <id>212</id>
+      <parentid>210</parentid>
+      <timestamp>2023-09-05T12:44:30Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <origin>212</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="279" sha1="aa5uoa4anccd5tp6kfhe1c5n5oc9vea" xml:space="preserve">'''Help for creating a main category:''' In the editing window you can insert the description and keywords. For a main category it is important that it has “[[:Category:Projects]]” as its parent category. After saving, go to [[Special:FormEdit/Project|Create Project]] again.</text>
+      <sha1>aa5uoa4anccd5tp6kfhe1c5n5oc9vea</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:ProjektComponent</title>
+    <ns>10</ns>
+    <id>66</id>
+    <revision>
+      <id>122</id>
+      <parentid>121</parentid>
+      <timestamp>2023-08-31T11:22:39Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>121</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1447" sha1="e72ok68s5rnvktwwg652wnl9uar5hl4" xml:space="preserve">&lt;noinclude&gt;Verwalten von Projektbestandteilen (Komponenten).
+
+== Vorlagenparameter ==
+
+* cmptitle
+* cmpimage, ?cmpimg? (ZUTUN: Funktionalität überprüfen)
+* cmpfile1, cmpfile2, cmpfile3, cmpfile4, cmpfile5
+
+== Technische Abhängigkeiten ==
+
+=== Vorlagen ===
+
+* [[Template:Projekt]]
+
+=== CSS ===
+
+&lt;pre&gt;
+div.projekt_component_box {}
+table.wikitable {}
+td.pcmp_title {}
+td.pcmp_desc {}
+td.pcmp_img {}
+td.pcmp_files {}
+td.pcmp_files.newtablinks {}
+&lt;/pre&gt;
+
+[[Category: Project management]]
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div class="projekt_component_box"&gt;
+&lt;table class="wikitable"&gt;&lt;!--
+--&gt;&lt;tr&gt;&lt;td colspan="2" class="pcmp_title" &gt;&lt;h3&gt;{{{cmptitle|}}}&lt;/h3&gt;&lt;/td&gt;&lt;!--
+--&gt;&lt;/tr&gt;&lt;!--
+--&gt;&lt;tr&gt;&lt;!--
+  --&gt;{{#if: {{{cmpimage|}}} | &lt;td class="pcmp_img" &gt;[[File:{{{cmpimage|}}}]]&lt;/td&gt; }}&lt;!--
+  --&gt;&lt;td class="pcmp_desc" &gt; {{{cmpimg|}}} &lt;/td&gt;&lt;!--
+--&gt;&lt;/tr&gt;&lt;!--
+--&gt;{{#if: {{{cmpfile1|}}}{{{cmpfile2|}}}{{{cmpfile3|}}}{{{cmpfile4|}}}{{{cmpfile5|}}} |&lt;!--
+--&gt;&lt;tr&gt;&lt;!--
+--&gt;&lt;td colspan="2" class="pcmp_files newtablinks" &gt;'''Files:'''&lt;br/&gt;
+ {{#if: {{{cmpfile1|}}} |[[Media:{{{cmpfile1|}}}|{{{cmpfile1|}}}]]&lt;br/&gt;
+ }}{{#if: {{{cmpfile2|}}} |[[Media:{{{cmpfile2|}}}|{{{cmpfile2|}}}]]&lt;br/&gt;
+ }}{{#if: {{{cmpfile3|}}} |[[Media:{{{cmpfile3|}}}|{{{cmpfile3|}}}]]&lt;br/&gt;
+ }}{{#if: {{{cmpfile4|}}} |[[Media:{{{cmpfile4|}}}|{{{cmpfile4|}}}]]&lt;br/&gt;
+ }}{{#if: {{{cmpfile5|}}} |[[Media:{{{cmpfile5|}}}|{{{cmpfile5|}}}]]&lt;br/&gt;
+ }}&lt;!--
+--&gt;&lt;/td&gt;&lt;!--
+--&gt;&lt;/tr&gt;&lt;!--
+--&gt;}}
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>e72ok68s5rnvktwwg652wnl9uar5hl4</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:ProjektComponent2</title>
+    <ns>10</ns>
+    <id>67</id>
+    <revision>
+      <id>124</id>
+      <parentid>123</parentid>
+      <timestamp>2023-08-31T11:22:39Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>123</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2671" sha1="cmzuqo56mpqy99a61gcakym7w631onp" xml:space="preserve">&lt;noinclude&gt;
+'''Zusammenfassung:''' Verwaltung von Komponenten eines Projektes.
+
+== Vorlagen-Beiwerte (Parameter) ==
+
+* cmpfile1
+* cmpfile2
+* cmpfile3
+* cmpfile4
+* cmpfile5
+* cmpfile6
+* cmpimage
+* cmpimg
+* cmptbl
+* cmptitle
+* wtbl1 – CSS Klassen
+* wtbl2
+
+== Technische Abhängigkeiten ==
+
+* [[Template:Projekt]]?
+* [[Template:Projekt3]]?
+
+=== CSS ===
+
+Bootstrap und dessen Klassen (https://getbootstrap.com/docs/4.0/)
+
+== ZUTUN ==
+
+&lt;code&gt;style="…" &lt;/code&gt; rausschmeißen stattdessen globales CSS erstellen:
+* [[MediaWiki:Chameleon.css]] - für diese Benutzeroberfläche
+* [[MediaWiki:Common.css]] allgemein für jegliche Benutzeroberfläche
+
+[[Category:Dokumentieren (ZUTUN)]]
+[[Category:Project management]]
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div class="projekt_component_box" &gt;
+	{{#if: {{{cmptitle|}}}&lt;!-- THEN--&gt;|&lt;h3 class="pcmp_title"&gt;{{{cmptitle|}}}&lt;/h3&gt;}}
+	{{#if: {{{cmpimage|}}}&lt;!-- 
+THEN--&gt;|&lt;!--
+--&gt;&lt;div class="row container-fluid" &gt;
+		&lt;div class="col-auto col-sm-auto col-md-auto col-lg-5 col-xl-5" &gt;
+			&lt;div class="res-img" &gt;
+				[[File:{{{cmpimage|}}}|400px]]
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!--
+		--&gt;{{#if: {{{cmpimg|}}} |
+			&lt;div class="{{{wtbl1|col-auto col-sm-auto col-md-8 col-lg-7 col-xl-7}}}" &gt;
+				{{{cmpimg|}}}
+			&lt;/div&gt;
+		}}&lt;!-- 		{{#if: {{{cmptbl|}}} |
+			&lt;div class="col-auto col-sm-auto col-md-8 col-lg-6 col-xl-6" &gt;
+			{{{cmptbl|}}}
+			&lt;/div&gt;
+		}} 
+		--&gt;
+	&lt;/div&gt;&lt;!--
+ELSE --&gt;|
+		{{#if: {{{cmpimg|}}} | 
+			&lt;div class="{{{wtbl2|col-auto col-sm-auto col-md-10 col-lg-8 col-xl-8}}}" &gt;
+				{{{cmpimg|}}}
+			&lt;/div&gt;
+		}}&lt;!--
+		{{#if: {{{cmptbl|}}} |
+			&lt;div class="col-auto col-sm-auto col-md-8 col-lg-auto col-xl-auto" &gt;
+				{{{cmptbl|}}}
+			&lt;/div&gt;
+		}}--&gt;
+	}}{{
+	#if: {{{cmpfile1|}}}{{{cmpfile2|}}}{{{cmpfile3|}}}{{{cmpfile4|}}}{{{cmpfile5|}}}&lt;!-- 
+	THEN --&gt;|
+	&lt;div class="pcmp_files" &gt;
+		'''Files:'''
+		{{#if: {{{cmpfile1|}}} |&lt;span class="btn btn-outline-primary /* bootstrap classes */"&gt;[[Media:{{{cmpfile1|}}}|{{{cmpfile1|}}}]]&lt;/span&gt;}}
+		{{#if: {{{cmpfile2|}}} |&lt;span class="btn btn-outline-primary /* bootstrap classes */"&gt;[[Media:{{{cmpfile2|}}}|{{{cmpfile2|}}}]]&lt;/span&gt;}}
+		{{#if: {{{cmpfile3|}}} |&lt;span class="btn btn-outline-primary /* bootstrap classes */"&gt;[[Media:{{{cmpfile3|}}}|{{{cmpfile3|}}}]]&lt;/span&gt;}}
+		{{#if: {{{cmpfile4|}}} |&lt;span class="btn btn-outline-primary /* bootstrap classes */"&gt;[[Media:{{{cmpfile4|}}}|{{{cmpfile4|}}}]]&lt;/span&gt;}}
+		{{#if: {{{cmpfile5|}}} |&lt;span class="btn btn-outline-primary /* bootstrap classes */"&gt;[[Media:{{{cmpfile5|}}}|{{{cmpfile5|}}}]]&lt;/span&gt;}}
+		{{#if: {{{cmpfile6|}}} |&lt;span class="btn btn-outline-primary /* bootstrap classes */"&gt;[[Media:{{{cmpfile6|}}}|{{{cmpfile6|}}}]]&lt;/span&gt;}}
+	&lt;/div&gt;
+}}
+&lt;/div&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>cmzuqo56mpqy99a61gcakym7w631onp</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:ProjektImages</title>
+    <ns>10</ns>
+    <id>68</id>
+    <revision>
+      <id>126</id>
+      <parentid>125</parentid>
+      <timestamp>2023-08-31T11:22:39Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>125</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="473" sha1="95teitjnav0t627fd1te58ybq3y656q" xml:space="preserve">&lt;noinclude&gt;Bilder eines Projektes mit Zeilenumbruch erzeugen
+
+== Vorlagenparameter ==
+* projectimage
+
+Benutzung:
+ &lt;nowiki&gt;{{&lt;/nowiki&gt;{{PAGENAME}}
+ |projectimage=
+ }}
+== Entwicklung ==
+
+Frage: Kann diese Vorlage programmiermäßig ohne Funktionseinbußen entfernt werden, oder ist sie Not-wendig? (Ziel: verringern von Abhängigkeiten)
+
+[[Category:Project management]]
+[[Category:Technische Ausbesserung (ZUTUN)]]
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{projectimage|}}}
+&lt;/includeonly&gt;</text>
+      <sha1>95teitjnav0t627fd1te58ybq3y656q</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:ProjektLink</title>
+    <ns>10</ns>
+    <id>69</id>
+    <revision>
+      <id>128</id>
+      <parentid>127</parentid>
+      <timestamp>2023-08-31T11:22:39Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>127</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="166" sha1="t6epms7qmpqvz4hsaamgk6f0mwdluqo" xml:space="preserve">&lt;noinclude&gt;
+== Vorlagenparameter ==
+
+* lnkurl
+* lnktitle
+
+[[Category: Project management]]
+&lt;/noinclude&gt;&lt;includeonly&gt;[{{{lnkurl|}}} {{{lnktitle|}}}]&lt;br/&gt;&lt;/includeonly&gt;</text>
+      <sha1>t6epms7qmpqvz4hsaamgk6f0mwdluqo</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:ProjektMaterials</title>
+    <ns>10</ns>
+    <id>70</id>
+    <revision>
+      <id>130</id>
+      <parentid>129</parentid>
+      <timestamp>2023-08-31T11:22:39Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>129</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="4987" sha1="5tdm2ucu4u7rmiaocxd86rdy14fz7an" xml:space="preserve">&lt;noinclude&gt;
+Verwaltung von Materialen bezüglich eines Projektes.
+
+== Technische Dokumentation ==
+
+Es wird eine Tabellen-Zeile erstellt, die in eine umgebende Tabelle eingebettet sein muß aus [[Template:Projekt]].
+&lt;pre&gt;
+&lt;table class="project_material_table"&gt;
+…
+&lt;/table&gt;
+&lt;/pre&gt;
+
+=== Vorlagenparameter ===
+
+* matdesc
+* matdrawingsheet
+* matpartnumber
+* matparttype
+* matpdffile
+* matquantity
+* matspec
+* status_rev_1
+* status_rev_2
+* status_rev_3
+
+=== Abhängigkeiten ===
+
+==== Vorlagen ====
+
+ {{[[Template: Projekt|Projekt]]|Materials= …}}
+ &lt;s&gt;{{[[Template: Projekt2|Projekt2]]|Materials= …}}&lt;/s&gt;
+ &lt;s&gt;{{[[Template: Projekt3|Projekt3]]|Materials= …}}&lt;/s&gt;
+
+==== Erweiterungen ====
+
+Erweiterung:HtmlSpecialFunctions (custom extension):
+* &lt;code&gt;#counterIncr&lt;/code&gt;, &lt;code&gt;#counter&lt;/code&gt;
+* JavaScript &lt;code&gt;function prepareForPopup()&lt;/code&gt;; &lt;code&gt;HtmlSpecialFunctions/html_includes/materials.html&lt;/code&gt;
+
+==== CSS ====
+
+&lt;syntaxhighlight lang="css"&gt;
+/* MediaWiki:Common.css */
+#pfForm .multipleTemplateList .multipleTemplateInstance.multipleTemplate { overflow:auto; }
+#pfForm table.mat_fields td pre {
+    margin:0px;
+    padding:0px;
+}
+&lt;/syntaxhighlight&gt;
+
+&lt;pre&gt;
+tr.materialRow {}
+/* HTML-ID #materialRow_… → wird ersetzt durch Vorlagenparameter {{{matpartnumber|}}} */
+  tr.materialRow td.statusRevBox {}
+  tr.materialRow td.statusRevBox_… {} /* … → wird ersetzt durch {{#counter:mat}} */
+  tr.materialRow td.statusRevBox div.statusRevBoxVals {}
+  tr.materialRow td.statusRevBox div.statusRevBoxVals span.status_… {} /* … → wird ersetzt durch status_rev_1, status_rev_2, status_rev_3 */
+  tr.materialRow td.statusRevBox div.statusRevBoxVals span.userStatus {}
+  tr.materialRow td.statusRevBox div.statusRevBoxVals span.popupLinks {}
+
+  tr.materialRow td.materialLinksBox.newtablinks {}
+  tr.materialRow td.materialCommandsBox {}
+  tr.materialRow td.materialCommandsBox &gt; div.showComment {}
+  tr.materialRow td.materialCommandsBox &gt; div.showComment &gt; span.commentsCountBox {}
+
+tr.commentRow {}
+tr#commentRow_… {} /* … → wird ersetzt durch {{{matpartnumber}}} */
+tr.commentRow td.loadingComments {}
+tr.commentRow td.loadingComments div.matCommentsArea.projectReviewsArea {}
+tr.commentRow td.loadingComments div.popupLinks {}
+&lt;/pre&gt;
+
+[[Category:Project management]]
+&lt;/noinclude&gt;&lt;includeonly&gt; 
+&lt;tr class="materialRow" id="materialRow_{{#replace:{{{matpartnumber|}}}|&lt;nowiki&gt; &lt;/nowiki&gt;|_}}"&gt;
+&lt;td&gt;{{{matpartnumber|}}}&lt;/td&gt;
+&lt;td&gt;{{{matquantity|}}}&lt;/td&gt;
+&lt;td&gt;{{{matdesc|}}}&lt;/td&gt;
+&lt;td&gt;{{{matdrawingsheet|}}}&lt;/td&gt;
+&lt;td&gt;{{LabelMatPartType|{{{matparttype|}}}}}&lt;/td&gt;
+&lt;td&gt;{{{matspec|}}}&lt;/td&gt;
+{{#counterIncr:mat|1}}
+&lt;td class="statusRevBox statusRevBox_{{#counter:mat}}"&gt;
+&lt;div class="statusRevBoxVals"&gt;
+{{#if:{{{status_rev_1|}}}|
+&lt;span class="status_{{anchorencode:{{{status_rev_1|}}}}}"&gt;
+&lt;span class="userStatus"&gt;REV1:&lt;/span&gt; {{LabelReviewStatus|{{{status_rev_1|}}}}}&lt;br/&gt;
+&lt;/span&gt;
+}}
+{{#if:{{{status_rev_2|}}}|
+&lt;span class="status_{{anchorencode:{{{status_rev_2|}}}}}"&gt;
+&lt;span class="userStatus"&gt;REV2:&lt;/span&gt; {{LabelReviewStatus|{{{status_rev_2|}}}}}&lt;br/&gt;
+&lt;/span&gt;
+}}
+{{#if:{{{status_rev_3|}}}|
+&lt;span class="status_{{anchorencode:{{{status_rev_3|}}}}}"&gt;
+&lt;span class="userStatus"&gt;REV3:&lt;/span&gt; {{LabelReviewStatus|{{{status_rev_3|}}}}}&lt;br/&gt;
+&lt;/span&gt;
+}}
+&lt;/div&gt;
+&lt;!-- 
+AP: this material popup (the old one) does not work
+* we could use standard formlink instead (but it needs a particular form name to be addressed
+  {{#formlink:form=Project|link text=Edit parts|target={{FULLPAGENAME}}#tab=Parts_list|tooltip=Edit parts on form tab “Parts list”}}
+* old code for now deactivated untill it gets resolved properly
+
+&lt;span class="popupLinks"&gt;[{{fullurl:{{FULLPAGENAME}}|action=formedit&amp;editstatusmat={{#counter:mat}}}} Edit]&lt;/span&gt;
+[{{fullurl:{{FULLPAGENAME}}|action=formedit&amp;editstatusmat={{#counter:mat}}#tab4}} Edit All]
+index.php?title=Solar_water_heater_for_disinfection&amp;action=formedit#tab=Parts_list
+
+[{{fullurl:{{FULLPAGENAME}}|action=formedit&amp;editstatusmat={{#counter:mat}}#tab=Parts_list}} Edit parts]
+--&gt;
+{{#formlink:form=Project|link text=Edit parts|querystring=editstatusmat={{#counter:mat}}&amp;edit_material_list_item={{#counter:mat}}|target={{FULLPAGENAME}}#tab=Parts_list|tooltip=Edit parts on form tab “Parts list” (popup)|popup|reload}}
+&lt;/td&gt;
+&lt;td class="materialLinksBox newtablinks"&gt;{{#if:{{{matpdffile|}}}|[[Media:{{{matpdffile|}}}|PDF]]}}&lt;/td&gt;
+&lt;td class="materialCommandsBox"&gt;&lt;!-- AP 20230830 disabled commenting for now
+  &lt;div class="showComment" &gt;[[Image:Review.png|32px|link=|Item Reviews]]&lt;span class="commentsCountBox"&gt;&lt;/span&gt;&lt;/div&gt;
+--&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="commentRow" id="{{anchorencode:commentRow_{{{matpartnumber|}}}}}"&gt;
+&lt;td colspan="9" class="loadingComments"&gt;
+&lt;div class="matCommentsArea projectReviewsArea"&gt;&lt;/div&gt;
+&lt;!-- AP 20230622 disabled review for now
+&lt;div class="popupLinks"&gt;
+[{{fullurl:{{TALKPAGENAME}}|action=edit&amp;section=new&amp;preloadtitle=Part%20number%20{{{matpartnumber|}}}|class=linksPopups}} Add Review]
+&lt;/div&gt;--&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>5tdm2ucu4u7rmiaocxd86rdy14fz7an</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:ProjektResults</title>
+    <ns>10</ns>
+    <id>71</id>
+    <revision>
+      <id>132</id>
+      <parentid>131</parentid>
+      <timestamp>2023-08-31T11:22:40Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>131</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2853" sha1="by4isojdmrn9lhqv7a1eeqv2dhbyemw" xml:space="preserve">&lt;noinclude&gt;
+'''Zusammenfassung:''' Ergebnisvorschau einer Projekt-Seite formatieren.
+
+== Vorlagen-Beiwerte (Parameter) ==
+
+* &lt;code&gt;|1=&lt;/code&gt; Seitenname
+* &lt;code&gt;|2=&lt;/code&gt; Beschreibung
+* &lt;code&gt;|3=&lt;/code&gt; Bilddatei (sollte Vorsilbe “File:” enthalten! um als Eigenschaft „Seite“ richtig dargestellt zu werden) 
+* &lt;code&gt;|4=&lt;/code&gt; Lizenz
+* &lt;code&gt;|5=&lt;/code&gt; Contains PDF Blueprints
+* ?&lt;code&gt;|6=&lt;/code&gt; ?
+* &lt;code&gt;|7=&lt;/code&gt; Contains CAD Files
+
+== Technische Abhängigkeiten ==
+
+* Erweiterung:HtmlSpecialFunctions &lt;nowiki&gt;#mwCleanHTML:&lt;/nowiki&gt;
+
+=== Vorlagen ===
+
+* [[template: ProjektSearch]]
+* [[template: Projekt]]
+
+ZUTUN:
+* Begutachten: für geschwindere Abfragen, diese Vorlage vollständig als Semantische Eigenschaft in den Projekt-Vorlagen abspeichern, und einzig diese dann schon fertig formatierte Sache in der Abfrage anzeigen lassen (nicht zur Laufzeit erzeugen!!)
+
+=== CSS ===
+
+* Bootstrap v4 (https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+
+Siehe [[MediaWiki:Common.css]], versuche gleich-hohe Vorschaurahmen zu modellieren:
+&lt;syntaxhighlight lang="css"&gt;
+/* Template:ProjektResults */
+div.search_item {  height:430px; }
+div.search_item  .search_item_img  { height:200px; overflow:hidden; }
+div.search_item .search_item_title { font-weight:bold; }
+div.search_item .search_item_desc  { font-size:smaller; }
+&lt;/syntaxhighlight&gt;
+
+[[Category:Technische Ausbesserung (ZUTUN)]]
+[[Category:Dokumentieren (ZUTUN)]]
+[[Category:Project management]]
+&lt;/noinclude&gt;
+&lt;includeonly&gt;&lt;!--
+--&gt;&lt;div class="search_item card" &gt;&lt;!-- card = bootstrap class --&gt;
+&lt;div class="search_item_frame card-body"&gt;&lt;!-- class card-body = bootstrap class --&gt;
+&lt;div class="search_item_img"&gt;{{#if: {{{3|}}}
+|[[&lt;!-- muß File: enthalten --&gt;{{{3}}}|frameless|class=card-img-top|link={{{1}}}]]
+}}&lt;/div&gt;
+[{{fullurl:{{{1}}}}} &lt;div class="search_item_title"&gt;{{{1}}}&lt;/div&gt;&lt;div class="search_item_desc"&gt;{{#mwCleanHTML:&lt;!-- 
+  remove [[File:…]] [[Datei:…]] from description
+  --&gt;{{#arraymap: {{{2|no description yet}}}&lt;!--
+  --&gt;|\n&lt;!-- sep
+  --&gt;|§&lt;!-- temporary var
+  --&gt;|{{#if: {{#pos: {{urlencode: §}}|%5B%5BFile%3A}}&lt;!-- 
+    then
+    --&gt;|&lt;!-- line is probably [[File: 
+      --&gt;|{{#if: {{#pos: {{urlencode: §}}|%5B%5BDatei%3A}}&lt;!-- 
+      dann
+      --&gt;|&lt;!-- Zeile wahrscheinlich [[Datei: 
+      else output/sonst Ausgabe
+      --&gt;|§}}
+      }}&lt;!-- if: output
+  --&gt;|\n&lt;!--output sep
+--&gt;}}&lt;!-- arraymap
+--&gt;|160}}&lt;/div&gt;]
+&lt;div class="search_item_info"&gt;&lt;!--
+--&gt;&lt;div class="search_item_info_type"&gt;&lt;!--
+--&gt;Contains PDF Blueprints: {{LabelYesNo|{{#switch:{{{5|}}}|Ja|Yes|Si=yes|no}}}}&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;div class="search_item_info_type"&gt;&lt;!--
+--&gt;Contains CAD Files: {{LabelYesNo|{{#switch:{{{7|}}}|Ja|Yes|Si=yes|no}}}}&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;div class="search_item_info_type"&gt;License: {{#if:{{{4|}}}|{{{4}}}|unknown}}&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;!--
+--&gt;&lt;/includeonly&gt;</text>
+      <sha1>by4isojdmrn9lhqv7a1eeqv2dhbyemw</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:ProjektSearch</title>
+    <ns>10</ns>
+    <id>72</id>
+    <revision>
+      <id>134</id>
+      <parentid>133</parentid>
+      <timestamp>2023-08-31T11:22:40Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: erste Seitenvorlagen als Grundlage (siehe https://github.com/Jaeger-und-Plank-GbR/Dokumentationsplattform-fuer-Open-Hardware-Projekte/issues/1)</comment>
+      <origin>133</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="10633" sha1="6c07iboq4ekb4uahxuu0kfdmnc2l3fk" xml:space="preserve">&lt;noinclude&gt;'''Summary:''' This is the ‘{{PAGENAME}}’ template. It should be called via the [[Form:ProjectSearch]] form.
+
+== Vorlagen-Beiwerte (Parameter) ==
+
+* search
+* searchDesc
+* licence
+* typeproject
+* subcat
+
+
+== Technische Abhängigkeiten ==
+=== Verschachtelte Vorlagen ===
+
+* [[template:Projekt]], [[template:Projekt3]]
+** [[template: ProjektResults]]
+** … usw.
+* [[template:LabelYesNo]]
+
+=== Semantische Objekte ===
+
+{| class="booktable"
+|-
+! Semantische Eigenschaft !! Vorlagenparameter
+|-
+| [[property: Projectname]] || projectname, search
+|-
+| [[property: Licence]] || licence
+|-
+| [[property: Typeproject]] || typeproject
+|-
+| [[property: Keywords]] || search
+|-
+| [[property: Desc]] || search
+|-
+| [[property: Projectimage]] || -
+|}
+
+ZUTUN Einarbeiten der Eigenschaften in das Formular (Übertragung aus en.oho.wiki):
+
+{| class="booktable"
+|-
+! Eigenschaft !! Vorlagenbeiwert oder Beschreibung
+|-
+| [[property: AssemblyInstructionsArePublished]] || assembly_inst_pub
+|-
+| [[property: BillOfMaterialsIsPublished]] || bill_materials_pub
+|-
+| [[property: CadFilesAreInEditableFormat]] || cad_files_editable
+|-
+| [[property: CertificateStatus]] || certificate_status
+|-
+| [[property: ContainsPdfDrawings]] || contains_pdf_drawings
+|-
+| [[property: ElectronicFilesEditable]] || electronic_files_editable
+|-
+| [[property: ElectronicFilesPub]] || electronic_files_pub
+|-
+| [[property: MechanicalLicence]] || mechanical_licence
+|-
+| [[property: ContainsOriginalSoftware]] || software_files_pub
+|-
+| [[property: TechnologyReadynessLevel]] || technology_readyness_level
+|-
+| [[property: ProjectSearchResultPreviewBox1]] || ([[template: ProjektResults]]) das fertig formatierte Vorschaubild als Kasten (Bootstrap CSS Klasse &lt;code&gt;.card&lt;/card&gt;
+|}
+
+=== Erweiterungen ===
+
+* Erweiterung:HtmlSpecialFunctions
+** &lt;code&gt;#mwCategoryLinks&lt;/code&gt;
+
+* Erweiterung:SemanticMediaWiki
+* Erweiterung:PageForms
+
+=== CSS ===
+
+* Bootstrap v4 (https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+
+&lt;syntaxhighlight lang="css"&gt;
+/* Bootstrap v4:
+ .card-columns 
+*/
+&lt;/syntaxhighlight&gt;
+
+
+=== ZUTUN ===
+
+Verbessere Ansicht beim Skalieren für Bootstrap Cards &lt;code&gt;class="card-columns"&lt;/code&gt;.
+
+In #mwCategoryLinks wenn Textsuche + Search description kommt &lt;span class="alert alert-error p-1"&gt;Internal error&lt;/span&gt;:
+* Cannot unset string offsets … (abgeschaltet, funktioniert nicht wie erwartet: man denkt das die Verknüpfungen das Formular vorbelegen mit Werten, stattdessen kommen immer diegleiche Anzahl an Ergebnissen, gleichgültig, ob man im Kategorie-Baum auf eine Kategorie mit “…(2)” oder  “…(5)” klickt, ich würde erwarten, daß ich genau diese 2 oder 5 Ergebnisse bekäme, stattdessen kommen alle Ergebnisse)
+
+Backtrace:
+
+ from /var/www/vhosts/oh-dc.org/extensions/HtmlSpecialFunctions/HtmlSpecialFunctions.php(541)
+ #0 /var/www/vhosts/oh-dc.org/includes/parser/Parser.php(3414): HtmlSpecialFunctions::mwCategoryLinks(Parser, string, string, string, string, string, string, string)
+ #1 /var/www/vhosts/oh-dc.org/includes/parser/Parser.php(3097): Parser-&gt;callParserFunction(PPTemplateFrame_Hash, string, array)
+ #2 /var/www/vhosts/oh-dc.org/includes/parser/PPFrame_Hash.php(276): Parser-&gt;braceSubstitution(array, PPTemplateFrame_Hash)
+ #3 /var/www/vhosts/oh-dc.org/includes/parser/Parser.php(3288): PPFrame_Hash-&gt;expand(PPNode_Hash_Tree)
+ #4 /var/www/vhosts/oh-dc.org/includes/parser/PPFrame_Hash.php(276): Parser-&gt;braceSubstitution(array, PPFrame_Hash)
+ #5 /var/www/vhosts/oh-dc.org/includes/parser/Parser.php(2933): PPFrame_Hash-&gt;expand(PPNode_Hash_Tree, integer)
+ #6 /var/www/vhosts/oh-dc.org/includes/parser/Parser.php(1580): Parser-&gt;replaceVariables(string)
+ #7 /var/www/vhosts/oh-dc.org/includes/parser/Parser.php(698): Parser-&gt;internalParse(string)
+ #8 /var/www/vhosts/oh-dc.org/extensions/PageForms/specials/PF_RunQuery.php(110): Parser-&gt;parse(string, Title, ParserOptions, boolean, boolean)
+ #9 /var/www/vhosts/oh-dc.org/extensions/PageForms/specials/PF_RunQuery.php(28): PFRunQuery-&gt;printPage(string, boolean)
+ #10 /var/www/vhosts/oh-dc.org/includes/specialpage/SpecialPage.php(671): PFRunQuery-&gt;execute(string)
+ #11 /var/www/vhosts/oh-dc.org/includes/specialpage/SpecialPageFactory.php(1378): SpecialPage-&gt;run(string)
+ #12 /var/www/vhosts/oh-dc.org/includes/MediaWiki.php(315): MediaWiki\SpecialPage\SpecialPageFactory-&gt;executePath(string, RequestContext)
+ #13 /var/www/vhosts/oh-dc.org/includes/MediaWiki.php(912): MediaWiki-&gt;performRequest()
+ #14 /var/www/vhosts/oh-dc.org/includes/MediaWiki.php(563): MediaWiki-&gt;main()
+ #15 /var/www/vhosts/oh-dc.org/index.php(53): MediaWiki-&gt;run()
+ #16 /var/www/vhosts/oh-dc.org/index.php(46): wfIndexMain()
+ #17 {main}
+
+[[Category: Project management]]
+[[Category: Technische Ausbesserung (ZUTUN)]]
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div class="search_project_results"&gt;
+&lt;!-- see backtrace: TODO correct errors 
+{{#mwCategoryLinks: {{#ask: {{#if: {{{search|}}}{{{licence|}}}{{{typeproject|}}}
+|{{#arraymap:{{{search|}}}|&lt;nowiki&gt; &lt;/nowiki&gt;|§|[[Projectname::~*§*]]|\n\n}}
+ {{#if: {{{licence|}}}|[[Licence::~*{{{licence|}}}*]]}}
+ {{#if: {{{typeproject|}}}|[[Typeproject::~*{{{typeproject|}}}*]]}}
+ OR
+ {{#arraymap:{{{search|}}}|&lt;nowiki&gt; &lt;/nowiki&gt;|§|[[Keywords::~*§*]]|\n\n}}
+ {{#if: {{{licence|}}}|[[Licence::~*{{{licence|}}}*]]}}
+ {{#if: {{{typeproject|}}}|[[Typeproject::~*{{{typeproject|}}}*]]}}
+
+ {{#switch: {{LC:{{{searchDesc|}}}}} |yes|ja|oui|si=
+  OR
+  {{#arraymap:{{{search|}}}|&lt;nowiki&gt; &lt;/nowiki&gt;|§|[[Desc::~*§*]]|\n\n}}
+  {{#if: {{{licence|}}}|[[Licence::~*{{{licence|}}}*]]}}
+  {{#if: {{{typeproject|}}}|[[Typeproject::~*{{{typeproject|}}}*]]}}
+ }}
+|
+ [[Projectname::~**]]
+}}
+ |?Category
+ |format=plainlist
+ |link=none
+ |limit=200
+ |sep=@@#@@
+ |valuesep=@@-@@
+ |headers=hide
+}}
+|@@#@@|@@-@@|ProjektSearch|subcat|[§] categories found for “{{{search|}}}”:|[§] projects found for “{{{search|}}}”[catlink]:}}
+--&gt;
+
+&lt;div class="gallery_results card-columns /* card-column = bootstrap class */"&gt;
+{{#ask: {{#if: {{{assembly_inst_pub|}}}&lt;!--
+--&gt;{{{bill_materials_pub|}}}&lt;!--
+--&gt;{{{cad_files_editable|}}}&lt;!--
+--&gt;{{{certificate_status|}}}&lt;!--
+--&gt;{{{contains_pdf_drawings|}}}&lt;!--
+--&gt;{{{electronic_files_editable|}}}&lt;!--
+--&gt;{{{electronic_files_pub|}}}&lt;!--
+--&gt;{{{licence|}}}&lt;!--
+--&gt;{{{mechanical_licence|}}}&lt;!--
+--&gt;{{{search|}}}&lt;!--
+--&gt;{{{software_files_pub|}}}&lt;!--
+--&gt;{{{subcat|}}}&lt;!--
+--&gt;{{{technology_readyness_level|}}}&lt;!--
+--&gt;{{{typeproject|}}}&lt;!-- 
+THEN
+--&gt;| {{#if: {{{search|}}}|{{#arraymap:{{{search|}}}|&lt;nowiki&gt; &lt;/nowiki&gt;|§|[[Projectname::~*§*]]|\n\n}} }}
+ {{#if: {{{subcat|}}}|[[Category:{{{subcat|}}}]]}} 
+ {{#if: {{{licence|}}}|[[Licence::~*{{{licence|}}}*]]}} 
+ {{#if: {{{typeproject|}}}|[[Typeproject::~*{{{typeproject|}}}*]]}}
+ {{#if: {{{certificate_status|}}}|[[CertificateStatus::{{{certificate_status|}}}]]}} 
+ {{#if: {{{contains_pdf_drawings|}}}|[[ContainsPdfDrawings::{{{contains_pdf_drawings|}}}]]}} 
+ {{#if: {{{cad_files_editable|}}}|[[CadFilesAreInEditableFormat::{{{cad_files_editable|}}}]]}} 
+ {{#if: {{{mechanical_licence|}}}|[[MechanicalLicence::{{{mechanical_licence|}}}]]}} 
+ {{#if: {{{electronic_files_pub|}}}|[[ElectronicFilesPub::{{{electronic_files_pub|}}}]]}} 
+ {{#if: {{{electronic_files_editable|}}}|[[ElectronicFilesEditable::{{{electronic_files_editable|}}}]]}} 
+ {{#if: {{{software_files_pub|}}}|[[ContainsOriginalSoftware::{{{software_files_pub|}}}]]}} 
+ {{#if: {{{assembly_inst_pub|}}}|[[AssemblyInstructionsArePublished::{{{assembly_inst_pub|}}}]]}} 
+ {{#if: {{{bill_materials_pub|}}}|[[BillOfMaterialsIsPublished::{{{bill_materials_pub|}}}]]}} 
+ {{#if: {{{technology_readyness_level|}}}|[[TechnologyReadynessLevel::{{{technology_readyness_level|}}}]]}} 
+ OR
+ {{#if: {{{search|}}}|{{#arraymap:{{{search|}}}|&lt;nowiki&gt; &lt;/nowiki&gt;|§|[[Keywords::~*§*]]|\n\n}} }}
+ {{#if: {{{subcat|}}}|[[Category:{{{subcat|}}}]]}} 
+ {{#if: {{{licence|}}}|[[Licence::~*{{{licence|}}}*]]}} 
+ {{#if: {{{typeproject|}}}|[[Typeproject::~*{{{typeproject|}}}*]]}} 
+ {{#if: {{{certificate_status|}}}|[[CertificateStatus::{{{certificate_status|}}}]]}} 
+ {{#if: {{{contains_pdf_drawings|}}}|[[ContainsPdfDrawings::{{{contains_pdf_drawings|}}}]]}} 
+ {{#if: {{{cad_files_editable|}}}|[[CadFilesAreInEditableFormat::{{{cad_files_editable|}}}]]}} 
+ {{#if: {{{mechanical_licence|}}}|[[MechanicalLicence::{{{mechanical_licence|}}}]]}} 
+ {{#if: {{{electronic_files_pub|}}}|[[ElectronicFilesPub::{{{electronic_files_pub|}}}]]}} 
+ {{#if: {{{electronic_files_editable|}}}|[[ElectronicFilesEditable::{{{electronic_files_editable|}}}]]}} 
+ {{#if: {{{software_files_pub|}}}|[[ContainsOriginalSoftware::{{{software_files_pub|}}}]]}} 
+ {{#if: {{{assembly_inst_pub|}}}|[[AssemblyInstructionsArePublished::{{{assembly_inst_pub|}}}]]}} 
+ {{#if: {{{bill_materials_pub|}}}|[[BillOfMaterialsIsPublished::{{{bill_materials_pub|}}}]]}} 
+ {{#if: {{{technology_readyness_level|}}}|[[TechnologyReadynessLevel::{{{technology_readyness_level|}}}]]}} 
+
+ {{#switch: {{LC:{{{searchDesc|}}}}} |yes|ja|oui|si=
+  OR
+  {{#if: {{{search|}}}|{{#arraymap:{{{search|}}}|&lt;nowiki&gt; &lt;/nowiki&gt;|§|[[Keywords::~*§*]]|\n\n}} }}
+  {{#if: {{{subcat|}}}|[[Category:{{{subcat|}}}]]}} 
+  {{#if: {{{licence|}}}|[[Licence::~*{{{licence|}}}*]]}} 
+  {{#if: {{{typeproject|}}}|[[Typeproject::~*{{{typeproject|}}}*]]}}
+  {{#if: {{{certificate_status|}}}|[[CertificateStatus::{{{certificate_status|}}}]]}} 
+  {{#if: {{{contains_pdf_drawings|}}}|[[ContainsPdfDrawings::{{{contains_pdf_drawings|}}}]]}} 
+  {{#if: {{{cad_files_editable|}}}|[[CadFilesAreInEditableFormat::{{{cad_files_editable|}}}]]}} 
+  {{#if: {{{mechanical_licence|}}}|[[MechanicalLicence::{{{mechanical_licence|}}}]]}} 
+  {{#if: {{{electronic_files_pub|}}}|[[ElectronicFilesPub::{{{electronic_files_pub|}}}]]}} 
+  {{#if: {{{electronic_files_editable|}}}|[[ElectronicFilesEditable::{{{electronic_files_editable|}}}]]}} 
+  {{#if: {{{software_files_pub|}}}|[[ContainsOriginalSoftware::{{{software_files_pub|}}}]]}} 
+  {{#if: {{{assembly_inst_pub|}}}|[[AssemblyInstructionsArePublished::{{{assembly_inst_pub|}}}]]}} 
+  {{#if: {{{bill_materials_pub|}}}|[[BillOfMaterialsIsPublished::{{{bill_materials_pub|}}}]]}} 
+  {{#if: {{{technology_readyness_level|}}}|[[TechnologyReadynessLevel::{{{technology_readyness_level|}}}]]}} 
+ }}
+&lt;!-- 
+ 
+ELSE
+--&gt;|&lt;!-- no filter was set at all --&gt; [[Projectname::~**]]
+}}&lt;!-- end {{if …}} --&gt;
+ |?ProjectSearchResultPreviewBox1=
+ |format=list|sep=
+ |limit=80
+ |offset=0
+ |link=none
+ |sort=
+ |order=asc
+ |headers=show
+ |default=No results found yet.
+ |mainlabel=-
+ |searchlabel=... further results
+}}
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--
+[[de:Special:RunQuery/projectSearch]]
+[[es:Special:RunQuery/projectSearch]]
+--&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>6c07iboq4ekb4uahxuu0kfdmnc2l3fk</sha1>
+    </revision>
+  </page>
+</mediawiki>

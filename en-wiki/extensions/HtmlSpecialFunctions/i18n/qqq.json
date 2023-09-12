@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Javier Finol"
+        ]
+    },
+    "htmlSpecialFunctions": "HtmlSpecialFunctions",
+    "htmlSpecialFunctions-desc": "Special parser functions and tools to improve the html data parsing for technical documentations for open source hardware projects."
+}

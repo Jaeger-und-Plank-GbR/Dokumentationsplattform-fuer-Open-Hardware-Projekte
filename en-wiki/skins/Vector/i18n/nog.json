@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gorgich",
+			"TayfunEt.",
+			"Abylaikhan 94"
+		]
+	},
+	"vector-languages": "Тиллер",
+	"vector-language-button-label": "{{PLURAL:$1|$1 тил}}",
+	"vector-action-addsection": "Мевзу косув",
+	"vector-action-delete": "Йок ет",
+	"vector-action-move": "Тагы",
+	"vector-action-protect": "Корув",
+	"vector-view-create": "Яратув",
+	"vector-view-edit": "Туьрлентуьв",
+	"vector-view-history": "Тарихын карав",
+	"vector-view-view": "Окув",
+	"vector-more-actions": "Тагы"
+}

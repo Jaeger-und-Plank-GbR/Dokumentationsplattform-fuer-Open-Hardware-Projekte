@@ -1,0 +1,293 @@
+<html>
+<style>@media (max-width: 600px) {
+    .home_search_info {
+        width: 100.5%
+    }
+} </style>
+<div class="home_search_info" style="position:absolute;width:95.5%">
+    <br/>The OHO Product Directory is our extensive collection of relevant complex open source hardware projects.<br/>
+    The rating shown below with the help of the Open-o-Meter reveals their openness according to commonly shared values
+    and<br/> standards of the open source hardware community.<br/><br/>
+</div>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+<h2 style="margin-top: 70px">Filter</h2>
+
+<input type="text" id="productName" placeholder="Product name.." title="Type in a name">
+
+<select id='selectcategory'>
+    <option value=""> Product Category</option>
+    <option value="Hardware"> Hardware</option>
+    <option value="Electronics"> Electronics</option>
+    <option value="Arts & Entertainment"> Arts & Entertainment</option>
+    <option value="Business & Industrial"> Business & Industrial</option>
+    <option value="Apparel & Accessories"> Apparel & Accessories</option>
+    <option value="Vehicles & Parts"> Vehicles & Parts</option>
+    <option value="Home & Garden"> Home & Garden</option>
+    <option value="Cameras & Optics"> Cameras & Optics</option>
+    <option value="Toys & Games"> Toys & Games</option>
+    <option value="Media"> Media</option>
+    <option value="Sporting Goods"> Sporting Goods</option>
+</select> <select id='selectstatu'>
+    <option value=""> Project Status</option>
+    <option value="Active"> Active</option>
+    <option value="Inactive"> Inactive</option>
+</select> <select id='selectstage'>
+    <option value=""> Development Stage</option>
+    <option value="Concept"> Concept</option>
+    <option value="Prototype"> Prototype</option>
+    <option value="Production / DIY"> Production / DIY</option>
+    <option value="Production / kit"> Production / kit</option>
+    <option value="Production / full product"> Production / full product</option>
+</select>
+
+<select id='openometer'>
+    <option value=""> Open-o-Meter</option>
+    <option value="0"> 0</option>
+    <option value="1"> 1</option>
+    <option value="2"> 2</option>
+    <option value="3"> 3</option>
+    <option value="4"> 4</option>
+    <option value="5"> 5</option>
+    <option value="6"> 6</option>
+    <option value="7"> 7</option>
+    <option value="8"> 8</option>
+    <option value="9"> &lt;5</option>
+    <option value="10"> &gt;5</option>
+</select> <select id='designfiles'>
+    <option value=""> Design Files</option>
+    <option value="Yes"> Yes</option>
+    <option value="No"> No</option>
+</select> <select id='assemblyinspublish'>
+    <option value=""> Assembly instructions are published</option>
+    <option value="Yes"> Yes</option>
+    <option value="No"> No</option>
+</select>
+
+<select id='mbillpublish'>
+    <option value=""> Bill of materials is published</option>
+    <option value="Yes"> Yes</option>
+    <option value="No"> No</option>
+</select> <select id='Contributing'>
+    <option value=""> Contributing guide is published</option>
+    <option value="Yes"> Yes</option>
+    <option value="No"> No</option>
+</select> <select id='originalfiles'>
+    <option value=""> Design Files are in Original Format</option>
+    <option value="Yes"> Yes</option>
+    <option value="No"> No</option>
+</select>
+
+<select id='freelicence'>
+    <option value=""> Free redistribution is allowed licence</option>
+    <option value="Yes"> Yes</option>
+    <option value="No"> No</option>
+</select> <select id='issue'>
+    <option value=""> Issue Management System</option>
+    <option value="Yes"> Yes</option>
+    <option value="No"> No</option>
+</select> <select id='versioning'>
+    <option value=""> Versioning System</option>
+    <option value="Yes"> Yes</option>
+    <option value="No"> No</option>
+</select>
+
+<button id="search">search</button>
+<button id="refresh">refresh</button>
+<script>
+    $(document).ready(function ($) {
+        $('#refresh').click(function () {
+            location.reload();
+        });
+
+
+        $("#search").click(function () {
+
+            var o = new Option("All", "-1");
+            $("select[name='DataTables_Table_0_length']").append(o);
+
+
+            $("select[name='DataTables_Table_0_length']").val(100);
+
+
+            var dataset = $('tbody').find('tr');
+            dataset.show();
+
+            if ($('#selectcategory').val() !== "") {
+                var selectcategory = $('#selectcategory').val();
+                var dataset = $('table').find('tr');
+
+                dataset.filter(function (index, item) {
+                    return $(item).find('td:nth-child(3)').text().split(',').indexOf(selectcategory) === -1;
+                }).hide();
+                $('thead').find('tr').show();
+            }
+
+
+            if ($('#selectstage').val() !== "") {
+                var selectionstage = $('#selectstage').val();
+                var datasetstage = $('table').find('tr');
+
+                datasetstage.filter(function (index, item) {
+                    return $(item).find('td:nth-child(5)').text().split(',').indexOf(selectionstage) === -1;
+                }).hide();
+                $('thead').find('tr').show()
+            }
+
+
+            if ($('#selectstatu').val() !== "") {
+                var selectionstatu = $('#selectstatu').val();
+                var dataset = $('table').find('tr');
+
+                dataset.filter(function (index, item) {
+                    return $(item).find('td:nth-child(4)').text().split(',').indexOf(selectionstatu) === -1;
+                }).hide();
+                $('thead').find('tr').show()
+            }
+
+
+            if ($('#openometer').val() !== "") {
+                var selectionstatu = $('#openometer').val();
+                var dataset = $('table').find('tr');
+
+                if (selectionstatu == "9") {
+                    dataset.each(
+                        function () {
+                            var x = $(this).find('td:nth-child(6)').html();
+
+                            if (x > 5) {
+                                $(this).find('td:nth-child(6)').parent().hide();
+                            }
+                        });
+
+                } else if (selectionstatu == "10") {
+                    dataset.each(
+                        function () {
+                            var x = $(this).find('td:nth-child(6)').html();
+
+                            if (x < 5) {
+                                $(this).find('td:nth-child(6)').parent().hide();
+                            }
+                        });
+
+                } else {
+
+                    dataset.filter(function (index, item) {
+                        return $(item).find('td:nth-child(6)').text().split(',').indexOf(selectionstatu) === -1;
+                    }).hide();
+
+                }
+
+            }
+
+
+            if ($('#designfiles').val() !== "") {
+                var selectionstatu = $('#designfiles').val();
+                var dataset = $('table').find('tr');
+
+                dataset.filter(function (index, item) {
+                    return $(item).find('td:nth-child(7)').text().split(',').indexOf(selectionstatu) === -1;
+                }).hide();
+                $('thead').find('tr').show()
+            }
+
+
+            if ($('#assemblyinspublish').val() !== "") {
+                var selectionstatu = $('#assemblyinspublish').val();
+                var dataset = $('table').find('tr');
+
+                dataset.filter(function (index, item) {
+                    return $(item).find('td:nth-child(8)').text().split(',').indexOf(selectionstatu) === -1;
+                }).hide();
+                $('thead').find('tr').show()
+            }
+
+
+            if ($('#mbillpublish').val() !== "") {
+                var selectionstatu = $('#mbillpublish').val();
+                var dataset = $('table').find('tr');
+
+                dataset.filter(function (index, item) {
+                    return $(item).find('td:nth-child(9)').text().split(',').indexOf(selectionstatu) === -1;
+                }).hide();
+                $('thead').find('tr').show()
+            }
+
+
+            if ($('#Contributing').val() !== "") {
+                var selectionstatu = $('#Contributing').val();
+                var dataset = $('table').find('tr');
+
+                dataset.filter(function (index, item) {
+                    return $(item).find('td:nth-child(10)').text().split(',').indexOf(selectionstatu) === -1;
+                }).hide();
+                $('thead').find('tr').show()
+            }
+
+            if ($('#originalfiles').val() !== "") {
+                var selectionstatu = $('#originalfiles').val();
+                var dataset = $('table').find('tr');
+
+                dataset.filter(function (index, item) {
+                    return $(item).find('td:nth-child(10)').text().split(',').indexOf(selectionstatu) === -1;
+                }).hide();
+                $('thead').find('tr').show()
+            }
+
+
+            if ($('#freelicence').val() !== "") {
+                var selectionstatu = $('#freelicence').val();
+                var dataset = $('table').find('tr');
+
+                dataset.filter(function (index, item) {
+                    return $(item).find('td:nth-child(14)').text().split(',').indexOf(selectionstatu) === -1;
+                }).hide();
+                $('thead').find('tr').show()
+            }
+
+            if ($('#issue').val() !== "") {
+                var selectionstatu = $('#issue').val();
+                var dataset = $('table').find('tr');
+
+                dataset.filter(function (index, item) {
+                    return $(item).find('td:nth-child(14)').text().split(',').indexOf(selectionstatu) === -1;
+                }).hide();
+                $('thead').find('tr').show()
+            }
+
+            if ($('#versioning').val() !== "") {
+                var selectionstatu = $('#versioning').val();
+                var dataset = $('table').find('tr');
+
+                dataset.filter(function (index, item) {
+                    return $(item).find('td:nth-child(14)').text().split(',').indexOf(selectionstatu) === -1;
+                }).hide();
+                $('thead').find('tr').show()
+            }
+
+        });
+
+
+    });
+    $(document).ready(function ($) {
+
+        $(document).ready(function () {
+            $("#search").click(function () {
+                var value = $('#productName').val().toLowerCase();
+                $("tbody tr").filter(function (index, item) {
+                    return $(item).find('td:first-child').text().toLowerCase().indexOf(value) === -1;
+
+                }).hide();
+            });
+        });
+
+
+    });
+</script>
+</body>
+</html>

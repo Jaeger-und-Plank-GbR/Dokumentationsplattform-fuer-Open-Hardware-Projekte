@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gazimagomedov",
+			"Omarov M."
+		]
+	},
+	"skinname-chameleon": "Chameleon",
+	"chameleon-desc": "Bootstrap 4 хӀалтӀизабигун бугеб цӀакъ хьетӀулеб ва жаваб кьолеб тема",
+	"chameleon-loggedin": "Мун $1 гӀадин жаниве лӀугьана",
+	"chameleon-notloggedin": "Нуж жанире лӀугьун гьечӀо",
+	"chameleon-newmessages": "Духъе цӀиял ругьелал руго.",
+	"chameleon-nonewmessages": "Духъе цӀиял ругьелал гьечӀо."
+}

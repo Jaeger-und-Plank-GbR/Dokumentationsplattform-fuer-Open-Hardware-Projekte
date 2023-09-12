@@ -1,0 +1,33 @@
+<script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        $('input[type=radio][name=project_form_tabs]').change(function () {
+            $('.tab_frame').hide();
+            $('.tab_frame_' + this.value).show();
+            $('.project_form_tabs label').removeClass('selected');
+            $('#type_form_tab_' + this.value).parent().addClass('selected');
+        });
+        $('#type_form_tab_1').prop("checked", true).change();
+
+        var hash = $(location).attr('hash');
+        if (hash.indexOf('#tab') == 0) {
+            var tabn = hash.replace(/[^0-9]+/ig, '');
+            $('.project_form_tabs #type_form_tab_' + tabn).click();
+        }
+    });
+</script>
+<div class="project_form_tabs">
+    <label for="type_form_tab_1"><input type="radio" id="type_form_tab_1" name="project_form_tabs" value="1"/>Basic Data</label>
+    <label for="type_form_tab_2"><input type="radio" id="type_form_tab_2" name="project_form_tabs" value="2"/>Additional
+        Fields</label>
+    <label for="type_form_tab_3"><input type="radio" id="type_form_tab_3" name="project_form_tabs" value="3"/>Technical
+        documentation</label>
+    <label for="type_form_tab_4"><input type="radio" id="type_form_tab_4" name="project_form_tabs" value="4"/>Parts list</label>
+    <certificationrequest>
+        <label for="type_form_tab_5"><input type="radio" id="type_form_tab_5" name="project_form_tabs" value="5"/>Certificate</label>
+    </certificationrequest>
+    <certificationadmin>
+        <label for="type_form_tab_6"><input type="radio" id="type_form_tab_6" name="project_form_tabs" value="6"/>Certification
+            Manager</label>
+    </certificationadmin>
+</div>

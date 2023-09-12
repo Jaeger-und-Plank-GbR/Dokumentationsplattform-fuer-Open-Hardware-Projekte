@@ -1,0 +1,255 @@
+<div class="import_mat_box">
+    Import from <em>comma</em> separated values (CSV): <input type="file" id="csv_materials_import"/>
+    <script type="text/javascript">/*
+    IMPORTANT: only use multiline comments no slash-slash single line comments.
+    By default, the script part gets compressed to one single line.
+    t*/
+    /**
+     * Map CSV text data to a data array
+     *
+     * @param strData text data
+     * @param csvDelimiter delimiter of a CSV field (default: comma), could be used for testing but
+     *      NEVER use semicolon as CSV is defined to use comma
+     * @returns {*[][]}
+     */
+    function CSVToArray(strData, csvDelimiter = ",") {
+        if  (!csvDelimiter) { csvDelimiter = "," ; }
+        /*
+            (\,|\r?\n|\r|^)(?:"([^"]*(?:""[^"]*)*)"|([^"\,\r\n]*))
+            `(\\${csvDelimiter}|\\r?\\n|\\r|^)(?:"([^"]*(?:""[^"]*)*)"|([^"\\${csvDelimiter}\\r\\n]*))`
+        */
+        const csvFieldSearchPattern = new RegExp(
+            (
+                /* Delimiters */
+                '(\\' + csvDelimiter + '|\\r?\\n|\\r|^)'
+                /* Quoted fields */
+                + '(?:"([^"]*(?:""[^"]*)*)"|'
+                /* Standard fields */
+                + '([^"\\' + csvDelimiter + '\\r\\n]*))'
+            ),
+            "gi"
+        );
+
+        var returnData = [[]];
+        var thisMatchedData = null;
+        while (thisMatchedData = csvFieldSearchPattern.exec(strData)) {
+            var thisMatchedDelimiter = thisMatchedData[1];
+            if (thisMatchedDelimiter.length) {
+                if (thisMatchedDelimiter !== csvDelimiter) {
+                    returnData.push([]);
+                }
+            }
+            var thisCSVvalue;
+            if (thisMatchedData[2]) {
+                thisCSVvalue = thisMatchedData[2].replace(/""/g,'"');
+            } else {
+                thisCSVvalue = thisMatchedData[3];
+            }
+            returnData[returnData.length - 1].push(thisCSVvalue);
+        }
+        return (returnData);
+    }
+
+    /**
+     * Read first uploaded file as text file
+     * @param e
+     */
+    function readUploadFileAsText(e) {
+        var file = e.target.files[0];
+        if (!file) {
+            return;
+        }
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            var contents = e.target.result;
+            pushMaterialValusToFieldContents(contents, true);
+        };
+        reader.readAsText(file);
+    }
+
+    /**
+     * Put CSV values to the form fields
+     *
+     * @todo review functionality
+     * @requires CSVToArray
+     * @param contents text content of e.g. a csv file
+     * @param hasColumnTitles
+     */
+    function pushMaterialValusToFieldContents(contents, hasColumnTitles) {
+        var data = CSVToArray(contents);
+        /*console.info(data);*/
+        var i_line_start = (hasColumnTitles) ? 1 : 0;
+
+        for (i = i_line_start; i < data.length; i++) {
+            if (data[i][0] !== "") {
+                $('#matform .multipleTemplateAdder').click();
+                $('#matform input[origname="ProjektMaterials[matpartnumber]"]').last().val(data[i][0]);
+                $('#matform input[origname="ProjektMaterials[matposold]"]').last().val(data[i][1]);
+                $('#matform input[origname="ProjektMaterials[matquantity]"]').last().val(data[i][2]);
+                $('#matform input[origname="ProjektMaterials[matdesc]"]').last().val(data[i][3]);
+                $('#matform input[origname="ProjektMaterials[matdrawingsheet]"]').last().val(data[i][4]);
+                $('#matform select[origname="ProjektMaterials[matparttype]"]').last().val(toTitleCase(data[i][5]));
+                $('#matform textarea[origname="ProjektMaterials[matspec]"]').last().val(data[i][6]);
+            }
+        }
+    }
+
+    /**
+     * String function to get TitleCase
+     * @param str
+     * @returns {string}
+     */
+    function toTitleCase(str) {
+        /* @todo Cannot read properties of undefined (reading 'trim') */
+        if (str === undefined) { return ''; }
+        str = str.trim();
+        return str.replace(/(?:^|\s)\w/g, function (match) {
+            return match.toUpperCase();
+        });
+    }
+
+    /**
+     * Assign user status of reviewer
+     */
+    function assignReviewerUserStatus() {
+        var wgUserName = mw.config.get('wgUserName');
+        /*console.log(wgUserName);*/
+        for (i = 1; i <= 3; i++) {
+            var review_user_value = $('input[name="Projekt[reviewer' + i + ']"]').val(),
+                $review_user_select = $('select[origname="ProjektMaterials[status_rev_' + i + ']"]');
+            /*console.log(review_user_value + " - " + wgUserName);*/
+            if (review_user_value === wgUserName) {
+                $review_user_select.prop('disabled', false);
+            } else {
+                $review_user_select.prop('disabled', true);
+                $review_user_select.each(function () {
+                    var $this = $(this);
+                    $('<input>').attr({
+                        type: 'hidden',
+                        name: $this.attr('name'),
+                        value: $this.val()
+                    }).insertAfter($this);
+                    $this.attr('name', '');
+                });
+            }
+        }
+    }
+
+    /**
+     * User list of certification review users
+     *
+     * @todo review code and functionality of reviewer management
+     */
+    function fillUserList() {
+        $.when( mw.loader.using( 'mw.Api' ), $.ready ).then( function () {
+            var api = new mw.Api();
+            api.get({
+                action: 'query',
+                list: 'allusers',
+                /*aurights: 'certificationreview',*/
+                augroup: 'certification_reviewer',
+                aulimit: '500'
+            }).done(function (data) {
+                $(".reviewers_dd_list").each(function () {
+                    var $this = $(this),
+                        this_input_value = $this.val(),
+                        $new_select = $('<select>').attr({
+                            class: 'createboxInput',
+                            tabindex: $this.attr('tabindex'),
+                            name: $this.attr('name'),
+                            id: $this.attr('id')
+                        }).insertAfter($this);
+
+                    var select_this_option = false;
+                    $new_select.append($('<option>', {value: '', text: ''}));
+                    for (i = 0; i < data.query.allusers.length; i++) {
+                        var this_user_name = data.query.allusers[i].name,
+                            is_selected = (this_user_name === this_input_value);
+                        $new_select.append($('<option>', {
+                            value: this_user_name, text: this_user_name,
+                            selected: is_selected
+                        }));
+                        select_this_option = is_selected ? true : select_this_option;
+                    }
+                    if (!select_this_option) {
+                        $new_select.append(
+                            $('<option>', {
+                                value: this_input_value,
+                                text: this_input_value,
+                                selected: true
+                            })
+                        );
+                    }
+                    $this.attr('name', '');
+                    $this.attr('id', '');
+                    $this.remove();
+                });
+            });
+        });
+    }
+
+    /**
+     * Get a single URL parameter
+     *
+     * @param paramName parameter name to find or search
+     * @deprecated use mw.util.getParamValue()
+     * @returns {boolean|string}
+     */
+    function getUrlValueOfParameter(paramName) {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterAndName = sURLVariables[i].split('=');
+            if (sParameterAndName[0] === paramName) {
+                return sParameterAndName[1] === undefined ? true : decodeURIComponent(sParameterAndName[1]);
+            }
+        }
+    }
+
+    /**
+     * @todo review code fix popup editing
+     * @todo add technical documentation
+     * */
+    function prepareForPopup() {
+        $.when( mw.loader.using( 'mw.util' ), $.ready ).then( function () {
+            /* editstatusmat=12&edit_material_list_item=12 */
+            var querystring=mw.util.getParamValue('querystring',location.href), i_editstatusmat = null;
+
+            if ((querystring + "").match(/edit_material_list_item/)){
+                let querystrings=querystring.split("&").map(string => string.split("="));
+                for (let i in querystrings){
+                    /* console.log(querystrings[i][0]); */
+                    if (querystrings[i][0]==="edit_material_list_item") {
+                        i_editstatusmat = Number(querystrings[i][1]);
+                        break;
+                    }
+                }
+            } else {
+                return;
+            }
+            if (i_editstatusmat) {
+                $(".project_form_tabs, .tab_frame, .import_mat_box, #matform .multipleTemplateInstance" +
+                    ", #matform .multipleTemplateInstance .formdiv > div" +
+                    ", .instanceAddAbove, .instanceRemove, .multipleTemplateAdder" +
+                    ", .project_summary, .instanceRearranger" +
+                    ", #matform fieldset legend, #wpPreview, #wpDiff, #matform > h2" +
+                    ", .mw-parser-output > p").hide();
+                $("#matform, #matform .multipleTemplateList div.multipleTemplateInstance:nth-of-type(" + i_editstatusmat + ")" +
+                    ", #matform .multipleTemplateInstance .formdiv > div.status_reviewers").show();
+                $("#matform .multipleTemplateList div.multipleTemplateInstance:nth-of-type(" + i_editstatusmat + ")").removeClass();
+                assignReviewerUserStatus();
+            }
+        });
+    }
+
+    if (initJSFuncts === undefined) {
+        var initJSFuncts = [];
+    }
+    initJSFuncts[initJSFuncts.length] = function () {
+        assignReviewerUserStatus();
+        fillUserList();
+    };
+
+    document.getElementById('csv_materials_import').addEventListener('change', readUploadFileAsText, false);
+    </script>
+</div>

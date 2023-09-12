@@ -1,0 +1,293 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Sandbox Open Hardware Documentation</sitename>
+    <dbname>sandbox_ohdc_wiki_en</dbname>
+    <base>https://sandbox.oh-dc.org/wiki/Home</base>
+    <generator>MediaWiki 1.38.6</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Sandbox Open Hardware Documentation</namespace>
+      <namespace key="5" case="first-letter">Sandbox Open Hardware Documentation talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="102" case="first-letter">Property</namespace>
+      <namespace key="103" case="first-letter">Property talk</namespace>
+      <namespace key="106" case="first-letter">Form</namespace>
+      <namespace key="107" case="first-letter">Form talk</namespace>
+      <namespace key="108" case="first-letter">Concept</namespace>
+      <namespace key="109" case="first-letter">Concept talk</namespace>
+      <namespace key="112" case="first-letter">smw/schema</namespace>
+      <namespace key="113" case="first-letter">smw/schema talk</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="844" case="first-letter">CommentStreams</namespace>
+      <namespace key="845" case="first-letter">CommentStreams Talk</namespace>
+      <namespace key="2300" case="first-letter">Gadget</namespace>
+      <namespace key="2301" case="first-letter">Gadget talk</namespace>
+      <namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+      <namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Category:Health</title>
+    <ns>14</ns>
+    <id>73</id>
+    <revision>
+      <id>191</id>
+      <parentid>190</parentid>
+      <timestamp>2023-09-05T11:01:59Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Category:Projects de:Kategorie + es:Categoría removed</comment>
+      <origin>190</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="216" sha1="93lnf9s485dm60ijqrjzlw9l2ug8j4a" xml:space="preserve">{{#seo:
+|keywords=
+|description=Health: Many Do It Yourself and Open Hardware projects for Health with construction manuals, photos and videos from the area Projects
+}}
+{{#default_form:Project}}
+[[Category:Projects]]</text>
+      <sha1>93lnf9s485dm60ijqrjzlw9l2ug8j4a</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Category:Business, industry</title>
+    <ns>14</ns>
+    <id>74</id>
+    <revision>
+      <id>193</id>
+      <parentid>192</parentid>
+      <timestamp>2023-09-05T11:01:59Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Category:Projects de:Kategorie + es:Categoría removed</comment>
+      <origin>192</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="240" sha1="h71hhtut3xdgj8ie51bfn3zf0ciweyz" xml:space="preserve">{{#seo:
+|keywords=
+|description=Business, industry: Many Do It Yourself and Open Hardware projects for Business, industry with construction manuals, photos and videos from the area Projects
+}}
+{{#default_form:Project}}
+[[Category:Projects]]</text>
+      <sha1>h71hhtut3xdgj8ie51bfn3zf0ciweyz</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Category:Renewable energies</title>
+    <ns>14</ns>
+    <id>75</id>
+    <revision>
+      <id>195</id>
+      <parentid>194</parentid>
+      <timestamp>2023-09-05T11:01:59Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Category:Projects de:Kategorie + es:Categoría removed</comment>
+      <origin>194</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="240" sha1="auakx2p04ri5igo38grdfvhrryqqkp9" xml:space="preserve">{{#seo:
+|keywords=
+|description=Renewable energies: Many Do It Yourself and Open Hardware projects for Renewable energies with construction manuals, photos and videos from the area Projects
+}}
+{{#default_form:Project}}
+[[Category:Projects]]</text>
+      <sha1>auakx2p04ri5igo38grdfvhrryqqkp9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Category:Environmental technologies</title>
+    <ns>14</ns>
+    <id>76</id>
+    <revision>
+      <id>197</id>
+      <parentid>196</parentid>
+      <timestamp>2023-09-05T11:01:59Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Category:Projects de:Kategorie + es:Categoría removed</comment>
+      <origin>196</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="256" sha1="fkaltnuoy31vdthak0qt3ck2m4stgc0" xml:space="preserve">{{#seo:
+|keywords=
+|description=Environmental technologies: Many Do It Yourself and Open Hardware projects for Environmental technologies with construction manuals, photos and videos from the area Projects
+}}
+{{#default_form:Project}}
+[[Category:Projects]]</text>
+      <sha1>fkaltnuoy31vdthak0qt3ck2m4stgc0</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Category:Computer, electronics</title>
+    <ns>14</ns>
+    <id>77</id>
+    <revision>
+      <id>199</id>
+      <parentid>198</parentid>
+      <timestamp>2023-09-05T11:01:59Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Category:Projects de:Kategorie + es:Categoría removed</comment>
+      <origin>198</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="246" sha1="lnzovy4lm562r2hf9ewz0x3by6zccmr" xml:space="preserve">{{#seo:
+|keywords=
+|description=Computer, electronics: Many Do It Yourself and Open Hardware projects for Computer, electronics with construction manuals, photos and videos from the area Projects
+}}
+{{#default_form:Project}}
+[[Category:Projects]]</text>
+      <sha1>lnzovy4lm562r2hf9ewz0x3by6zccmr</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Category:Agriculture, forest</title>
+    <ns>14</ns>
+    <id>78</id>
+    <revision>
+      <id>201</id>
+      <parentid>200</parentid>
+      <timestamp>2023-09-05T11:01:59Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Category:Projects de:Kategorie + es:Categoría removed</comment>
+      <origin>200</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="242" sha1="7quqiq3jm0d2n6p847qlw0016d2fesw" xml:space="preserve">{{#seo:
+|keywords=
+|description=Agriculture, forest: Many Do It Yourself and Open Hardware projects for Agriculture, forest with construction manuals, photos and videos from the area Projects
+}}
+{{#default_form:Project}}
+[[Category:Projects]]</text>
+      <sha1>7quqiq3jm0d2n6p847qlw0016d2fesw</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Category:Mobility, Logistics</title>
+    <ns>14</ns>
+    <id>79</id>
+    <revision>
+      <id>203</id>
+      <parentid>202</parentid>
+      <timestamp>2023-09-05T11:01:59Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported: Category:Projects de:Kategorie + es:Categoría removed</comment>
+      <origin>202</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="242" sha1="ms4argx0swtggokhv65tqxb53kw82dt" xml:space="preserve">{{#seo:
+|keywords=
+|description=Mobility, Logistics: Many Do It Yourself and Open Hardware projects for Mobility, Logistics with construction manuals, photos and videos from the area Projects
+}}
+{{#default_form:Project}}
+[[Category:Projects]]</text>
+      <sha1>ms4argx0swtggokhv65tqxb53kw82dt</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Category:Example category 1</title>
+    <ns>14</ns>
+    <id>109</id>
+    <revision>
+      <id>219</id>
+      <timestamp>2023-09-05T13:32:16Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Create main project category</comment>
+      <origin>219</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="47" sha1="6i5we22or0120hb0p4t8cir6ko12w51" xml:space="preserve">{{#default_form:Project}}
+[[Category:Projects]]</text>
+      <sha1>6i5we22or0120hb0p4t8cir6ko12w51</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Category:Example subcategory 1</title>
+    <ns>14</ns>
+    <id>110</id>
+    <revision>
+      <id>223</id>
+      <parentid>222</parentid>
+      <timestamp>2023-09-05T14:21:51Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>Wikiadmin moved page [[Category:Example category 2]] to [[Category:Example subcategory 1]]: make it a subcategory</comment>
+      <origin>222</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="57" sha1="ag5l6hpwvj23xnooum1t8i9h1i56zim" xml:space="preserve">{{#default_form:Project}}
+[[Category:Example category 1]]</text>
+      <sha1>ag5l6hpwvj23xnooum1t8i9h1i56zim</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Category:Wood</title>
+    <ns>14</ns>
+    <id>111</id>
+    <revision>
+      <id>221</id>
+      <timestamp>2023-09-05T14:19:34Z</timestamp>
+      <contributor>
+        <username>Wikiadmin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Create main project category</comment>
+      <origin>221</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="164" sha1="kol58ozq0ba2xmlr1hpnwi1ilvtnt0r" xml:space="preserve">{{#seo:
+|keywords=wood, woodworking, open source manufacture
+|description=Projects that relate to wood in general
+}}
+{{#default_form:Project}}
+[[Category:Projects]]</text>
+      <sha1>kol58ozq0ba2xmlr1hpnwi1ilvtnt0r</sha1>
+    </revision>
+  </page>
+</mediawiki>

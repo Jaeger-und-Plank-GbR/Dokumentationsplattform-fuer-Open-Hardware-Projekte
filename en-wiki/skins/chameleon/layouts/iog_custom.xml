@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<?xml-model href="https://cmln.github.io/chameleon/schema/1.0/layout.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+This file is part of the MediaWiki skin Chameleon.
+
+@copyright 2013 - 2016, Stephan Gambke
+@license   GNU General Public License, version 3 (or any later version)
+
+The Chameleon skin is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option) any
+later version.
+
+The Chameleon skin is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+details.
+
+You should have received a copy of the GNU General Public License along
+with this program. If not, see <http://www.gnu.org/licenses/>.
+
+@author Stephan Gambke
+@since 1.0
+@ingroup Skins
+-->
+<!-- 
+css
+
+.IOG-header.sticky * .large-IOG-logo.p-logo {
+    display:none;
+}
+.IOG-header.sticky * .small-IOG-logo.p-logo {
+    display:inline;
+}
+
+.IOG-header:not(.sticky) * .large-IOG-logo.p-logo {
+    display:inline;
+    z-index:2;
+}
+.IOG-header:not(.sticky) * .large-IOG-logo.p-logo * img { width:180px }
+
+.IOG-header:not(.sticky) * .small-IOG-logo.p-logo {
+    display:none;
+}
+
+-->
+<structure xmlns="https://ProfessionalWiki.github.io/chameleon/schema/3.2/layout.rng">
+  <grid mode="fluid" class="IOG-header"><!-- mx-0 w-100 -->
+    <row>
+      <cell class="">
+        <component type="Logo" class="large-IOG-logo position-absolute" />
+      </cell>
+    </row>
+    <row class="bg-light">
+      <cell class="">
+        <component type="PersonalTools" position="right" class="pull-right " />
+      </cell>
+    </row>
+    <row class="">
+      <cell class="">
+        <component type="NavbarHorizontal"  class="py-3 bg-white" >
+          <component type="Logo"  class="small-IOG-logo" />
+          <component type="NavMenu" position="right" /><!-- NavMenu hat kein class="…" -->
+          <!--<component type="Menu" message="secondary-menu"/>-->
+          <component type="SearchBar" buttons="go" position="right" />
+      </component>  
+      </cell>
+    </row>
+    <modification type="Sticky"/>
+</grid>
+
+  
+<!--  
+<component type="NavbarHorizontal"  class="alert alert-light " >
+    <component type="Logo"  />
+    <component type="NavMenu" position="right" /> NavMenu hat kein class="…" 
+    <component type="SearchBar" buttons="go" position="right" />
+    <modification type="Sticky"/>
+  </component>  
+-->
+  
+
+  <grid class="flex-fill position-relative">
+    <row>
+      <cell>
+        <component type="SiteNotice"/>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <component type="PageTools" hideSelectedNameSpace="yes" />
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <component type="MainContent"/>
+      </cell>
+    </row>
+  </grid>
+
+  <grid class="footer bg-gradient-primary text-light mt-4" mode="fluid">
+    <row>
+      <cell>
+        <component type="NavbarHorizontal" collapsible="no" class="small" >
+          <component type="Toolbox" flatten="no" class="toolbox dropup"/>
+          <component type="LangLinks" flatten="no" class="language-links dropup"/>
+          <component type="FooterInfo" position="right"  class="footer-info"/>
+        </component>
+      </cell>
+    </row>
+
+    <row>
+      <cell>
+        <component type="FooterPlaces"/>
+      </cell>
+      <cell>
+        <component type="FooterIcons" class="justify-content-end"/>
+      </cell>
+    </row>
+  </grid>
+</structure>

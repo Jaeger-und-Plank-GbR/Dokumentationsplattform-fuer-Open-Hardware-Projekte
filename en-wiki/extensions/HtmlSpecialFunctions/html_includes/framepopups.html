@@ -1,0 +1,333 @@
+<script type="text/javascript">
+var ppfstate = 0;
+if (initJSFuncts===undefined) {var initJSFuncts = [];}
+initJSFuncts[initJSFuncts.length] = function() {
+	$('.ppWindow .ppClose, .ppMask').click(function (e) {
+		ppfstate = 0;
+		e.preventDefault();
+		$(".ppWindowFrame iframe").hide();
+		$(".ppWindowFrame iframe")[0].contentWindow.stop();
+		$(".ppWindowFrame iframe")[0].contentWindow.onbeforeunload = null;
+		$(".ppWindowFrame iframe").attr('src', 'about:blank');
+		$(".ppWindowFrame iframe").contents().html('');
+		$(".ppWindowFrame iframe")[0].contentWindow.stop();
+		$('.ppMask, .ppWindow').hide();
+	});
+	$(window).resize(function () {
+ 		var box = $('.ppWindow');
+ 
+	        var maskHeight = $(document).height();
+        	var maskWidth = $(window).width();
+      
+	        $('.ppMask').css({'width':maskWidth,'height':maskHeight});
+               
+	        var winH = $(window).height();
+        	var winW = $(window).width();
+ 
+	        box.css('top',  winH/2 - box.height()/2);
+        	box.css('left', winW/2 - box.width()/2);
+	});
+	$('.ppWindowFrame iframe').on('load', function() {
+		var ifr = $(this);
+		var ifrc = ifr.contents();
+
+		ifr[0].contentWindow.onbeforeunload = null;
+		if (ppfstate == 1) {
+			ifrc.find(".header, .searchbar, .p-contentnavigation, .footer, .imprint, .contentHeader").hide();
+			ifrc.find(".smw-editpage-help, #editpage-copywarn, #wpPreviewWidget, #wpDiffWidget, .editCheckboxes").hide();
+
+			ifrc.find(".content-body").css('margin-top', '0px');
+			ifrc.find(".mw-body").css({'margin':'0px 0px 15px 0px', 'height':'auto', 'min-height':'auto'});
+			ifrc.find("html").css('background-color', '#ffffff');
+
+			var furl = ifr.attr('src');
+			if (/(?:Discussion|Diskussion):.+showtitle=1/.test(furl)) {
+                                ifrc.find("#wpTextbox1").css('height', '150px');
+			}else{
+				ifrc.find("#wpSummaryLabel").hide();
+				ifrc.find("#wpTextbox1").css('height', '225px');
+			}
+
+			$('.ppWindowFrame .ppTitle').html(ifrc.find(".firstHeading").html());
+			
+			if (typeof ifr[0].contentWindow.prepareForPopup === 'function') {
+				ifr[0].contentWindow.prepareForPopup();
+			}
+			ifr.show();
+			ppfstate = 2;
+			ifrc.find("#editform, #pfForm").submit(function(e) {
+				ppfstate = 3;
+				$(".ppWindowFrame iframe").hide();
+			});
+			ifrc.find("#mw-editform-cancel a, .project_save_box a").click(function(e) {
+				e.preventDefault();
+				$('.ppWindow .ppClose').click();
+			});
+		}else{
+			if (ppfstate == 3){
+				var furl = ifr.attr('src');
+				/*console.log(furl);*/
+				if (/(?:Discussion|Diskussion|Talk|Discusión):/.test(furl)) {
+					loadPageComments();
+				}else{
+					refreshStatusReviews();
+				}
+			}
+			$('.ppWindow .ppClose').click();
+		}
+	});
+
+	if (self===top) {
+		$('.ppBoxes').appendTo(document.body);
+        	if (urldiscussion!==undefined) {
+                	loadCommentsFromPage(urldiscussion);
+	        }
+		refreshCommentLinks();
+		prepareMaterialsTable();
+	}
+};
+function refreshCommentLinks() {
+	$('.popupLinks a, .projectReviewsArea .mw-editsection a,  .linksPopups').click(function (e) {
+		e.preventDefault();
+		var url = $(this).attr('href');
+		if (url.indexOf('?')<0) {
+			url += "?";
+		}else{
+			url += "\u0026";
+		}
+		url += 'arnd=RNBLPARG';
+		showFramePage(url);
+	});
+}
+function refreshStatusReviews() {
+        var ifr = $(".ppWindowFrame iframe");
+        var ifrc = ifr.contents();
+
+	var imax = ifrc.find(".materialRow").length;
+	/*console.log(imax);*/
+	for(i=1; i<=imax; i++) {
+		var fhtml = ifrc.find(".statusRevBox_"+i).html();
+		/*console.log(fhtml);*/
+		$(".statusRevBox_"+i).html(fhtml);
+	}
+	refreshCommentLinks();
+}
+
+/**
+ * Load page comments
+ */
+function loadPageComments() {
+	var ifr = $(".ppWindowFrame iframe");
+	var ifrc = ifr.contents();
+	var ctbl = $(".project_material_table");
+
+	$(".project_material_table .commentRow td").addClass("loadingComments");
+	$("div.generalCommentsBox").addClass("loadingComments");
+	$("div.generalCommentsArea").html("");
+	var csel = "";
+	var hasRoot = false;
+	for (i=1; i<=3; i++) {
+		ifrc.find("div.mw-parser-output > *").each(function() {
+			var tname = $(this).prop("tagName").toLowerCase();
+			if (tname=="h"+i) {
+				hasRoot = true;
+				cselid = $(this).find(".mw-headline").first().text();
+				cselid = cselid.replace(/ -- .*/gi, "").trim().replace(/^Part number /gi, "").trim();
+				cselid = cselid.replace('"', '\"');
+				cselid = cselid.replace(" ", "_");
+				csel = 'tr[id="commentRow_' + cselid + '"]';
+				msel = 'tr[id="materialRow_' + cselid + '"]';
+				/*console.log(csel);*/
+			}
+			if (csel.length > 0) {
+				var chtml = $(this).wrap('<p/>').parent().html();
+				/*console.log(chtml);*/
+				/*console.log(ctbl);*/
+				/*console.log(ctbl.find(csel));*/
+				if (ctbl.find(csel).length>0) {
+					ctbl.find(csel + " .loadingComments div.matCommentsArea").html("");
+					ctbl.find(csel + " .loadingComments").removeClass("loadingComments");
+					ctbl.find(csel + " div.matCommentsArea").append(chtml);
+	
+					var cc = ctbl.find(csel + " div.matCommentsArea .mw-headline").length;
+					ctbl.find(msel + " .commentsCountBox").html(cc);
+				}else{
+					$("div.generalCommentsArea").append(chtml);
+				}
+			}
+		});
+		if (hasRoot) {break;}
+	}
+	$("div.generalCommentsBox").removeClass("loadingComments");
+	$(".project_material_table .commentRow td").removeClass("loadingComments");
+
+	var cc = $("div.generalCommentsArea .mw-headline").length;
+	$(".showGralComment .commentsCountBox").html(cc);
+	
+	var nmbh = 1;
+	$(".project_material_table .matCommentsArea > *, .generalCommentsBox .generalCommentsArea > *").each(function() {
+		var tname = $(this).prop("tagName").toLowerCase();
+		if (/h\d+/.test(tname)) {
+			nmbh = tname.replace("h", "");
+		}
+		$(this).addClass("commentlevel_" + nmbh);
+	});
+	refreshCommentLinks();
+}
+
+/**
+ *
+ * @param url
+ */
+function loadCommentsFromPage(url) {
+	ppfstate = 3;
+	url = url.replace('=RNBLPARG', '='+Date.now());
+	$('.ppWindowFrame iframe').attr('src', url);
+}
+
+/**
+ *
+ * @param searchBoxes jQuery
+ */
+function findRowsByCol(searchBoxes) {
+	var foundClasses = Array();
+	$('.project_material_table .materialRow').show(0).removeClass('foundMaterial');
+	$('.project_material_table .commentRow').hide(0).removeClass('notFoundComment').removeClass('foundMaterial');
+	$('.project_material_table .openComments').removeClass('openComments');
+
+	searchBoxes.each(function() {
+		var search = $(this).val();
+		if (search.length>0) {
+			var stype = 'inc';
+			stype = ($(this).hasClass('searchLeft'))? 'left': stype;
+                        stype = ($(this).hasClass('searchRight'))? 'right': stype;
+
+			search = search.toLowerCase();
+			var col = this.id.replace('searchByCol', '');
+			col = Number(col) - 1;
+			foundClasses[foundClasses.length] = '.foundMatCol' + col;
+
+			$('.project_material_table .commentRow').hide(0);
+		        var rows = $('.project_material_table .materialRow').toArray();
+		        for (var i = 0; i < rows.length; i++){
+                		var rval = getCellValue(rows[i], col);
+				spos = rval.toLowerCase().indexOf(search);
+				sres = false;
+				if (stype==='inc') {
+					if (spos>=0) {sres = true;}
+				}else if (stype==='left') {
+                                        if (spos===0) {sres = true;}
+                                }else if (stype==='right') {
+                                        if (spos===rval.length-search.length) {sres = true;}
+				}
+				if (sres) {
+					$(rows[i]).addClass('foundMatCol'+col);
+					$(rows[i]).next().addClass('foundMatCol'+col);
+				}
+			}
+		}
+	});
+
+	if (foundClasses.length>0) {
+		$('.project_material_table .materialRow').not(foundClasses.join('')).hide(0);
+		$(foundClasses.join('')).addClass('foundMaterial');
+		for (i=0; i<foundClasses.length; i++) {
+			$(foundClasses[i]).removeClass(foundClasses[i].replace('.', ''));
+		}
+		
+		$('.materialRow.foundMaterial').show(0);
+		$('.project_material_table .commentRow').not('.foundMaterial').addClass('notFoundComment');
+	}
+}
+function prepareMaterialsTable() {
+	var rows = $('.project_material_table .materialRow').toArray().sort(comparerrows(0));
+	var maxLevel = 3;
+	var firstLevel = maxLevel;
+	for (var i = 0; i < rows.length; i++){
+		var table = $('.project_material_table');
+		var rowC = $('tr[id="' + rows[i].id.replace('materialRow', 'commentRow') + '"]:first');
+		var level = getCellValue(rows[i], 0).replace(/[^.]+/g, '').length + 1;
+		level = (level<=maxLevel)?level:maxLevel;
+		firstLevel = (level<firstLevel)?level:firstLevel;
+		var classLevel = 'mat_level_' + level;
+		$(rows[i]).addClass(classLevel);
+                rowC.addClass(classLevel);
+		table.append(rows[i]);
+                table.append(rowC);
+	}
+	$('.project_material_table .mat_level_' + firstLevel).addClass('mat_first_level');
+	$('.project_material_table .mat_level_' + maxLevel).addClass('mat_last_level');
+}
+function comparerrows(index) {
+	return function(a, b) {
+		var valA = getCellValue(a, index), valB = getCellValue(b, index);
+		valA = fixLevelsString(valA); valB = fixLevelsString(valB);
+		if (!$.isNumeric(valA)||!$.isNumeric(valB)) {
+			return valA.toString().localeCompare(valB);
+		}else{
+			return valA - valB;
+		}
+	}
+}
+function getCellValue(row, index) {
+	return $(row).children('td').eq(index).text();
+}
+function fixLevelsString(str) {
+	var lstr = str.split(".");
+	for (var i = 0; i < lstr.length; i++) {
+		lstr[i] = leftPad(lstr[i], '0', 100);
+	}
+	return lstr.join(".");
+}
+function leftPad(str, charpad, length) {
+	str = String(str);
+	charpad = String(charpad);
+	length = length - str.length;
+	return (charpad.repeat(length) + str)
+}
+
+
+function showFramePage(url, title) {
+	url = url.replace('=RNBLPARG', '='+Date.now());
+	if (ppfstate === 3){return false;}
+	if (title===undefined) {title = '';}
+	ppfstate = 1;
+	$('.ppWindowFrame .ppTitle').html(title);
+	$('.ppWindowFrame iframe').hide();
+        $('.ppWindowFrame iframe').attr('src', url);
+	$(".ppWindowFrame iframe").contents().find(".header, .searchbar, .p-contentnavigation, .footer, .imprint").hide();
+
+	showWindowPP('.ppWindowFrame');
+}
+function showWindowPP(id) {
+	if (ppfstate === 3){return false;}
+	var maskHeight = $(document).height();
+	var maskWidth = $(window).width();
+	
+	$('.ppMask').css({'width':maskWidth,'height':maskHeight});
+	$('.ppMask').fadeIn(1000);	
+	$('.ppMask').fadeTo("slow",0.8);	
+	
+	var winH = $(window).height();
+	var winW = $(window).width();
+              
+	$(id).css('top',  winH/2-$(id).height()/2);
+	$(id).css('left', winW/2-$(id).width()/2);
+	$(id).fadeIn(2000); 
+}
+</script>
+
+
+<div class="ppBoxes">
+<div class="ppWindow ppWindowFrame">
+	<div class="ppHeader">
+		<span class="ppTitle"></span> 
+		<a href="#" class="ppClose"></a>
+	</div>
+ 	<div class="ppBody">
+		<!-- TODO AP review code of iframe, time loading -->
+		<iframe allowtransparency="true" frameborder="0"></iframe>
+	</div>
+</div>
+<div class="ppMask"></div>
+</div>
