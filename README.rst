@@ -5,18 +5,23 @@ Dies ist eine WikiMedia Plattform zur Dokumentation von Projekten Offengelegter 
 
 Somit können einzelne Projekte über Formulare erstellt und gepflegt werden. Im Hintergrund arbeiten dann normale Wiki-Vorlagen, einschließlich auch semantischer Eigenschaften, die die Seiten erzeugen und deren Eigenschaften gezielt gesucht und abgefragt werden können. Auf diese Weise ist das Dokumentations-System frei erweiterbar und kann den Wünschen der Open-Hardware-Dokumentation angepaßt werden.
 
+Installation
+------------
+
+Zur Neuerstellung eines vollständigen Wikis siehe `LIESMICH_MW1_38_sandbox_installieren.md <./LIESMICH_MW1_38_sandbox_installieren.md>`_
+
 Gefördert von
 -------------
 
 |zwischenraum| |zwischenraum| |BMBF| |zwischenraum| |OKF| |zwischenraum| |zwischenraum|
 
 .. |BMBF| image:: Bilder/BMBF_gefoerdert_vom_deutsch.jpg
-  :width: 10 %
+  :width: 15 %
   :target: https://www.bmbf.de
   :alt: Gefördert vom Bundesministerium für Bildung und Forschung (BMBF)
 
 .. |OKF| image:: Bilder/open-knowledge-foundation-logo.svg
-  :width: 10 %
+  :width: 15 %
   :target: https://okfn.de
   :alt: Gefördert vom der Open Knowledge Foundation Deutschland (OKNF-Deutschland)
 
