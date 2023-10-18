@@ -92,6 +92,146 @@ Die `[[category: Project management]]` sollte alle nötigen technischen Seiten z
 
 Neue Vorlagen sollten auch innerhalb `[[category: Project management]]` dokumentiert werden.
 
+# Technische Anmerkungen und allgemeine Empfehlungen
+
+## Allgemein Beachtenswertes beim Einpflegen
+
+**Nachvollziehbarkeit von Änderungen**
+
+:heavy_check_mark: Kurze Zusammenfassung bei Seitenänderungen beigeben, dies erleichtert das Mitlesen, z.B.: Was wurde geändert usw..
+
+**Übertragbarkeit**
+
+:question: Läßt sich Wiki-Code einwandfrei in andere Systeme übertragen? Lieber Standard-Wiki-Elemente verwenden (Listen, Tabellen, Gallerie usw.) statt ausgklügelter und nur im Einzelfall funktionierender HTML-Code
+
+**Verständlichkeit**
+
+:question: Ist der Code, die Vorlagenbeiwerte (Parameter) verständlich?
+
+- Im Zweifel: Lieber ausführlicher und verständlich, z.B. statt `kw` besser `keyword` o.ä. ausgeschrieben
+
+:pencil: Verständlicher Code, ergänzende Code-Zwischenkommentare `<!-- … -->` helfen falls nötig – die hohe Kunst ;-)
+
+## Gestaltung Vorlagen-Formulare-Eigenschaften
+
+Ein Hauptziel bei Vorlagenprogrammierung dürfte sein, die Beiwerte (Parameter) und die Benennung selbst so klar und selbsterklärend wie nur möglich zu erstellen:
+
+- vermeide: Mischung Deutscher und Englischer Benennung, z.B. `template:Projekt`
+- vermeide: Nummerierung ohne Dokumentation `template:Projekt2` – _unklar_ was meint 2 hier?
+
+## Inhalte in Wikiseiten einpflegen
+
+Wichtig ist, daß die Inhalte gut übertragbar und verständlich bleiben sollten:
+
+- möglichst _immer_ eine **kurze Zusammenfassung** gemachter Änderungen zum Abspeichern einer Seite beigeben, dadurch wird der Änderungsverlauf viel leichter auffindbar und nachvollziehbar
+
+Elemente möglichst (nur) in ihrer Grundstruktur verwenden: Absatz, Überschrift, Bild, Listen mit Stichpunkten oder ordentliche Aufzählung, Tabelle usw.
+
+- soweit wie möglich nur Standard-Wiki Elemente verwenden
+- was wie eine Tabelle aussehen soll, z. B. linke Spalte, rechte Spalte, sollte auch als (Standard)Tabelle formatiert bleiben (den Rest kann man meist mit CSS Klassen hübscher machen)
+- sparsam mit kompliziertem HTML, z.B. `<div style="…"><div style="…"></div></div>`, was über CSS Klassen umformatiert wird zu einer Zweispalten-Tabelle vermeiden, nur wo dringend nötig und unumgänglich
+
+### Bilder
+
+Statt komplizierte `<div>[[File:…|…]]</div>` …
+
+- lieber `<gallery></gallery>`
+- oder `<gallery mode="packed"></gallery>` verwenden
+
+Statt `<div class="search_item_img">[[File:…|frameless]]</div>` …
+
+- lieber die CSS Klasse innerhalb des Wiki-Elementes einsetzen `[[File:…|frameless|class=search_item_img]]` und dieses dann definieren in
+  - MediaWiki:Common.css (für _alle_ Benutzeroberflächen) oder
+  - MediaWiki:Chamaeleon.css (für Chamäleon/Bootstrapp) oder
+  - MediaWiki:Vector.css (für klassische Benutzeroberfläche Vector)
+
+### Formulare
+
+Zusammenspiel von Eigenschaften und Formularefeld sollte man bevorzugen (`[[allowed value::…]]` auf der Seite der `Property:…`):
+
+- Anzeigewerte eines Formularfeldes, daß semantische Eigenschaften haben soll, besser auf der Property-Seite so einstellen, daß die Werte auf der Property-Seite automatisch ins Forumlarfeld übernommen werden
+  - alt: `{{{field|parameter name1|input-type=…|values=Youtube,Web,…}}}`
+  - neu: auf Property:Typeproject `[[Allows value::Youtube]]` + im Formular `{{{field|parameter name1|input-type=dropdown|property=Typeproject}}}`
+
+### Lesbarkeit von Code
+
+Allgemein siehe https://www.mediawiki.org/wiki/Manual:Coding_conventions
+
+## Massenweises ersetzen von Texten
+
+Auf [Special: MassEditRegex](https://www.oh-dc.org/wiki/Special:MassEditRegex) kann jeder Administrator, oder wer `masseditregexeditor` ist, mehrere Seiten gleichzeitig durchsuchen lassen und Textschnippsel ersetzen; Beispiel die Sprachen-Verknüpfungen (`|projectnameES=…`)
+
+1. wir brauchen die Liste der Seitennamen
+2. über [Special:ExpandTemplates](https://www.oh-dc.org/wiki/Special:ExpandTemplates) können, was uns die Liste an Seiten ergibt, die wahrscheinlich das zu löschende `|projectnameES=…` enthalten: wir `#ask` ausführen lassen:
+
+   ```plaintext
+   {{#ask: [[Projectname::~**]]
+    |sep=<br>
+    |format=plainlist
+    |searchlabel=
+    |outro=<br>(…usw. nur als Beispiel)
+    |link=none}}
+   ```
+3. dann [Special: MassEditRegex](https://www.oh-dc.org/wiki/Special:MassEditRegex) oben diese Ergebnisliste der Seiten eintragen
+4. Ersetzung eintragen
+5. Ersetzung mit Vorschau (preview) anzeigen, was passieren würde wenn ...
+6. dann _tatsächlich_ ausfüheren lassen + Zusammenfassung (summary) eintragen, was gelöscht werden wird
+
+### Ersetzungsbeispiel
+
+Beispiel 1: Löschen vollständiger (ganzer) Zeilen mit `|projectnameES=…` oder `|projectnameDE=…`:
+
+| Search for: | Replace with: |
+|-------------|---------------|
+| `/\n\|projectnameES=(.*)/` |  |
+| `/\n\|projectnameDE=(.*)/` |  |
+
+### Vorlagenbeiwerte (Parameter) nachhaltig umschreiben
+
+1. Vorlagen-Code so schreiben, daß der alte Vorlagenbeiwert ausgeführt wird (im Code) aber nicht mehr dokumentiert ist z.B. \
+   alt: `{{{kewords|}}}` \
+   neu: `{{{keywords|{{{kewords|}}}}}}`
+2. Formular-Code umschreiben, falls Formular diesen Vorlagenbeiwert enthält z.B. \
+   alt: `{{{field|kewords|…}}}` \
+   neu: `{{{field|keywords|…}}}`
+3. Danach auf allen Seiten die alten Beiwerte auf den entsprechenden Wikiseiten ersetzen (siehe [Abschnitt massenweises Ersetzen](#massenweises-ersetzen-von-texten))
+
+Auf diese Weise würden alte reinkopierte Vorlagen noch funktionieren, aber bei Bearbeitung im neuen Formular wird nur der neue Beiwert eingepflegt, der alte Wert muß in jedem Falle händisch ersetzt werden, damit auf Formularebene der richtige Wert im richtigen Feld steht.
+
+## Massenweise Seiten löschen
+
+Umfangreiche Seitenlöschungen am besten in der Befehlszeile durchführen:
+
+1. Seitenliste zusammentragen und in eine Textdatei (Zeilenende Unix/Linux) schreiben
+2. diese Textdatei dem Verwaltungsskript `deleteBatch.php` übergeben
+
+Beispiel in der Befehlszeile:
+
+```bash
+sudo -u www-user php ./maintenance/deleteBatch.php  \
+  --conf LocalSettings.php \
+  --r "Lösche Unter-Kategorien für Projekte; belasse Hauptkategorien" \
+  --u "ein-definierter-Administrator" Löschliste_Projekt-Kategorien_ohne_Projekt-Hauptkategorien_20230831.txt
+# …
+# Category:Workbenches 2 Deleted!
+# Category:Workshop equipment Deleted!
+# Category:Workshop gauges Deleted!
+# Category:X-ray equipment Deleted!
+# …
+```
+
+## Systemseiten
+
+### Menüs und Navigation
+
+Bei der Benutzeroberfläche Chameleon (es nutzt Bootstrap v4.0) wird das Hauptmenü durch `MediaWiki:Sidebar` gesteuert und danach erstellt, die dort verschachtelten Listen-Einträge ergeben das Hauptmenü und/oder Untermenüs.
+
+Vertiefende technische Dokumentation siehe [mediawiki.org/wiki/Manual:Interface/Sidebar](https://www.mediawiki.org/wiki/Manual:Interface/Sidebar).
+
+**Hauptseite** definieren:
+
+- `MediaWiki:Mainpage`
+
 ## Allgemeinverständnis Vorlagen, Formulare, Artikelseite
 
 Vorlagen dienen dazu, die (vorgegebene) Struktur in Artikelseiten einzupflegen:
