@@ -10,6 +10,16 @@ Installation
 
 Zur Neuerstellung eines vollständigen Wikis siehe `LIESMICH_MW1_38_sandbox_installieren.md <./LIESMICH_MW1_38_sandbox_installieren.md>`_
 
+Anwendung und weitere Hilfe
+---------------------------
+
+Die Funktionalität ist derzeit grundlegend auf `sandbox.oh-dc.org <https://sandbox.oh-dc.org>`_ umgesetzt, dort lassen sich auch weitere Wiki-Code-Verbesserungen realisieren oder Beispielprojekte erstellen.
+
+Siehe auch:
+
+- `Häufig gestellte Fragen (README.md) <./wikipages/README.md>`_  (Ordner wikipages)
+- `Anliegen/Issues <../../issues>`_
+
 Gefördert von
 -------------
 
