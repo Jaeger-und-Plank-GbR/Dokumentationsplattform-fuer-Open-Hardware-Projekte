@@ -20,7 +20,7 @@ Siehe auch:
 - `Häufig gestellte Fragen (README.md) <./wikipages/README.md>`_  (Ordner wikipages)
 - `Anliegen/Issues <../../issues>`_
 
-Eine weitere Umsetzung ist `oh-dc.org <https://oh-dc.org>`_ , das insbesondere für den Verein Ingenieure ohne Grenzen e.V. programmiert und gestaltet ist.
+Eine weitere Umsetzung ist `oh-dc.org <https://www.oh-dc.org>`_ , das insbesondere für den Verein Ingenieure ohne Grenzen e.V. programmiert und gestaltet ist.
 
 Gefördert von
 -------------
