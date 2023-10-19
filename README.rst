@@ -13,12 +13,14 @@ Zur Neuerstellung eines vollständigen Wikis siehe `LIESMICH_MW1_38_sandbox_inst
 Anwendung und weitere Hilfe
 ---------------------------
 
-Die Funktionalität ist derzeit grundlegend auf `sandbox.oh-dc.org <https://sandbox.oh-dc.org>`_ umgesetzt, dort lassen sich auch weitere Wiki-Code-Verbesserungen realisieren oder Beispielprojekte erstellen.
+Die Funktionalität ist derzeit grundlegend auf `sandbox.oh-dc.org <https://sandbox.oh-dc.org>`_ verwirklicht, dort lassen sich auch weitere Wiki-Code-Verbesserungen realisieren oder Beispielprojekte erstellen.
 
 Siehe auch:
 
 - `Häufig gestellte Fragen (README.md) <./wikipages/README.md>`_  (Ordner wikipages)
 - `Anliegen/Issues <../../issues>`_
+
+Eine weitere Umsetzung ist `oh-dc.org <https://oh-dc.org>`_ , das insbesondere für den Verein Ingenieure ohne Grenzen e.V. programmiert und gestaltet ist.
 
 Gefördert von
 -------------

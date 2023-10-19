@@ -68,7 +68,7 @@ Beim Aufbau muß eine Unterkategorie auf die nächst höhere Kategorie verweisen
 +---------------------------------+
 ```
 
-## Wie andert man die Auswahlliste eines Formularfeldes?
+## Wie ändert man die Auswahlliste eines Formularfeldes?
 
 Am besten im Wiki-Code nachschauen (`Form:Project`), dann gibt es 2 Möglichkeiten:
 
@@ -110,7 +110,7 @@ Neue Vorlagen sollten auch innerhalb `[[category: Project management]]` dokument
 
 - Im Zweifel: Lieber ausführlicher und verständlich, z.B. statt `kw` besser `keyword` o.ä. ausgeschrieben
 
-:pencil: Verständlicher Code, ergänzende Code-Zwischenkommentare `<!-- … -->` helfen falls nötig – die hohe Kunst ;-)
+:pencil: Code-Verständlichkeit ergänzen, mit Zwischenanmerkungen `<!-- … -->` (Kommentaren) falls nötig – die hohe Kunst ;-)
 
 ## Gestaltung Vorlagen-Formulare-Eigenschaften
 
@@ -211,7 +211,8 @@ Beispiel in der Befehlszeile:
 sudo -u www-user php ./maintenance/deleteBatch.php  \
   --conf LocalSettings.php \
   --r "Lösche Unter-Kategorien für Projekte; belasse Hauptkategorien" \
-  --u "ein-definierter-Administrator" Löschliste_Projekt-Kategorien_ohne_Projekt-Hauptkategorien_20230831.txt
+  --u "ein-definierter-Administrator" \
+  Löschliste_Projekt-Kategorien_ohne_Projekt-Hauptkategorien_20230831.txt
 # …
 # Category:Workbenches 2 Deleted!
 # Category:Workshop equipment Deleted!
